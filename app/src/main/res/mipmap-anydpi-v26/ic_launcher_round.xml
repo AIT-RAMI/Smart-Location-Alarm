@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <item name="androidx.core.app.FrameMetricsAggregator FrameMetricsAggregator(int) 0">
+        <annotation name="androidx.annotation.IntDef">
+            <val
+                name="flag"
+                val="true" />
+            <val
+                name="value"
+                val="{androidx.core.app.F

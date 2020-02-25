@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <item name="androidx.appcompat.app.ActionBar int getDisplayOptions()">
+        <annotation name="androidx.annotation.IntDef">
+            <val
+                name="flag"
+                val="true" />
+            <val
+                name="value"
+                val="{androidx.appcompat.app.ActionBar.DISPLAY_USE_LOGO, androidx.appcompat.app.ActionBar.DISPLAY_SHOW_HOME, androidx.appcompat.app.ActionBar.DISPLAY_HOME_AS_UP, androidx.appcompat.app.ActionBar.DISPLAY_SHOW_TITLE, androidx.appcompat.app.ActionBar.DISPLAY_SHOW_CUSTOM}" />
+        </annotation>
+    </item>
+    <item name="androidx.appcompat.app.ActionBar int getNavigationMode()">
+        <annotation name="androidx.annotation.IntDef">
+            <val
+                name="value"
+                val="{androidx.appcompat.app.ActionBar.NAVIGATION_MODE_STANDARD, androidx.appcompat.app.ActionBar.NAVIGATION_MODE_LIST, androidx.appcompat.app.ActionBar.NAVIGATION_MODE_TABS}" />
+        </annotation>
+    </item>
+    <item name="androidx.appcompat.app.ActionBar void setDisplayOptions(int) 0">
+        <annotation name="androidx.annotation.IntDef">
+            <val
+                name="flag"
+                val="true" />
+            <val
+                name="value"
+                val="{androidx.appcompat.app.ActionBar.DISPLAY_USE_LOGO, androidx.appcompat.app.ActionBar.DISPLAY_SHOW_HOME, androidx.appcompat.app.ActionBar.DISPLAY_HOME_AS_UP, androidx.appcompat.app.ActionBar.DISPLAY_SHOW_TITLE, androidx.appcompat.app.ActionBar.DISPLAY_SHOW_CUSTOM}" />
+        </annotation>
+    </item>
+    <item name="androidx.appcompat.app.ActionBar void setDisplayOptions(int, int) 0">
+        <annotation name="androidx.annotation.IntDef">
+            <val
+                name="flag"
+                val="true" />
+            <val
+                name="value"
+                val="{androidx.appcompat.app.ActionBar.DISPLAY_USE_LOGO, androidx.appcompat.app.ActionBar.DISPLAY_SHOW_HOME, androidx.appcompat.app.ActionBar.DISPLAY_HOME_AS_UP, androidx.appcompat.app.ActionBar.DISPLAY_SHOW_TITLE, androidx.appcompat.app.ActionBar.DISPLAY_SHOW_CUSTOM}" />
+        </annotation>
+    </item>
+    <i
