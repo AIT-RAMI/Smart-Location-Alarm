@@ -11,6 +11,6 @@ Android project
 
 # Tasks
 - Create alarm : Rami
-- Map + database: Abir
-- alarms + ihm : Younes
-- settings + notification : Adnane
+- Map + Database: Abir
+- Alarms + ihm : Younes
+- Settings + notification : Adnane
