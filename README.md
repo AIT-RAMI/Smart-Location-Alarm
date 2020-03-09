@@ -10,7 +10,7 @@ Android project
 - EventBrite API
 
 # Tasks
-1- Create alarm : Rami
-2- Map + database: Abir
-3- alarms + ihm : Younes
-4- settings + notification : Adnane
+- Create alarm : Rami
+- Map + database: Abir
+- alarms + ihm : Younes
+- settings + notification : Adnane
