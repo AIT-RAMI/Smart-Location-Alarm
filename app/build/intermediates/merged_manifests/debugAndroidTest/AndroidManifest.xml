@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.smart_location_alarm.test" >
+    package="com.example.smartlocationalarm.test" >
 
     <uses-sdk
         android:minSdkVersion="15"
@@ -10,8 +10,8 @@
         android:name="androidx.test.runner.AndroidJUnitRunner"
         android:functionalTest="false"
         android:handleProfiling="false"
-        android:label="Tests for com.example.smart_location_alarm"
-        android:targetPackage="com.example.smart_location_alarm" />
+        android:label="Tests for com.example.smartlocationalarm"
+        android:targetPackage="com.example.smartlocationalarm" />
 
     <uses-permission android:name="android.permission.REORDER_TASKS" />
 
@@ -20,21 +20,21 @@
 
         <activity
             android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
-            android:theme="@style/InstrumentationActivityInvokerBootstrapActivityTheme" >
+            android:theme="@android:style/Theme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
             android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
-            android:theme="@style/InstrumentationActivityInvokerEmptyActivityTheme" >
+            android:theme="@android:style/Theme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
             android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
-            android:theme="@style/InstrumentationActivityInvokerFloatingActivityTheme" >
+            android:theme="@android:style/Theme.Dialog" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>

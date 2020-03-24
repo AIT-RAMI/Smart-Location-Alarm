@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='Smart_Location_Alarm'
+rootProject.name='SmartLocationAlarm'
