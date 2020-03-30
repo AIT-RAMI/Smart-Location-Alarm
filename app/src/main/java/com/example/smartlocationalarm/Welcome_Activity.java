@@ -22,6 +22,8 @@ public class Welcome_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_welcome_);
 
         Button notif;
+        Button settings;
+
         notif = findViewById(R.id.test);
         notif.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,7 +31,14 @@ public class Welcome_Activity extends AppCompatActivity {
                 addNotification();
             }
         });
-
+        settings = findViewById(R.id.test2);
+        settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), SettingsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void addNotification() {
