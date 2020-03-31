@@ -17,6 +17,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.smartlocationalarm.SettingsActivity" />
         <activity android:name="com.example.smartlocationalarm.NotificationActivity" />
         <activity android:name="com.example.smartlocationalarm.Welcome_Activity" />
         <activity android:name="com.example.smartlocationalarm.MainActivity" >

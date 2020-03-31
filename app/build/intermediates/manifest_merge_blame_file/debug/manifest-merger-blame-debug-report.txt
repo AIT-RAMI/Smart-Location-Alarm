@@ -11,7 +11,7 @@
 9-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:5:5-21:19
+11-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:5:5-22:19
 12        android:allowBackup="true"
 12-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -27,26 +27,29 @@
 18-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:10:9-35
 19        android:theme="@style/AppTheme" >
 19-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:11:9-40
-20        <activity android:name="com.example.smartlocationalarm.NotificationActivity" />
-20-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:12:9-67
-20-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:12:19-55
-21        <activity android:name="com.example.smartlocationalarm.Welcome_Activity" />
-21-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:13:9-54
-21-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:13:19-51
-22        <activity android:name="com.example.smartlocationalarm.MainActivity" >
-22-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:14:9-20:20
-22-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:14:19-47
-23            <intent-filter>
-23-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:15:13-19:29
-24                <action android:name="android.intent.action.MAIN" />
-24-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:16:17-69
-24-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:16:25-66
-25
-26                <category android:name="android.intent.category.LAUNCHER" />
-26-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:18:17-77
-26-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:18:27-74
-27            </intent-filter>
-28        </activity>
-29    </application>
-30
-31</manifest>
+20        <activity android:name="com.example.smartlocationalarm.SettingsActivity" />
+20-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:12:9-63
+20-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:12:19-51
+21        <activity android:name="com.example.smartlocationalarm.NotificationActivity" />
+21-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:13:9-58
+21-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:13:19-55
+22        <activity android:name="com.example.smartlocationalarm.Welcome_Activity" />
+22-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:14:9-54
+22-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:14:19-51
+23        <activity android:name="com.example.smartlocationalarm.MainActivity" >
+23-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:15:9-21:20
+23-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:15:19-47
+24            <intent-filter>
+24-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:16:13-20:29
+25                <action android:name="android.intent.action.MAIN" />
+25-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:17:17-69
+25-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:17:25-66
+26
+27                <category android:name="android.intent.category.LAUNCHER" />
+27-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:19:17-77
+27-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:19:27-74
+28            </intent-filter>
+29        </activity>
+30    </application>
+31
+32</manifest>
