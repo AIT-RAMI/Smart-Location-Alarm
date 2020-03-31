@@ -10,47 +10,54 @@
 9        android:targetSdkVersion="29" />
 9-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
 10
-11    <application
-11-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:5:5-22:19
-12        android:allowBackup="true"
-12-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.1.0] C:\Users\aabba\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
-14        android:debuggable="true"
-15        android:icon="@mipmap/ic_launcher"
-15-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:7:9-43
-16        android:label="@string/app_name"
-16-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:8:9-41
-17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:9:9-54
-18        android:supportsRtl="true"
-18-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:10:9-35
-19        android:testOnly="true"
-20        android:theme="@style/AppTheme" >
-20-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:11:9-40
-21        <activity android:name="com.example.smartlocationalarm.SettingsActivity" />
-21-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:12:9-63
-21-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:12:19-51
-22        <activity android:name="com.example.smartlocationalarm.NotificationActivity" />
-22-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:13:9-58
-22-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:13:19-55
-23        <activity android:name="com.example.smartlocationalarm.Welcome_Activity" />
-23-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:14:9-54
-23-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:14:19-51
-24        <activity android:name="com.example.smartlocationalarm.MainActivity" >
-24-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:15:9-21:20
-24-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:15:19-47
-25            <intent-filter>
-25-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:16:13-20:29
-26                <action android:name="android.intent.action.MAIN" />
-26-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:17:17-69
-26-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:17:25-66
-27
-28                <category android:name="android.intent.category.LAUNCHER" />
-28-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:19:17-77
-28-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:19:27-74
-29            </intent-filter>
-30        </activity>
-31    </application>
-32
-33</manifest>
+11    <uses-permission android:name="android.permission.VIBRATE" />
+11-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:24:5-65
+11-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:24:22-63
+12    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+12-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:25:5-85
+12-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:25:22-82
+13
+14    <application
+14-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:5:5-22:19
+15        android:allowBackup="true"
+15-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:6:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.1.0] C:\Users\aabba\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:icon="@mipmap/ic_launcher"
+18-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:7:9-43
+19        android:label="@string/app_name"
+19-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:8:9-41
+20        android:roundIcon="@mipmap/ic_launcher_round"
+20-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:9:9-54
+21        android:supportsRtl="true"
+21-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:10:9-35
+22        android:testOnly="true"
+23        android:theme="@style/AppTheme" >
+23-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:11:9-40
+24        <activity android:name="com.example.smartlocationalarm.SettingsActivity" />
+24-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:12:9-63
+24-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:12:19-51
+25        <activity android:name="com.example.smartlocationalarm.NotificationActivity" />
+25-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:13:9-58
+25-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:13:19-55
+26        <activity android:name="com.example.smartlocationalarm.Welcome_Activity" />
+26-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:14:9-54
+26-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:14:19-51
+27        <activity android:name="com.example.smartlocationalarm.MainActivity" >
+27-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:15:9-21:20
+27-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:15:19-47
+28            <intent-filter>
+28-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:16:13-20:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:17:17-69
+29-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:17:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:19:17-77
+31-->C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:19:27-74
+32            </intent-filter>
+33        </activity>
+34    </application>
+35
+36</manifest>

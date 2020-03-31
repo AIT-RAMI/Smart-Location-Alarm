@@ -11,20 +11,25 @@
         android:layout_width="120dp"
         android:layout_height="54dp"
         android:layout_centerInParent="true"
+        android:layout_marginEnd="144dp"
+        android:layout_marginRight="144dp"
         android:text="notification"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39"
-        tools:layout_editor_absoluteX="146dp" />
+        app:layout_constraintVertical_bias="0.395" />
 
     <Button
         android:id="@+id/test2"
         android:layout_width="120dp"
         android:layout_height="54dp"
         android:layout_centerInParent="true"
+        android:layout_marginEnd="144dp"
+        android:layout_marginRight="144dp"
         android:text="settings"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="146dp" />
+        app:layout_constraintVertical_bias="0.499" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
