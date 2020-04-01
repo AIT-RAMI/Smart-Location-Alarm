@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Smart Location Alarm</string>
+    <string name="title_activity_create_alarm">Map</string>
 </resources>

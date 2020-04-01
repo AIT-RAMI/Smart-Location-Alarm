@@ -15,7 +15,7 @@ import androidx.core.app.NotificationCompat;
 
 public class Welcome_Activity extends AppCompatActivity {
 
-
+    Button create;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +30,19 @@ public class Welcome_Activity extends AppCompatActivity {
             }
         });
 
+        create = findViewById(R.id.create);
+        create.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                clickCreate();
+            }
+        });
+
+    }
+
+    private void clickCreate(){
+        Intent intent = new Intent(this, PermissionActivity.class);
+        this.startActivity(intent);
     }
 
     private void addNotification() {

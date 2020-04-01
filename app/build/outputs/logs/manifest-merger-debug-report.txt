@@ -1,178 +1,298 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-23:12
-MERGED from [com.google.android.material:material:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\c7eb9cd3508ac3959447c14fd76c9fb9\material-1.0.0\AndroidManifest.xml:17:1-24:12
+ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-47:12
+MERGED from [com.karumi:dexter:6.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ff8aa114c850c8bb504dee7f1bab2e28\dexter-6.0.2\AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5d52d9573d8a8f70a8462cc8f8a42ce9\material-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\6a9d1885cb0ca0d94af2e5b22dfc9d65\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.mancj:MaterialSearchBar:0.8.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3d086e8a3f5eb7d1a1d437b427b2fb25\jetified-MaterialSearchBar-0.8.1\AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\43ba4815b68c84586a976ed5dc3ac9e1\places-2.2.0\AndroidManifest.xml:2:1-23:12
+MERGED from [com.tbuonomo.andrui:viewpagerdotsindicator:2.0.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a5d198e178af89bfe3bac34d2d3b8e05\jetified-viewpagerdotsindicator-2.0.3\AndroidManifest.xml:2:1-17:12
+MERGED from [com.github.iammert:ReadableBottomBar:0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4418faf6ea10a8c45febcb79d648ae32\jetified-ReadableBottomBar-0.2\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\6119d746697059b7e1b74aab4d181f56\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\0362ff4d8672321347a402c32368f192\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\24bb03d10ab268a6aeafc941e4345037\media-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\8ac21d9e6ffd28bb13add2ffc04b2920\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\e95d1611d40c652e0f77a7c95d74a3f6\transition-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ddf6a25e6e3e5e2af441269b48288beb\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ceb81553a8d4d1147c847656f2ca2121\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ec593f8d91037f6ef1bbcd6a177afa1c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\00bc847ce5b9e3ce7b40d465bffbf9e9\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4f8b5527496d67480951cc322460db7f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.transition:transition:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d2cae29ea156ecc28d8f5099dc624ed2\transition-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4932f7e67b26f042b51fa62f1aa4816d\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5276819c062a92c029464122749254f1\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\dbbcc99072b5616db9e0106b8ed65934\activity-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d1ca7cd3905794bed09cb92934ccd6c2\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4276267baf989d651cf25177c247ad49\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\8849109129fcb2f39779166fb64480b1\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5ad830c9e1047f79e3f0f7e9e42ab8ab\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\056634285937b2535ff256884ac7cf86\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a3d702a77cbfacefb23de82416a0cb1f\play-services-maps-17.0.0\AndroidManifest.xml:17:1-38:12
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\cd2555db0203a9129fdeb1355c14dcc8\play-services-location-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\2b8a3547a6423f6fb15f19a78415dd89\play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\2905ca591d95bf0e403f68a05d4ee4e5\play-services-places-placereport-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\b5c8af7db70c43d258d02e8746c2c96f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\0078d1380dba3ee7366f8424e5e798e8\lifecycle-extensions-2.1.0\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\0362ff4d8672321347a402c32368f192\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\00bc847ce5b9e3ce7b40d465bffbf9e9\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a53596bdd308807993a20732db231575\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4932f7e67b26f042b51fa62f1aa4816d\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a3c457ded457b98b207b4f227d629399\customview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3d4a3c67e39fa8d6d0c0f126c28b81d8\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\82b148795609bbbaf8e825fc2ff2a6bf\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4f8b5527496d67480951cc322460db7f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5276819c062a92c029464122749254f1\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\dbbcc99072b5616db9e0106b8ed65934\activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\2c4911487622891b7d804fc82995f4ba\core-1.2.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3ec6fa8458ddbe732478393a9f9e6c77\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\fb2fbe77879a57ea0c5dfd6fe59ba874\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4fe44ae24daa7cfa2dd483a5d3b65a2f\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.test:runner:1.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5039d80f5368d388acc1d0449060eaf9\runner-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.skyfishjy.ripplebackground:library:1.0.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5187ebecdf93254ca9fb0e20aa46f0d9\library-1.0.1\AndroidManifest.xml:2:1-13:12
+MERGED from [com.romandanylyk:pageindicatorview:1.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\f768668aadd0bf0bfa18397118480a42\jetified-pageindicatorview-1.0.2\AndroidManifest.xml:2:1-11:12
+MERGED from [com.makeramen:roundedimageview:2.3.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a8c1ef74ed81794ff3f1bbb8e7da42c7\jetified-roundedimageview-2.3.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\78be57497ca2a8dd090798c529f3e53d\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3a992d8307f21a8f15eb649383ba6a6a\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\f3f97c8a5fb582cafab2f95850ea615d\transport-backend-cct-2.1.0\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\22ab9f9ae56c67fcd90c62fb40f23aa3\transport-runtime-2.1.0\AndroidManifest.xml:15:1-41:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\fb2fbe77879a57ea0c5dfd6fe59ba874\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.test:monitor:1.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\dd36868e8e0abaace928186785bab122\monitor-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3c03e0805bdfd6180afbf0af0c9cd9a0\lifecycle-process-2.1.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\86183f609071467cbb11786cc9cbb026\lifecycle-service-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ffa46f3d6480310395b7b525cf59ccde\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\64ed055c454b36433d45a77285ee24d6\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\720b2290ca550345d3df6fc1b6a7ac3a\lifecycle-livedata-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\11feedb5ce6b3e9b1eb69e2892e42453\lifecycle-livedata-core-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4cee4734b336f81c686d6e7b16dafec9\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3819fb4fef2e012192b32762458ba145\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\f582580d3eb247a74d915a27810a4674\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\c75155371656c04dff3a027cdeb13e8a\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\53b4a4cf87c0ff501a8c414cec884555\print-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ffa46f3d6480310395b7b525cf59ccde\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\64ed055c454b36433d45a77285ee24d6\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3819fb4fef2e012192b32762458ba145\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\63647da4654da12a6f2785cfbbad8123\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\733fc1d306cee2c05d3e1fb0b7527020\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\fdd65d8b6066fd289a68b42931dc03a2\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-23:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3a992d8307f21a8f15eb649383ba6a6a\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\eb55d4c9124584881a3120eff1096616\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.datatransport:transport-api:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\58d1325ad2640f1ab1fdab3a1ca831fd\transport-api-2.1.0\AndroidManifest.xml:15:1-22:12
+INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-47:12
 	package
 		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:3:5-45
 		INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-23:12
+		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-47:12
 		INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-23:12
+		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-47:12
 		INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\43ba4815b68c84586a976ed5dc3ac9e1\places-2.2.0\AndroidManifest.xml:9:5-79
+MERGED from [com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\43ba4815b68c84586a976ed5dc3ac9e1\places-2.2.0\AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:10:22-76
 application
-ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:5:5-21:19
-MERGED from [com.google.android.material:material:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\c7eb9cd3508ac3959447c14fd76c9fb9\material-1.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\c7eb9cd3508ac3959447c14fd76c9fb9\material-1.0.0\AndroidManifest.xml:22:5-20
-MERGED from [androidx.core:core:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:5-89
+ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:12:5-45:19
+MERGED from [com.karumi:dexter:6.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ff8aa114c850c8bb504dee7f1bab2e28\dexter-6.0.2\AndroidManifest.xml:26:5-30:19
+MERGED from [com.karumi:dexter:6.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ff8aa114c850c8bb504dee7f1bab2e28\dexter-6.0.2\AndroidManifest.xml:26:5-30:19
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5d52d9573d8a8f70a8462cc8f8a42ce9\material-1.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5d52d9573d8a8f70a8462cc8f8a42ce9\material-1.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.github.mancj:MaterialSearchBar:0.8.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3d086e8a3f5eb7d1a1d437b427b2fb25\jetified-MaterialSearchBar-0.8.1\AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.mancj:MaterialSearchBar:0.8.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3d086e8a3f5eb7d1a1d437b427b2fb25\jetified-MaterialSearchBar-0.8.1\AndroidManifest.xml:11:5-15:19
+MERGED from [com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\43ba4815b68c84586a976ed5dc3ac9e1\places-2.2.0\AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\43ba4815b68c84586a976ed5dc3ac9e1\places-2.2.0\AndroidManifest.xml:13:5-21:19
+MERGED from [com.tbuonomo.andrui:viewpagerdotsindicator:2.0.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a5d198e178af89bfe3bac34d2d3b8e05\jetified-viewpagerdotsindicator-2.0.3\AndroidManifest.xml:11:5-15:19
+MERGED from [com.tbuonomo.andrui:viewpagerdotsindicator:2.0.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a5d198e178af89bfe3bac34d2d3b8e05\jetified-viewpagerdotsindicator-2.0.3\AndroidManifest.xml:11:5-15:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a3d702a77cbfacefb23de82416a0cb1f\play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a3d702a77cbfacefb23de82416a0cb1f\play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\cd2555db0203a9129fdeb1355c14dcc8\play-services-location-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\cd2555db0203a9129fdeb1355c14dcc8\play-services-location-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\2b8a3547a6423f6fb15f19a78415dd89\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\2b8a3547a6423f6fb15f19a78415dd89\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\2905ca591d95bf0e403f68a05d4ee4e5\play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\2905ca591d95bf0e403f68a05d4ee4e5\play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\b5c8af7db70c43d258d02e8746c2c96f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\b5c8af7db70c43d258d02e8746c2c96f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\0078d1380dba3ee7366f8424e5e798e8\lifecycle-extensions-2.1.0\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\0078d1380dba3ee7366f8424e5e798e8\lifecycle-extensions-2.1.0\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.core:core:1.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\2c4911487622891b7d804fc82995f4ba\core-1.2.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\2c4911487622891b7d804fc82995f4ba\core-1.2.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3ec6fa8458ddbe732478393a9f9e6c77\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3ec6fa8458ddbe732478393a9f9e6c77\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [com.skyfishjy.ripplebackground:library:1.0.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5187ebecdf93254ca9fb0e20aa46f0d9\library-1.0.1\AndroidManifest.xml:11:5-20
+MERGED from [com.skyfishjy.ripplebackground:library:1.0.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5187ebecdf93254ca9fb0e20aa46f0d9\library-1.0.1\AndroidManifest.xml:11:5-20
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\78be57497ca2a8dd090798c529f3e53d\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\78be57497ca2a8dd090798c529f3e53d\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\f3f97c8a5fb582cafab2f95850ea615d\transport-backend-cct-2.1.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\f3f97c8a5fb582cafab2f95850ea615d\transport-backend-cct-2.1.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\22ab9f9ae56c67fcd90c62fb40f23aa3\transport-runtime-2.1.0\AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\22ab9f9ae56c67fcd90c62fb40f23aa3\transport-runtime-2.1.0\AndroidManifest.xml:25:5-39:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3c03e0805bdfd6180afbf0af0c9cd9a0\lifecycle-process-2.1.0\AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3c03e0805bdfd6180afbf0af0c9cd9a0\lifecycle-process-2.1.0\AndroidManifest.xml:22:5-28:19
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\eb55d4c9124584881a3120eff1096616\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\eb55d4c9124584881a3120eff1096616\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\2c4911487622891b7d804fc82995f4ba\core-1.2.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:17:9-35
 	android:label
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:15:9-41
 	android:roundIcon
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:16:9-54
 	android:icon
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:14:9-43
 	android:allowBackup
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:13:9-35
 	android:theme
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:18:9-40
+meta-data#com.google.android.geo.API_KEY
+ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:28:9-30:55
+	android:value
+		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:30:13-52
+	android:name
+		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:29:13-58
+activity#com.example.smartlocationalarm.CreateAlarmActivity
+ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:32:9-34:76
+	android:label
+		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:34:13-64
+	android:name
+		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:33:13-48
+activity#com.example.smartlocationalarm.PermissionActivity
+ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:35:9-56
+	android:name
+		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:35:19-53
 activity#com.example.smartlocationalarm.NotificationActivity
-ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:12:9-67
+ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:36:9-58
 	android:name
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:12:19-55
+		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:36:19-55
 activity#com.example.smartlocationalarm.Welcome_Activity
-ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:13:9-54
+ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:37:9-54
 	android:name
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:13:19-51
+		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:37:19-51
 activity#com.example.smartlocationalarm.MainActivity
-ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:14:9-20:20
+ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:38:9-44:20
 	android:name
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:14:19-47
+		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:38:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:15:13-19:29
+ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:39:13-43:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:16:17-69
+ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:40:17-69
 	android:name
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:16:25-66
+		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:40:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:18:17-77
+ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:42:17-77
 	android:name
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:18:27-74
+		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:42:27-74
 uses-sdk
 INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
-MERGED from [com.google.android.material:material:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\c7eb9cd3508ac3959447c14fd76c9fb9\material-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\c7eb9cd3508ac3959447c14fd76c9fb9\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.karumi:dexter:6.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ff8aa114c850c8bb504dee7f1bab2e28\dexter-6.0.2\AndroidManifest.xml:22:5-24:41
+MERGED from [com.karumi:dexter:6.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ff8aa114c850c8bb504dee7f1bab2e28\dexter-6.0.2\AndroidManifest.xml:22:5-24:41
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5d52d9573d8a8f70a8462cc8f8a42ce9\material-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5d52d9573d8a8f70a8462cc8f8a42ce9\material-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\6a9d1885cb0ca0d94af2e5b22dfc9d65\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\6a9d1885cb0ca0d94af2e5b22dfc9d65\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.mancj:MaterialSearchBar:0.8.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3d086e8a3f5eb7d1a1d437b427b2fb25\jetified-MaterialSearchBar-0.8.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.mancj:MaterialSearchBar:0.8.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3d086e8a3f5eb7d1a1d437b427b2fb25\jetified-MaterialSearchBar-0.8.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\43ba4815b68c84586a976ed5dc3ac9e1\places-2.2.0\AndroidManifest.xml:7:5-44
+MERGED from [com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\43ba4815b68c84586a976ed5dc3ac9e1\places-2.2.0\AndroidManifest.xml:7:5-44
+MERGED from [com.tbuonomo.andrui:viewpagerdotsindicator:2.0.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a5d198e178af89bfe3bac34d2d3b8e05\jetified-viewpagerdotsindicator-2.0.3\AndroidManifest.xml:7:5-9:41
+MERGED from [com.tbuonomo.andrui:viewpagerdotsindicator:2.0.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a5d198e178af89bfe3bac34d2d3b8e05\jetified-viewpagerdotsindicator-2.0.3\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.iammert:ReadableBottomBar:0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4418faf6ea10a8c45febcb79d648ae32\jetified-ReadableBottomBar-0.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.iammert:ReadableBottomBar:0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4418faf6ea10a8c45febcb79d648ae32\jetified-ReadableBottomBar-0.2\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\6119d746697059b7e1b74aab4d181f56\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\6119d746697059b7e1b74aab4d181f56\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\0362ff4d8672321347a402c32368f192\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\0362ff4d8672321347a402c32368f192\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\24bb03d10ab268a6aeafc941e4345037\media-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\24bb03d10ab268a6aeafc941e4345037\media-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\8ac21d9e6ffd28bb13add2ffc04b2920\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\8ac21d9e6ffd28bb13add2ffc04b2920\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\e95d1611d40c652e0f77a7c95d74a3f6\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\e95d1611d40c652e0f77a7c95d74a3f6\transition-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ddf6a25e6e3e5e2af441269b48288beb\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ddf6a25e6e3e5e2af441269b48288beb\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ceb81553a8d4d1147c847656f2ca2121\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ceb81553a8d4d1147c847656f2ca2121\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ec593f8d91037f6ef1bbcd6a177afa1c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ec593f8d91037f6ef1bbcd6a177afa1c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\00bc847ce5b9e3ce7b40d465bffbf9e9\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\00bc847ce5b9e3ce7b40d465bffbf9e9\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4f8b5527496d67480951cc322460db7f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4f8b5527496d67480951cc322460db7f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d2cae29ea156ecc28d8f5099dc624ed2\transition-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d2cae29ea156ecc28d8f5099dc624ed2\transition-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4932f7e67b26f042b51fa62f1aa4816d\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4932f7e67b26f042b51fa62f1aa4816d\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5276819c062a92c029464122749254f1\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5276819c062a92c029464122749254f1\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\dbbcc99072b5616db9e0106b8ed65934\activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\dbbcc99072b5616db9e0106b8ed65934\activity-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d1ca7cd3905794bed09cb92934ccd6c2\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d1ca7cd3905794bed09cb92934ccd6c2\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4276267baf989d651cf25177c247ad49\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4276267baf989d651cf25177c247ad49\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\8849109129fcb2f39779166fb64480b1\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\8849109129fcb2f39779166fb64480b1\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5ad830c9e1047f79e3f0f7e9e42ab8ab\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5ad830c9e1047f79e3f0f7e9e42ab8ab\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\056634285937b2535ff256884ac7cf86\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\056634285937b2535ff256884ac7cf86\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a3d702a77cbfacefb23de82416a0cb1f\play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a3d702a77cbfacefb23de82416a0cb1f\play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\cd2555db0203a9129fdeb1355c14dcc8\play-services-location-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\cd2555db0203a9129fdeb1355c14dcc8\play-services-location-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\2b8a3547a6423f6fb15f19a78415dd89\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\2b8a3547a6423f6fb15f19a78415dd89\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\2905ca591d95bf0e403f68a05d4ee4e5\play-services-places-placereport-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\2905ca591d95bf0e403f68a05d4ee4e5\play-services-places-placereport-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\b5c8af7db70c43d258d02e8746c2c96f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\b5c8af7db70c43d258d02e8746c2c96f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\0078d1380dba3ee7366f8424e5e798e8\lifecycle-extensions-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\0078d1380dba3ee7366f8424e5e798e8\lifecycle-extensions-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\0362ff4d8672321347a402c32368f192\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\0362ff4d8672321347a402c32368f192\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\00bc847ce5b9e3ce7b40d465bffbf9e9\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\00bc847ce5b9e3ce7b40d465bffbf9e9\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a53596bdd308807993a20732db231575\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a53596bdd308807993a20732db231575\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4932f7e67b26f042b51fa62f1aa4816d\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4932f7e67b26f042b51fa62f1aa4816d\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a3c457ded457b98b207b4f227d629399\customview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a3c457ded457b98b207b4f227d629399\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3d4a3c67e39fa8d6d0c0f126c28b81d8\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3d4a3c67e39fa8d6d0c0f126c28b81d8\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\82b148795609bbbaf8e825fc2ff2a6bf\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\82b148795609bbbaf8e825fc2ff2a6bf\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4f8b5527496d67480951cc322460db7f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4f8b5527496d67480951cc322460db7f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5276819c062a92c029464122749254f1\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5276819c062a92c029464122749254f1\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\dbbcc99072b5616db9e0106b8ed65934\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\dbbcc99072b5616db9e0106b8ed65934\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\2c4911487622891b7d804fc82995f4ba\core-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\2c4911487622891b7d804fc82995f4ba\core-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3ec6fa8458ddbe732478393a9f9e6c77\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3ec6fa8458ddbe732478393a9f9e6c77\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\fb2fbe77879a57ea0c5dfd6fe59ba874\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\fb2fbe77879a57ea0c5dfd6fe59ba874\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4fe44ae24daa7cfa2dd483a5d3b65a2f\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4fe44ae24daa7cfa2dd483a5d3b65a2f\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.test:runner:1.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5039d80f5368d388acc1d0449060eaf9\runner-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test:runner:1.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5039d80f5368d388acc1d0449060eaf9\runner-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.skyfishjy.ripplebackground:library:1.0.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5187ebecdf93254ca9fb0e20aa46f0d9\library-1.0.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.skyfishjy.ripplebackground:library:1.0.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5187ebecdf93254ca9fb0e20aa46f0d9\library-1.0.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.romandanylyk:pageindicatorview:1.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\f768668aadd0bf0bfa18397118480a42\jetified-pageindicatorview-1.0.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.romandanylyk:pageindicatorview:1.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\f768668aadd0bf0bfa18397118480a42\jetified-pageindicatorview-1.0.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.makeramen:roundedimageview:2.3.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a8c1ef74ed81794ff3f1bbb8e7da42c7\jetified-roundedimageview-2.3.0\AndroidManifest.xml:7:5-43
+MERGED from [com.makeramen:roundedimageview:2.3.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a8c1ef74ed81794ff3f1bbb8e7da42c7\jetified-roundedimageview-2.3.0\AndroidManifest.xml:7:5-43
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\78be57497ca2a8dd090798c529f3e53d\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\78be57497ca2a8dd090798c529f3e53d\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3a992d8307f21a8f15eb649383ba6a6a\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3a992d8307f21a8f15eb649383ba6a6a\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\f3f97c8a5fb582cafab2f95850ea615d\transport-backend-cct-2.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\f3f97c8a5fb582cafab2f95850ea615d\transport-backend-cct-2.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\22ab9f9ae56c67fcd90c62fb40f23aa3\transport-runtime-2.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\22ab9f9ae56c67fcd90c62fb40f23aa3\transport-runtime-2.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\fb2fbe77879a57ea0c5dfd6fe59ba874\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\fb2fbe77879a57ea0c5dfd6fe59ba874\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.test:monitor:1.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\dd36868e8e0abaace928186785bab122\monitor-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test:monitor:1.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\dd36868e8e0abaace928186785bab122\monitor-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3c03e0805bdfd6180afbf0af0c9cd9a0\lifecycle-process-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3c03e0805bdfd6180afbf0af0c9cd9a0\lifecycle-process-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\86183f609071467cbb11786cc9cbb026\lifecycle-service-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\86183f609071467cbb11786cc9cbb026\lifecycle-service-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ffa46f3d6480310395b7b525cf59ccde\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ffa46f3d6480310395b7b525cf59ccde\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\64ed055c454b36433d45a77285ee24d6\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\64ed055c454b36433d45a77285ee24d6\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\720b2290ca550345d3df6fc1b6a7ac3a\lifecycle-livedata-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\720b2290ca550345d3df6fc1b6a7ac3a\lifecycle-livedata-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\11feedb5ce6b3e9b1eb69e2892e42453\lifecycle-livedata-core-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\11feedb5ce6b3e9b1eb69e2892e42453\lifecycle-livedata-core-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4cee4734b336f81c686d6e7b16dafec9\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\4cee4734b336f81c686d6e7b16dafec9\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3819fb4fef2e012192b32762458ba145\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3819fb4fef2e012192b32762458ba145\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\f582580d3eb247a74d915a27810a4674\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\f582580d3eb247a74d915a27810a4674\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\c75155371656c04dff3a027cdeb13e8a\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\c75155371656c04dff3a027cdeb13e8a\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\53b4a4cf87c0ff501a8c414cec884555\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\53b4a4cf87c0ff501a8c414cec884555\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ffa46f3d6480310395b7b525cf59ccde\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ffa46f3d6480310395b7b525cf59ccde\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\64ed055c454b36433d45a77285ee24d6\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\64ed055c454b36433d45a77285ee24d6\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3819fb4fef2e012192b32762458ba145\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3819fb4fef2e012192b32762458ba145\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\63647da4654da12a6f2785cfbbad8123\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\63647da4654da12a6f2785cfbbad8123\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\733fc1d306cee2c05d3e1fb0b7527020\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\733fc1d306cee2c05d3e1fb0b7527020\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\fdd65d8b6066fd289a68b42931dc03a2\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\fdd65d8b6066fd289a68b42931dc03a2\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3a992d8307f21a8f15eb649383ba6a6a\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3a992d8307f21a8f15eb649383ba6a6a\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\eb55d4c9124584881a3120eff1096616\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\eb55d4c9124584881a3120eff1096616\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
+MERGED from [com.google.android.datatransport:transport-api:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\58d1325ad2640f1ab1fdab3a1ca831fd\transport-api-2.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\58d1325ad2640f1ab1fdab3a1ca831fd\transport-api-2.1.0\AndroidManifest.xml:18:5-20:41
 INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
@@ -183,3 +303,105 @@ INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\Andro
 		INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
+activity#com.karumi.dexter.DexterActivity
+ADDED from [com.karumi:dexter:6.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ff8aa114c850c8bb504dee7f1bab2e28\dexter-6.0.2\AndroidManifest.xml:27:9-29:72
+	android:theme
+		ADDED from [com.karumi:dexter:6.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ff8aa114c850c8bb504dee7f1bab2e28\dexter-6.0.2\AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.karumi:dexter:6.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ff8aa114c850c8bb504dee7f1bab2e28\dexter-6.0.2\AndroidManifest.xml:28:13-60
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\43ba4815b68c84586a976ed5dc3ac9e1\places-2.2.0\AndroidManifest.xml:10:5-76
+	android:name
+		ADDED from [com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\43ba4815b68c84586a976ed5dc3ac9e1\places-2.2.0\AndroidManifest.xml:10:22-73
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\43ba4815b68c84586a976ed5dc3ac9e1\places-2.2.0\AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a3d702a77cbfacefb23de82416a0cb1f\play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a3d702a77cbfacefb23de82416a0cb1f\play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\f3f97c8a5fb582cafab2f95850ea615d\transport-backend-cct-2.1.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\f3f97c8a5fb582cafab2f95850ea615d\transport-backend-cct-2.1.0\AndroidManifest.xml:26:5-67
+	android:name
+		ADDED from [com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\43ba4815b68c84586a976ed5dc3ac9e1\places-2.2.0\AndroidManifest.xml:11:22-64
+activity#com.google.android.libraries.places.widget.AutocompleteActivity
+ADDED from [com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\43ba4815b68c84586a976ed5dc3ac9e1\places-2.2.0\AndroidManifest.xml:14:9-20:20
+	android:label
+		ADDED from [com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\43ba4815b68c84586a976ed5dc3ac9e1\places-2.2.0\AndroidManifest.xml:17:13-62
+	android:windowSoftInputMode
+		ADDED from [com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\43ba4815b68c84586a976ed5dc3ac9e1\places-2.2.0\AndroidManifest.xml:19:13-55
+	android:exported
+		ADDED from [com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\43ba4815b68c84586a976ed5dc3ac9e1\places-2.2.0\AndroidManifest.xml:16:13-37
+	android:theme
+		ADDED from [com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\43ba4815b68c84586a976ed5dc3ac9e1\places-2.2.0\AndroidManifest.xml:18:13-61
+	android:name
+		ADDED from [com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\43ba4815b68c84586a976ed5dc3ac9e1\places-2.2.0\AndroidManifest.xml:15:13-91
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a3d702a77cbfacefb23de82416a0cb1f\play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\f3f97c8a5fb582cafab2f95850ea615d\transport-backend-cct-2.1.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\f3f97c8a5fb582cafab2f95850ea615d\transport-backend-cct-2.1.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\22ab9f9ae56c67fcd90c62fb40f23aa3\transport-runtime-2.1.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\22ab9f9ae56c67fcd90c62fb40f23aa3\transport-runtime-2.1.0\AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a3d702a77cbfacefb23de82416a0cb1f\play-services-maps-17.0.0\AndroidManifest.xml:23:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a3d702a77cbfacefb23de82416a0cb1f\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a3d702a77cbfacefb23de82416a0cb1f\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a3d702a77cbfacefb23de82416a0cb1f\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a3d702a77cbfacefb23de82416a0cb1f\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a3d702a77cbfacefb23de82416a0cb1f\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a3d702a77cbfacefb23de82416a0cb1f\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\b5c8af7db70c43d258d02e8746c2c96f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\b5c8af7db70c43d258d02e8746c2c96f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\b5c8af7db70c43d258d02e8746c2c96f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\f3f97c8a5fb582cafab2f95850ea615d\transport-backend-cct-2.1.0\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\22ab9f9ae56c67fcd90c62fb40f23aa3\transport-runtime-2.1.0\AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\22ab9f9ae56c67fcd90c62fb40f23aa3\transport-runtime-2.1.0\AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\f3f97c8a5fb582cafab2f95850ea615d\transport-backend-cct-2.1.0\AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\f3f97c8a5fb582cafab2f95850ea615d\transport-backend-cct-2.1.0\AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\f3f97c8a5fb582cafab2f95850ea615d\transport-backend-cct-2.1.0\AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\f3f97c8a5fb582cafab2f95850ea615d\transport-backend-cct-2.1.0\AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\f3f97c8a5fb582cafab2f95850ea615d\transport-backend-cct-2.1.0\AndroidManifest.xml:33:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\22ab9f9ae56c67fcd90c62fb40f23aa3\transport-runtime-2.1.0\AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\22ab9f9ae56c67fcd90c62fb40f23aa3\transport-runtime-2.1.0\AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\22ab9f9ae56c67fcd90c62fb40f23aa3\transport-runtime-2.1.0\AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\22ab9f9ae56c67fcd90c62fb40f23aa3\transport-runtime-2.1.0\AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\22ab9f9ae56c67fcd90c62fb40f23aa3\transport-runtime-2.1.0\AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\22ab9f9ae56c67fcd90c62fb40f23aa3\transport-runtime-2.1.0\AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\22ab9f9ae56c67fcd90c62fb40f23aa3\transport-runtime-2.1.0\AndroidManifest.xml:33:13-132
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3c03e0805bdfd6180afbf0af0c9cd9a0\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3c03e0805bdfd6180afbf0af0c9cd9a0\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3c03e0805bdfd6180afbf0af0c9cd9a0\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3c03e0805bdfd6180afbf0af0c9cd9a0\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3c03e0805bdfd6180afbf0af0c9cd9a0\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79

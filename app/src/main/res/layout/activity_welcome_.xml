@@ -12,4 +12,14 @@
         android:layout_centerInParent="true"
         android:text="notification" />
 
+    <Button
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/test"
+        android:layout_centerInParent="true"
+        android:text="create alarm" />
+
+
+
 </RelativeLayout>
