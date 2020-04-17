@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-55:12
+ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-56:12
 MERGED from [com.karumi:dexter:6.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\888d40eea2ad613e17df2608c9eb76ef\jetified-dexter-6.0.2\AndroidManifest.xml:17:1-32:12
 MERGED from [androidx.navigation:navigation-ui:2.2.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\bf9467d83927bc03752839aa958b7dd1\navigation-ui-2.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\6bd54e831d7d39523628e6e86bbc2f7b\material-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -75,20 +75,20 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\ABIR\.gradle
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\24fcbc70f156d54b427077633d92649b\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.datatransport:transport-api:2.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\1b8d3838153f2f70a653c904f5aab7ea\jetified-transport-api-2.1.0\AndroidManifest.xml:15:1-22:12
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\2720e36a8bea74f137ecce5bacfd69a0\jetified-firebase-database-collection-17.0.0\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-56:12
 	package
 		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:3:5-45
 		INJECTED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-55:12
+		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-56:12
 		INJECTED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-55:12
+		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-56:12
 		INJECTED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:11-69
@@ -127,7 +127,7 @@ MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\
 	android:name
 		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:12:22-76
 application
-ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:14:5-53:19
+ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:14:5-54:19
 MERGED from [com.karumi:dexter:6.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\888d40eea2ad613e17df2608c9eb76ef\jetified-dexter-6.0.2\AndroidManifest.xml:26:5-30:19
 MERGED from [com.karumi:dexter:6.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\888d40eea2ad613e17df2608c9eb76ef\jetified-dexter-6.0.2\AndroidManifest.xml:26:5-30:19
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\6bd54e831d7d39523628e6e86bbc2f7b\material-1.1.0\AndroidManifest.xml:22:5-20
@@ -188,62 +188,66 @@ MERGED from [com.android.volley:volley:1.1.1] C:\Users\ABIR\.gradle\caches\trans
 		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:15:9-35
 	android:theme
 		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:20:9-40
+activity#com.example.smartlocationalarm.Edit
+ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:21:9-51
+	android:name
+		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:21:19-39
 activity#com.example.smartlocationalarm.adding_alarm_db
-ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:21:9-62
+ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:22:9-53
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:21:19-50
+		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:22:19-50
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:30:9-32:55
+ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:31:9-33:55
 	android:value
-		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:32:13-52
+		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:33:13-52
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:31:13-58
+		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:32:13-58
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:33:9-35:69
+ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:34:9-36:69
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\f2c8b4624d1269ee053bd8db8444a9c2\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\f2c8b4624d1269ee053bd8db8444a9c2\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:35:13-66
+		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:36:13-66
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:34:13-58
+		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:35:13-58
 activity#com.example.smartlocationalarm.MapsActivity
-ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:37:9-39:59
+ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:38:9-40:59
 	android:label
-		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:39:13-56
+		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:40:13-56
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:38:13-41
+		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:39:13-41
 activity#com.example.smartlocationalarm.CreateAlarmActivity
-ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:40:9-42:67
+ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:41:9-43:67
 	android:label
-		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:42:13-64
+		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:43:13-64
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:41:13-48
+		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:42:13-48
 activity#com.example.smartlocationalarm.PermissionActivity
-ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:43:9-56
+ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:44:9-56
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:43:19-53
+		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:44:19-53
 activity#com.example.smartlocationalarm.NotificationActivity
-ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:44:9-58
+ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:45:9-58
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:44:19-55
+		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:45:19-55
 activity#com.example.smartlocationalarm.Welcome_Activity
-ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:45:9-54
+ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:46:9-54
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:45:19-51
+		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:46:19-51
 activity#com.example.smartlocationalarm.MainActivity
-ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:46:9-52:20
+ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:47:9-53:20
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:46:19-47
+		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:47:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:47:13-51:29
+ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:48:13-52:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:48:17-69
+ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:49:17-69
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:48:25-66
+		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:49:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:50:17-77
+ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:51:17-77
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:50:27-74
+		ADDED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:51:27-74
 uses-sdk
 INJECTED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\ABIR\Desktop\Smart-Location-Alarm\app\src\main\AndroidManifest.xml

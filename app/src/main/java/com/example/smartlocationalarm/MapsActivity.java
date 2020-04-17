@@ -1,6 +1,7 @@
 package com.example.smartlocationalarm;
 
 import android.Manifest;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -11,6 +12,7 @@ import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -42,6 +44,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private static final float DEFAULT_ZOOM = 15f;
     public ImageView mAdd, mSaved;
     Boolean Marker = false;
+    Dialog myDialog;
+    Button mEdit;
     //vars
     private Boolean mLocationPermissionsGranted = false;
     private GoogleMap mMap;
@@ -78,6 +82,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         setContentView(R.layout.activity_maps);
         mAdd = findViewById(R.id.ic_add_alarm);
         mSaved = findViewById(R.id.ic_alarms);
+
 
 //        reff.addValueEventListener(new ValueEventListener() {
 //            @Override
@@ -133,6 +138,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                 Marker = true;
                                 LatLng Hassan = new LatLng(34.0227868, -6.8238124);
                                 mMap.addMarker(new MarkerOptions().position(Hassan).title("visiter Hassan").icon(bitmapDescriptorFromVector(getApplicationContext(), R.drawable.ic_marker)));
+
+                                mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+                                    @Override
+                                    public boolean onMarkerClick(com.google.android.gms.maps.model.Marker marker) {
+                                        String markerTitle = marker.getTitle();
+                                        myAlarmDialog();
+                                        return false;
+                                    }
+                                });
 
                             }
 
@@ -214,6 +228,25 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Canvas canvas = new Canvas(bitmap);
         vectorDarawable.draw(canvas);
         return BitmapDescriptorFactory.fromBitmap(bitmap);
+
+    }
+
+    public void myAlarmDialog() {
+        myDialog = new Dialog(MapsActivity.this);
+        myDialog.setContentView(R.layout.activity_popup);
+        myDialog.setTitle("Alarm information");
+        mEdit = myDialog.findViewById(R.id.Edit);
+
+
+        mEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MapsActivity.this, Edit.class);
+                startActivity(intent);
+            }
+        });
+
+        myDialog.show();
 
     }
 
