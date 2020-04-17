@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "615793666638",
+    "firebase_url": "https://smartlocationalarm-6d034.firebaseio.com",
+    "project_id": "smartlocationalarm-6d034",
+    "storage_bucket": "smartlocationalarm-6d034.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615793666638:android:6d17bb854d9fdcf529311f",
+        "android_client_info": {
+          "package_name": "com.example.smartlocationalarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615793666638-un268dqbnae9lpod26d4bokv5fvmb71v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHxoEa91oLFNPi3brMWULtnaVoBTiuLzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "615793666638-un268dqbnae9lpod26d4bokv5fvmb71v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -16,6 +16,7 @@ import androidx.core.app.NotificationCompat;
 public class Welcome_Activity extends AppCompatActivity {
 
     Button create;
+    Button exist;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +38,18 @@ public class Welcome_Activity extends AppCompatActivity {
                 clickCreate();
             }
         });
+        exist = findViewById(R.id.test3);
+        exist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                existing();
+            }
+        });
+    }
 
+    private void existing() {
+        Intent intent = new Intent(this, MapsActivity.class);
+        this.startActivity(intent);
     }
 
     private void clickCreate(){
