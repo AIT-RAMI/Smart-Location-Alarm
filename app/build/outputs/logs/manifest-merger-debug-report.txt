@@ -1,12 +1,13 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-47:12
+ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-49:12
 MERGED from [com.karumi:dexter:6.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ff8aa114c850c8bb504dee7f1bab2e28\dexter-6.0.2\AndroidManifest.xml:17:1-32:12
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5d52d9573d8a8f70a8462cc8f8a42ce9\material-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\6a9d1885cb0ca0d94af2e5b22dfc9d65\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.Triggertrap:SeekArc:v1.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\73aa0bcd4c7bfab25aed70e8843769d8\SeekArc-v1.1\AndroidManifest.xml:25:1-40:12
 MERGED from [com.github.mancj:MaterialSearchBar:0.8.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3d086e8a3f5eb7d1a1d437b427b2fb25\jetified-MaterialSearchBar-0.8.1\AndroidManifest.xml:2:1-17:12
 MERGED from [com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\43ba4815b68c84586a976ed5dc3ac9e1\places-2.2.0\AndroidManifest.xml:2:1-23:12
 MERGED from [com.tbuonomo.andrui:viewpagerdotsindicator:2.0.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\a5d198e178af89bfe3bac34d2d3b8e05\jetified-viewpagerdotsindicator-2.0.3\AndroidManifest.xml:2:1-17:12
@@ -60,35 +61,39 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transf
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3a992d8307f21a8f15eb649383ba6a6a\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\eb55d4c9124584881a3120eff1096616\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.datatransport:transport-api:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\58d1325ad2640f1ab1fdab3a1ca831fd\transport-api-2.1.0\AndroidManifest.xml:15:1-22:12
-INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-49:12
 	package
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:3:5-45
-		INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:4:5-45
+		INJECTED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-47:12
-		INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-49:12
+		INJECTED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-47:12
-		INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:1-49:12
+		INJECTED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:10:5-79
+ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:11:5-79
 MERGED from [com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\43ba4815b68c84586a976ed5dc3ac9e1\places-2.2.0\AndroidManifest.xml:9:5-79
 MERGED from [com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\43ba4815b68c84586a976ed5dc3ac9e1\places-2.2.0\AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:10:22-76
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:11:22-76
 application
-ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:12:5-45:19
+ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:13:5-47:19
 MERGED from [com.karumi:dexter:6.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ff8aa114c850c8bb504dee7f1bab2e28\dexter-6.0.2\AndroidManifest.xml:26:5-30:19
 MERGED from [com.karumi:dexter:6.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ff8aa114c850c8bb504dee7f1bab2e28\dexter-6.0.2\AndroidManifest.xml:26:5-30:19
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5d52d9573d8a8f70a8462cc8f8a42ce9\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5d52d9573d8a8f70a8462cc8f8a42ce9\material-1.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.github.Triggertrap:SeekArc:v1.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\73aa0bcd4c7bfab25aed70e8843769d8\SeekArc-v1.1\AndroidManifest.xml:34:5-38:19
+MERGED from [com.github.Triggertrap:SeekArc:v1.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\73aa0bcd4c7bfab25aed70e8843769d8\SeekArc-v1.1\AndroidManifest.xml:34:5-38:19
 MERGED from [com.github.mancj:MaterialSearchBar:0.8.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3d086e8a3f5eb7d1a1d437b427b2fb25\jetified-MaterialSearchBar-0.8.1\AndroidManifest.xml:11:5-15:19
 MERGED from [com.github.mancj:MaterialSearchBar:0.8.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3d086e8a3f5eb7d1a1d437b427b2fb25\jetified-MaterialSearchBar-0.8.1\AndroidManifest.xml:11:5-15:19
 MERGED from [com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\43ba4815b68c84586a976ed5dc3ac9e1\places-2.2.0\AndroidManifest.xml:13:5-21:19
@@ -128,65 +133,70 @@ MERGED from [com.android.volley:volley:1.1.1] C:\Users\AIT RAMI\.gradle\caches\t
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\2c4911487622891b7d804fc82995f4ba\core-1.2.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:19:9-35
 	android:label
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:15:9-41
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:16:9-41
 	android:roundIcon
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:16:9-54
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:17:9-54
 	android:icon
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:14:9-43
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:15:9-43
+		REJECTED from [com.github.Triggertrap:SeekArc:v1.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\73aa0bcd4c7bfab25aed70e8843769d8\SeekArc-v1.1\AndroidManifest.xml:36:9-45
 	android:allowBackup
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:14:9-35
 	android:theme
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:18:9-40
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:20:9-40
+	tools:replace
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:18:9-37
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:28:9-30:55
+ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:30:9-32:55
 	android:value
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:30:13-52
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:32:13-52
 	android:name
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:29:13-58
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:31:13-58
 activity#com.example.smartlocationalarm.CreateAlarmActivity
-ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:32:9-34:76
+ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:34:9-36:76
 	android:label
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:34:13-64
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:36:13-64
 	android:name
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:33:13-48
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:35:13-48
 activity#com.example.smartlocationalarm.PermissionActivity
-ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:35:9-56
+ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:37:9-56
 	android:name
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:35:19-53
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:37:19-53
 activity#com.example.smartlocationalarm.NotificationActivity
-ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:36:9-58
+ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:38:9-58
 	android:name
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:36:19-55
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:38:19-55
 activity#com.example.smartlocationalarm.Welcome_Activity
-ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:37:9-54
+ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:39:9-54
 	android:name
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:37:19-51
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:39:19-51
 activity#com.example.smartlocationalarm.MainActivity
-ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:38:9-44:20
+ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:40:9-46:20
 	android:name
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:38:19-47
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:40:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:39:13-43:29
+ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:41:13-45:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:40:17-69
+ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:42:17-69
 	android:name
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:40:25-66
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:42:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:42:17-77
+ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:44:17-77
 	android:name
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:42:27-74
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:44:27-74
 uses-sdk
-INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
 MERGED from [com.karumi:dexter:6.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ff8aa114c850c8bb504dee7f1bab2e28\dexter-6.0.2\AndroidManifest.xml:22:5-24:41
 MERGED from [com.karumi:dexter:6.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ff8aa114c850c8bb504dee7f1bab2e28\dexter-6.0.2\AndroidManifest.xml:22:5-24:41
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5d52d9573d8a8f70a8462cc8f8a42ce9\material-1.1.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\5d52d9573d8a8f70a8462cc8f8a42ce9\material-1.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\6a9d1885cb0ca0d94af2e5b22dfc9d65\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\6a9d1885cb0ca0d94af2e5b22dfc9d65\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.Triggertrap:SeekArc:v1.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\73aa0bcd4c7bfab25aed70e8843769d8\SeekArc-v1.1\AndroidManifest.xml:30:5-32:41
+MERGED from [com.github.Triggertrap:SeekArc:v1.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\73aa0bcd4c7bfab25aed70e8843769d8\SeekArc-v1.1\AndroidManifest.xml:30:5-32:41
 MERGED from [com.github.mancj:MaterialSearchBar:0.8.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3d086e8a3f5eb7d1a1d437b427b2fb25\jetified-MaterialSearchBar-0.8.1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.mancj:MaterialSearchBar:0.8.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3d086e8a3f5eb7d1a1d437b427b2fb25\jetified-MaterialSearchBar-0.8.1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\43ba4815b68c84586a976ed5dc3ac9e1\places-2.2.0\AndroidManifest.xml:7:5-44
@@ -293,16 +303,16 @@ MERGED from [com.android.volley:volley:1.1.1] C:\Users\AIT RAMI\.gradle\caches\t
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\eb55d4c9124584881a3120eff1096616\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
 MERGED from [com.google.android.datatransport:transport-api:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\58d1325ad2640f1ab1fdab3a1ca831fd\transport-api-2.1.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.android.datatransport:transport-api:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\58d1325ad2640f1ab1fdab3a1ca831fd\transport-api-2.1.0\AndroidManifest.xml:18:5-20:41
-INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\AIT RAMI\github\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\AIT RAMI\github\t\t\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
 activity#com.karumi.dexter.DexterActivity
 ADDED from [com.karumi:dexter:6.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\ff8aa114c850c8bb504dee7f1bab2e28\dexter-6.0.2\AndroidManifest.xml:27:9-29:72
 	android:theme

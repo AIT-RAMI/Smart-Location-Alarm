@@ -13,7 +13,8 @@
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        />
 
     <com.skyfishjy.library.RippleBackground
         android:layout_width="match_parent"
@@ -26,6 +27,7 @@
         app:rb_scale="6">
 
         <ImageView
+            android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -44,10 +46,20 @@
         app:mt_navIconEnabled="true"
         android:elevation="5dp"
         android:outlineProvider="bounds"
-        app:mt_placeholder="Search a place"/>
-
+        app:mt_placeholder="Where do you want to go?"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Long press on a location to create the alarm"
+        android:textStyle="bold"
+        android:layout_below="@id/searchBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        />
     <Button
         android:id="@+id/btn_create"
+        android:visibility="gone"
+        android:onClick="ShowPopup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

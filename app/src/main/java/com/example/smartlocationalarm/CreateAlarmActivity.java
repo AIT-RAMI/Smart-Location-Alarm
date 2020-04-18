@@ -3,8 +3,16 @@ package com.example.smartlocationalarm;
 import androidx.annotation.*;
 import androidx.fragment.app.*;
 
+import android.app.Activity;
+import android.app.Dialog;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.location.Address;
+import android.location.Geocoder;
+import android.provider.Telephony;
 import android.text.TextWatcher;
 
+import java.io.IOException;
 import java.util.*;
 
 
@@ -20,6 +28,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.api.ApiException;
@@ -32,11 +41,13 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.LocationSettingsRequest;
 import com.google.android.gms.location.LocationSettingsResponse;
 import com.google.android.gms.location.SettingsClient;
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -58,6 +69,7 @@ import com.skyfishjy.library.RippleBackground;
 
 
 public class CreateAlarmActivity extends FragmentActivity implements OnMapReadyCallback {
+    private double lat = 0, log = 0;
 
     private GoogleMap mMap;
     private FusedLocationProviderClient mFusedLocationProviderClient;
@@ -74,10 +86,14 @@ public class CreateAlarmActivity extends FragmentActivity implements OnMapReadyC
 
     private final float DEFAULT_ZOOM = 15;
 
+    Dialog myDialog;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_alarm);
+        myDialog = new Dialog(this);
 
         materialSearchBar = findViewById(R.id.searchBar);
         btnCreate = findViewById(R.id.btn_create);
@@ -99,7 +115,21 @@ public class CreateAlarmActivity extends FragmentActivity implements OnMapReadyC
 
             @Override
             public void onSearchConfirmed(CharSequence text) {
-                startSearch(text.toString(), true, null, true);
+                String location = text.toString();
+                List<Address> addressList = null;
+                if(location != null || !location.equals("")){
+                    Geocoder geocoder = new Geocoder(CreateAlarmActivity.this);
+                    try{
+                        addressList = geocoder.getFromLocationName(location, 1);
+                    } catch (IOException e){
+                        e.printStackTrace();
+                    }
+                    Address address = addressList.get(0);
+                    LatLng latLng = new LatLng(address.getLatitude(), address.getLongitude());
+                    mMap.addMarker(new MarkerOptions().position(latLng).title(location));
+                    mMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
+                }
+                //startSearch(text.toString(), true, null, true);
             }
 
             @Override
@@ -125,6 +155,7 @@ public class CreateAlarmActivity extends FragmentActivity implements OnMapReadyC
                         .setSessionToken(token)
                         .setQuery(s.toString())
                         .build();
+
                 placesClient.findAutocompletePredictions(predictionsRequest).addOnCompleteListener(new OnCompleteListener<FindAutocompletePredictionsResponse>() {
                     @Override
                     public void onComplete(@NonNull Task<FindAutocompletePredictionsResponse> task) {
@@ -210,19 +241,25 @@ public class CreateAlarmActivity extends FragmentActivity implements OnMapReadyC
         btnCreate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LatLng currentMarkerLocation = mMap.getCameraPosition().target;
-                rippleBg.startRippleAnimation();
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        rippleBg.stopRippleAnimation();
-                        startActivity(new Intent(CreateAlarmActivity.this, MainActivity.class));
-                        finish();
-                    }
-                }, 3000);
-
+                ShowPopup(v);
             }
         });
+    }
+    public void ShowPopup(View v) {
+        TextView txtclose;
+        Button btnFollow;
+        myDialog.setContentView(R.layout.create_alarm_popup);
+        txtclose =(TextView) myDialog.findViewById(R.id.txtclose);
+        txtclose.setText("M");
+        btnCreate = (Button) myDialog.findViewById(R.id.btncreate);
+        txtclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myDialog.dismiss();
+            }
+        });
+        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        myDialog.show();
     }
 
     @SuppressLint("MissingPermission")
@@ -282,6 +319,51 @@ public class CreateAlarmActivity extends FragmentActivity implements OnMapReadyC
                 return false;
             }
         });
+        final Intent intent = getIntent();
+        final String getlocation = "true";
+        if(getlocation.equals("true") || getlocation.equals("update")){
+            final double[] latitude = {0};
+            final double[] longitude = {0};
+            LatLng position = new LatLng(33.9715904,-6.8498129);
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(position, 10));
+            Toast.makeText(this,"Appuyez sur une position pour obtenir ses coordonnées",Toast.LENGTH_LONG).show();
+
+            mMap.setOnMapLongClickListener(new GoogleMap.OnMapLongClickListener() {
+                @Override
+                public void onMapLongClick(LatLng point) {
+                    log = point.longitude;
+                    lat = point.latitude;
+                    Toast.makeText(CreateAlarmActivity.this,point.latitude + ", " + point.longitude, Toast.LENGTH_LONG).show();
+                    ShowPopup(mapView);
+                    /*setResult(CreateAlarmActivity.RESULT_OK, new Intent().putExtra("latitude", point.latitude).putExtra("longitude", point.longitude));
+
+                    if(getlocation.equals("true")){
+
+
+                    }
+                    else{
+                        int updateid= intent.getExtras().getInt("updateid",1000);
+                        setResult(Activity.RESULT_OK, new Intent().putExtra("latitude", point.latitude).putExtra("longitude", point.longitude).putExtra("updateid",updateid));
+                    }
+                    final Intent data = getIntent();
+                    double lat = data.getDoubleExtra("latitude", 0);
+                    double log = data.getDoubleExtra("longitude", 0);
+
+                    finish();*/
+                }
+            });
+
+        }
+        else {
+            String name = intent.getExtras().getString("name");
+            String label = intent.getExtras().getString("label");
+            Double latitude = intent.getExtras().getDouble("latitude");
+            Double longitude = intent.getExtras().getDouble("longitude");
+            LatLng position = new LatLng(latitude,longitude);
+            mMap.addMarker(new MarkerOptions().position(position).title(name).snippet(label));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(position, 13));
+        }
+
     }
 
     @Override

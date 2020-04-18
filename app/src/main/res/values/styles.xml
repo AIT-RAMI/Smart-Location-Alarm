@@ -16,5 +16,9 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppThemeTwo" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">#1a237e</item>
+        <item name="colorControlNormal">#00b0ff</item>
+    </style>
 
 </resources>
