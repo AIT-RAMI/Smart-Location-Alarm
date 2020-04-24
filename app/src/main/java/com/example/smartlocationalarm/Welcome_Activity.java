@@ -17,6 +17,8 @@ public class Welcome_Activity extends AppCompatActivity {
 
     Button create;
     Button exist;
+    Button nav;
+    Button data;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,12 +41,22 @@ public class Welcome_Activity extends AppCompatActivity {
             }
         });
         exist = findViewById(R.id.test3);
+        nav = findViewById(R.id.nav);
+        nav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Welcome_Activity.this, Main2Activity.class);
+                startActivity(intent);
+            }
+        });
         exist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 existing();
             }
         });
+
+
     }
 
     private void existing() {

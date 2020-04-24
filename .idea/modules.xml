@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Smart-Location-Alarm-SmartLocationAlarm.iml" filepath="$PROJECT_DIR$/Smart-Location-Alarm-SmartLocationAlarm.iml" group="SmartLocationAlarm" />
       <module fileurl="file://$PROJECT_DIR$/SmartLocationAlarm.iml" filepath="$PROJECT_DIR$/SmartLocationAlarm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="SmartLocationAlarm/app" />
     </modules>
   </component>
 </project>

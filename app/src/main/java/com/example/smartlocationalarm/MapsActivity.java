@@ -34,6 +34,14 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
     private static final String TAG = "MapActivity";
@@ -50,11 +58,46 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private Boolean mLocationPermissionsGranted = false;
     private GoogleMap mMap;
     private FusedLocationProviderClient mFusedLocationProviderClient;
+    ////////////////////////////////////////////////////////////////////////////////
+    //read data
+    final ArrayList<alarm> alarms = new ArrayList<alarm>();
+    private ArrayList<String> longitudes = new ArrayList<String>();
+    private ArrayList<String> latitudes = new ArrayList<String>();
+    private ArrayList<String> names = new ArrayList<String>();
 
+    private FirebaseDatabase firebaseDatabase;
+    private DatabaseReference databaseReference;
 
-//    private ArrayList dataAlarms = new ArrayList<alarms>();
-//    DatabaseReference reff = FirebaseDatabase.getInstance().getReference().child("alarm");
-//
+    public void readAlarms() {
+        firebaseDatabase = firebaseDatabase.getInstance();
+        databaseReference = firebaseDatabase.getReference().child("alarm");
+        Toast.makeText(this, "databaseLoaded", Toast.LENGTH_SHORT).show();
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                alarms.clear();
+                longitudes.clear();
+                latitudes.clear();
+                names.clear();
+                List<String> keys = new ArrayList<>();
+                for (DataSnapshot keyNode : dataSnapshot.getChildren()) {
+                    keys.add(keyNode.getKey());
+                    alarm mAlarm = keyNode.getValue(alarm.class);
+                    alarms.add(mAlarm);
+                }
+                int a = alarms.size();
+                Log.d("aaaaaaaa", String.valueOf(a));
+                int h = 0;
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+            }
+        });
+    }
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
@@ -136,8 +179,36 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                 LatLng MyLocation = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
                                 mMap.addMarker(new MarkerOptions().position(MyLocation).title("My Location"));
                                 Marker = true;
-                                LatLng Hassan = new LatLng(34.0227868, -6.8238124);
-                                mMap.addMarker(new MarkerOptions().position(Hassan).title("visiter Hassan").icon(bitmapDescriptorFromVector(getApplicationContext(), R.drawable.ic_marker)));
+                                firebaseDatabase = firebaseDatabase.getInstance();
+                                databaseReference = firebaseDatabase.getReference().child("alarm");
+                                databaseReference.addValueEventListener(new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                        alarms.clear();
+                                        longitudes.clear();
+                                        latitudes.clear();
+                                        names.clear();
+                                        List<String> keys = new ArrayList<>();
+                                        for (DataSnapshot keyNode : dataSnapshot.getChildren()) {
+                                            keys.add(keyNode.getKey());
+                                            alarm mAlarm = keyNode.getValue(alarm.class);
+                                            alarms.add(mAlarm);
+                                        }
+                                        for (int i = 0; i < alarms.size(); i++) {
+                                            double latitude = Double.valueOf(alarms.get(i).getLatitude());
+                                            double longitude = Double.valueOf(alarms.get(i).getLongitude());
+
+                                            String name = alarms.get(i).getName();
+                                            LatLng position = new LatLng(latitude, longitude);
+                                            mMap.addMarker(new MarkerOptions().position(position).title(name).icon(bitmapDescriptorFromVector(getApplicationContext(), R.drawable.ic_marker)));
+                                        }
+                                    }
+
+                                    @Override
+                                    public void onCancelled(@NonNull DatabaseError databaseError) {
+                                    }
+                                });
+
 
                                 mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
                                     @Override
@@ -149,7 +220,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                 });
 
                             }
-
                         } else {
                             Log.d(TAG, "onComplete: current location is null");
                             Toast.makeText(MapsActivity.this, "unable to get current location", Toast.LENGTH_SHORT).show();
