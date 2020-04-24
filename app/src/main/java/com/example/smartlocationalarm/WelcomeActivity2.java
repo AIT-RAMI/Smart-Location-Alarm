@@ -1,5 +1,6 @@
 package com.example.smartlocationalarm;
 
+import android.app.Activity;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -13,61 +14,76 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 
-public class Welcome_Activity extends AppCompatActivity {
+import hotchemi.android.rate.AppRate;
 
-    Button create;
-    Button exist;
-    Button nav;
-    Button data;
+public class WelcomeActivity2 extends AppCompatActivity {
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome_);
+        setContentView(R.layout.activity_welcome2);
 
         Button notif;
+        Button settings;
+        Button rating;
+        Button share;
+        Button about;
+
+        AppRate.with(this)
+                .setInstallDays(0)
+                .setLaunchTimes(10)
+                .setRemindInterval(5)
+                .setShowLaterButton(true)
+                .monitor();
+
+        AppRate.showRateDialogIfMeetsConditions(this);
+
         notif = findViewById(R.id.test);
         notif.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Welcome_Activity.this, WelcomeActivity2.class);
+                addNotification();
+            }
+        });
+        settings = findViewById(R.id.test2);
+        settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), SettingsActivity.class);
                 startActivity(intent);
             }
         });
-
-        create = findViewById(R.id.create);
-        create.setOnClickListener(new View.OnClickListener(){
+        rating = findViewById(R.id.test3);
+        final Context c = this;
+        final Activity a = this;
+        rating.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                clickCreate();
+                AppRate.with(c).showRateDialog(a);
             }
         });
-        exist = findViewById(R.id.test3);
-        nav = findViewById(R.id.nav);
-        nav.setOnClickListener(new View.OnClickListener() {
+        share = findViewById(R.id.test4);
+        share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Welcome_Activity.this, Main2Activity.class);
+                Intent i = new Intent(Intent.ACTION_SEND);
+                i.setType("text/plain");
+                i.putExtra(Intent.EXTRA_SUBJECT, "Smart Location Alarm");
+                String message = "\nJe voudrais vous recommander cette application Smart Location Alarm, prochainement nous allons la mettre dans le play store \n\n";
+
+                i.putExtra(Intent.EXTRA_TEXT, message);
+                startActivity(Intent.createChooser(i, "Share with others"));
+            }
+        });
+        about = findViewById(R.id.test5);
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
                 startActivity(intent);
             }
         });
-        exist.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                existing();
-            }
-        });
-
-
-    }
-
-    private void existing() {
-        Intent intent = new Intent(this, MapsActivity.class);
-        this.startActivity(intent);
-    }
-
-    private void clickCreate(){
-        Intent intent = new Intent(this, PermissionActivity.class);
-        this.startActivity(intent);
     }
 
     private void addNotification() {
@@ -77,7 +93,7 @@ public class Welcome_Activity extends AppCompatActivity {
         Intent intent = new Intent(this, NotificationActivity.class);
         intent.putExtra("text", notif_text);
 
-        PendingIntent pdIntent = PendingIntent.getActivity(Welcome_Activity.this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent pdIntent = PendingIntent.getActivity(WelcomeActivity2.this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.alarm)

@@ -17,9 +17,13 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        tools:replace="android:icon"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".WelcomeActivity2" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".NotificationActivity" />
         <activity
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"
@@ -48,7 +52,6 @@
             android:name=".CreateAlarmActivity"
             android:label="@string/title_activity_create_alarm" />
         <activity android:name=".PermissionActivity" />
-        <activity android:name=".NotificationActivity" />
         <activity android:name=".Welcome_Activity" />
         <activity android:name=".MainActivity">
             <intent-filter>
