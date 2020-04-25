@@ -24,9 +24,9 @@ import java.util.ArrayList;
 public class MainActivityAlarms extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    private ArrayList<DataSetFire> arrayList;
-    private FirebaseRecyclerOptions<DataSetFire> options;
-    private FirebaseRecyclerAdapter<DataSetFire, FirebaseViewHolder> adapter;
+    private ArrayList<alarm> arrayList;
+    private FirebaseRecyclerOptions<alarm> options;
+    private FirebaseRecyclerAdapter<alarm, FirebaseViewHolder> adapter;
     private DatabaseReference databaseReference;
 
     @Override
@@ -44,25 +44,25 @@ public class MainActivityAlarms extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_alarms);
+        setContentView(R.layout.activity_main);
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        arrayList = new ArrayList<DataSetFire>();
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("Alarms");
+        arrayList = new ArrayList<alarm>();
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("alarm");
         databaseReference.keepSynced(true);
-        options = new FirebaseRecyclerOptions.Builder<DataSetFire>().setQuery(databaseReference,DataSetFire.class).build()  ;
-        adapter = new FirebaseRecyclerAdapter<DataSetFire, FirebaseViewHolder>(options) {
+        options = new FirebaseRecyclerOptions.Builder<alarm>().setQuery(databaseReference,alarm.class).build()  ;
+        adapter = new FirebaseRecyclerAdapter<alarm, FirebaseViewHolder>(options) {
             @Override
-            protected void onBindViewHolder(@NonNull FirebaseViewHolder firebaseViewHolder, int i, @NonNull final DataSetFire dataSetFire) {
-                firebaseViewHolder._name.setText(dataSetFire.getNom());
-                firebaseViewHolder._date.setText(dataSetFire.getDate());
+            protected void onBindViewHolder(@NonNull FirebaseViewHolder firebaseViewHolder, int i, @NonNull final alarm alarm) {
+                firebaseViewHolder._name.setText(alarm.getName());
+                firebaseViewHolder._date.setText(alarm.getLatitude());
                 firebaseViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(MainActivityAlarms.this,MainActivityAlarms.class);
-                        intent.putExtra("Nom", dataSetFire.getNom());
-                        Intent intent1 = intent.putExtra("Date", dataSetFire.getDate());
+                        intent.putExtra("name", alarm.getName());
+                        Intent intent1 = intent.putExtra("latitude", alarm.getLatitude());
                         startActivity(intent);
                     }
                 });
