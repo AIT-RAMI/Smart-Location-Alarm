@@ -34,6 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/test"
         android:layout_centerInParent="true"
+        android:layout_marginBottom="27dp"
         android:text="create alarm" />
 
     <Button
@@ -59,6 +60,25 @@
         android:layout_marginRight="162dp"
         android:layout_marginBottom="78dp"
         android:text="Button" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginRight="139dp"
+        android:layout_marginBottom="616dp"
+        android:text="All Alarms"
+        android:onClick="AllAlarms"/>
 
 
 </RelativeLayout>

@@ -100,4 +100,9 @@ public class Welcome_Activity extends AppCompatActivity {
 
         ntfManager.notify(0, builder.build());
     }
+
+    public void AllAlarms(View view) {
+        Intent intent = new Intent(this, MainActivityAlarms.class);
+        this.startActivity(intent);
+    }
 }
