@@ -1,17 +1,18 @@
 package com.example.smartlocationalarm;
 
-import android.app.Activity;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -20,7 +21,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 
-public class MainActivityAlarms extends Activity {
+public class MainActivityAlarms extends AppCompatActivity {
+
     private RecyclerView recyclerView;
     private ArrayList<DataSetFire> arrayList;
     private FirebaseRecyclerOptions<DataSetFire> options;
@@ -42,12 +44,12 @@ public class MainActivityAlarms extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_alarms);
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         arrayList = new ArrayList<DataSetFire>();
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("alarm");
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("Alarms");
         databaseReference.keepSynced(true);
         options = new FirebaseRecyclerOptions.Builder<DataSetFire>().setQuery(databaseReference,DataSetFire.class).build()  ;
         adapter = new FirebaseRecyclerAdapter<DataSetFire, FirebaseViewHolder>(options) {
@@ -59,8 +61,8 @@ public class MainActivityAlarms extends Activity {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(MainActivityAlarms.this,MainActivityAlarms.class);
-                        intent.putExtra("name", dataSetFire.getNom());
-                        Intent intent1 = intent.putExtra("latitude", dataSetFire.getDate());
+                        intent.putExtra("Nom", dataSetFire.getNom());
+                        Intent intent1 = intent.putExtra("Date", dataSetFire.getDate());
                         startActivity(intent);
                     }
                 });

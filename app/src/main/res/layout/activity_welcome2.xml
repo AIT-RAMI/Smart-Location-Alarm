@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/test"
+        android:id="@+id/settings"
         android:layout_width="120dp"
         android:layout_height="54dp"
         android:layout_centerInParent="true"

@@ -18,6 +18,7 @@ public class Welcome_Activity extends AppCompatActivity {
     Button create;
     Button exist;
     Button nav;
+    Button allalarms;
     Button data;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,7 @@ public class Welcome_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_welcome_);
 
         Button notif;
-        notif = findViewById(R.id.test);
+        notif = findViewById(R.id.settings);
         notif.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,6 +57,15 @@ public class Welcome_Activity extends AppCompatActivity {
                 existing();
             }
         });
+        allalarms = findViewById(R.id.allalarms);
+        allalarms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Welcome_Activity.this, MainActivityAlarms.class);
+                startActivity(intent);
+            }
+        });
+
 
 
     }

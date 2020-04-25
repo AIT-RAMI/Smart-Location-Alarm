@@ -6,7 +6,7 @@
     tools:context=".Welcome_Activity">
 
     <Button
-        android:id="@+id/test"
+        android:id="@+id/settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -16,23 +16,16 @@
         android:id="@+id/test3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="149dp"
-        android:layout_marginLeft="149dp"
-        android:layout_marginEnd="142dp"
-        android:layout_marginRight="142dp"
-        android:layout_marginBottom="267dp"
+        android:layout_below="@id/settings"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="27dp"
         android:text="existing alarms" />
 
     <Button
         android:id="@+id/create"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/test"
+        android:layout_above="@id/settings"
         android:layout_centerInParent="true"
         android:layout_marginBottom="27dp"
         android:text="create alarm" />
@@ -41,12 +34,9 @@
         android:id="@+id/nav"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="161dp"
-        android:layout_marginRight="161dp"
-        android:layout_marginBottom="188dp"
+        android:layout_below="@id/test3"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="27dp"
         android:text="navigation" />
 
     <Button
@@ -59,26 +49,17 @@
         android:layout_marginEnd="162dp"
         android:layout_marginRight="162dp"
         android:layout_marginBottom="78dp"
+        android:visibility="gone"
         android:text="Button" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="127dp"
+        android:id="@+id/allalarms"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="144dp"
-        android:layout_marginLeft="144dp"
-        android:layout_marginTop="67dp"
-        android:layout_marginEnd="139dp"
-        android:layout_marginRight="139dp"
-        android:layout_marginBottom="616dp"
-        android:text="All Alarms"
-        android:onClick="AllAlarms"/>
+        android:layout_above="@id/create"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="27dp"
+        android:text="All Alarms"/>
 
 
 </RelativeLayout>

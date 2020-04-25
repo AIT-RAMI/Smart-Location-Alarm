@@ -39,7 +39,7 @@ public class WelcomeActivity2 extends AppCompatActivity {
 
         AppRate.showRateDialogIfMeetsConditions(this);
 
-        notif = findViewById(R.id.test);
+        notif = findViewById(R.id.settings);
         notif.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
