@@ -12,6 +12,7 @@ public class Welcome_Activity extends AppCompatActivity {
     Button create;
     Button exist;
     Button nav;
+    Button notif;
     Button allalarms;
     Button data;
     @Override
@@ -19,7 +20,6 @@ public class Welcome_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome_);
 
-        Button notif;
         notif = findViewById(R.id.settings);
         notif.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,7 +36,7 @@ public class Welcome_Activity extends AppCompatActivity {
                 clickCreate();
             }
         });
-        exist = findViewById(R.id.test3);
+        exist = findViewById(R.id.exist);
         nav = findViewById(R.id.nav);
         nav.setOnClickListener(new View.OnClickListener() {
             @Override
