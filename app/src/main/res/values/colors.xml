@@ -9,4 +9,6 @@
     <color name="orange">#eaad43</color>
     <color name="colorTransparent">#43000000</color>
     <color name="redTransparent">#7ffd0101</color>
+    <color name="radius">#95ABC8F1</color>
+    <color name="outline">#F587ADE3</color>
 </resources>
