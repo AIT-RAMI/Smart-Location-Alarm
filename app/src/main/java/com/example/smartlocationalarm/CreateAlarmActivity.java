@@ -301,6 +301,8 @@ public class CreateAlarmActivity extends FragmentActivity implements OnMapReadyC
                     alarm.setLongitude(String.valueOf(log));
                     reff.child(String.valueOf(mid + 1)).setValue(alarm);
                     Toast.makeText(CreateAlarmActivity.this, "saved successfully", Toast.LENGTH_SHORT).show();
+                    Intent intent=new Intent(CreateAlarmActivity.this,MapsActivity.class);
+                    startActivity(intent);
 //
 //                    Toast.makeText(CreateAlarmActivity.this, alarmName.getText().toString() + " " + alarmNotes.getText().toString() + " " + radius,
 //                                   Toast.LENGTH_SHORT).show();
@@ -348,7 +350,7 @@ public class CreateAlarmActivity extends FragmentActivity implements OnMapReadyC
         //check if gps is enabled or not and then request user to enable it
         LocationRequest locationRequest = LocationRequest.create();
         locationRequest.setInterval(10000);
-        locationRequest.setFastestInterval(5000);
+        locationRequest.setFastestInterval(1000);
         locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
 
         LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder().addLocationRequest(locationRequest);
@@ -457,7 +459,7 @@ public class CreateAlarmActivity extends FragmentActivity implements OnMapReadyC
                             } else {
                                 final LocationRequest locationRequest = LocationRequest.create();
                                 locationRequest.setInterval(10000);
-                                locationRequest.setFastestInterval(5000);
+                                locationRequest.setFastestInterval(1000);
                                 locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
                                 locationCallback = new LocationCallback() {
                                     @Override
