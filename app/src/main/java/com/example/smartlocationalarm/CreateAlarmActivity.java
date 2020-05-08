@@ -64,6 +64,11 @@ import com.google.android.libraries.places.api.net.FetchPlaceResponse;
 import com.google.android.libraries.places.api.net.FindAutocompletePredictionsRequest;
 import com.google.android.libraries.places.api.net.FindAutocompletePredictionsResponse;
 import com.google.android.libraries.places.api.net.PlacesClient;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.mancj.materialsearchbar.MaterialSearchBar;
 import com.mancj.materialsearchbar.adapter.SuggestionsAdapter;
 import com.skyfishjy.library.RippleBackground;
@@ -93,7 +98,11 @@ public class CreateAlarmActivity extends FragmentActivity implements OnMapReadyC
     private int radius = 0;
     private EditText alarmName;
     private EditText alarmNotes;
+    public long mid;
+    public final alarm alarm = new alarm();
 
+
+    DatabaseReference reff;
 
 
     @Override
@@ -266,13 +275,35 @@ public class CreateAlarmActivity extends FragmentActivity implements OnMapReadyC
                 myDialog.dismiss();
             }
         });
+        reff = FirebaseDatabase.getInstance().getReference().child("alarm");
+        reff.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if (dataSnapshot.exists()) {
+                    mid = (dataSnapshot.getChildrenCount());
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
         btnCreate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(!alarmName.getText().toString().isEmpty()){
                     // TODO adding values to the database
-                    Toast.makeText(CreateAlarmActivity.this, alarmName.getText().toString() + " " + alarmNotes.getText().toString() + " " + radius,
-                                   Toast.LENGTH_SHORT).show();
+                    alarm.setName(alarmName.getText().toString().trim());
+                    alarm.setNotes(alarmNotes.getText().toString().trim());
+                    alarm.setRadius(String.valueOf(radius).toString().trim());
+                    alarm.setLatitude(String.valueOf(lat));
+                    alarm.setLongitude(String.valueOf(log));
+                    reff.child(String.valueOf(mid + 1)).setValue(alarm);
+                    Toast.makeText(CreateAlarmActivity.this, "saved successfully", Toast.LENGTH_SHORT).show();
+//
+//                    Toast.makeText(CreateAlarmActivity.this, alarmName.getText().toString() + " " + alarmNotes.getText().toString() + " " + radius,
+//                                   Toast.LENGTH_SHORT).show();
                 }
             }
         });
