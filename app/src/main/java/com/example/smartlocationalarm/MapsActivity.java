@@ -5,15 +5,19 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.location.Geocoder;
 import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -30,7 +34,9 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -54,6 +60,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     Boolean Marker = false;
     Dialog myDialog;
     Button mEdit;
+    TextView Ename;
     //vars
     private Boolean mLocationPermissionsGranted = false;
     private GoogleMap mMap;
@@ -169,9 +176,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 location.addOnCompleteListener(new OnCompleteListener() {
                     @Override
                     public void onComplete(@NonNull Task task) {
+                        String Raduiss,Notess;
                         if (task.isSuccessful()) {
                             Log.d(TAG, "onComplete: found location!");
-                            Location currentLocation = (Location) task.getResult();
+                            final Location currentLocation = (Location) task.getResult();
 
                             moveCamera(new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude()),
                                     DEFAULT_ZOOM);
@@ -197,28 +205,41 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                         for (int i = 0; i < alarms.size(); i++) {
                                             double latitude = Double.valueOf(alarms.get(i).getLatitude());
                                             double longitude = Double.valueOf(alarms.get(i).getLongitude());
-
-                                            String name = alarms.get(i).getName();
+                                            double radius = Double.valueOf(alarms.get(i).getRadius());
+                                            String notes = alarms.get(i).getName();
+                                            String name = alarms.get(i).getName()+ " : "+alarms.get(i).getNotes();
                                             LatLng position = new LatLng(latitude, longitude);
-                                            mMap.addMarker(new MarkerOptions().position(position).title(name).icon(bitmapDescriptorFromVector(getApplicationContext(), R.drawable.ic_marker)));
+                                            mMap.addMarker(new MarkerOptions().position(position).title(name).icon(bitmapDescriptorFromVector(getApplicationContext(), R.drawable.ic_marker))).showInfoWindow();
+                                            mMap.addCircle(new CircleOptions().center(position).radius(radius).strokeWidth(2.0f).strokeColor(getResources().getColor(R.color.outline)).fillColor(getResources().getColor(R.color.radius)));
                                         }
                                     }
-
                                     @Override
                                     public void onCancelled(@NonNull DatabaseError databaseError) {
                                     }
                                 });
-
-
-                                mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
-                                    @Override
-                                    public boolean onMarkerClick(com.google.android.gms.maps.model.Marker marker) {
-                                        String markerTitle = marker.getTitle();
-                                        myAlarmDialog();
-                                        return false;
-                                    }
-                                });
-
+//                                try {
+//                                    // Customise the styling of the base map using a JSON object defined
+//                                    // in a raw resource file.
+//                                    boolean success = mMap.setMapStyle(
+//                                            MapStyleOptions.loadRawResourceStyle(
+//                                                    MapsActivity.this, R.raw.mapsretro));
+//
+//                                    if (!success) {
+//                                        Log.e("MapsActivityRaw", "Style parsing failed.");
+//                                    }
+//                                } catch (Resources.NotFoundException e) {
+//                                    Log.e("MapsActivityRaw", "Can't find style.", e);
+//                                }
+//                                mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+//                                    @Override
+//                                    public boolean onMarkerClick(com.google.android.gms.maps.model.Marker marker) {
+//                                        String markerTitle = marker.getTitle();
+//
+//                                        myAlarmDialog(markerTitle);
+//                                        return false;
+//                                    }
+//                                });
+//                                mMap.setInfoWindowAdapter(new CustomInfoWindowAdapter(MapsActivity.this));
                             }
                         } else {
                             Log.d(TAG, "onComplete: current location is null");
@@ -301,24 +322,21 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }
 
-    public void myAlarmDialog() {
-        myDialog = new Dialog(MapsActivity.this);
-        myDialog.setContentView(R.layout.activity_popup);
-        myDialog.setTitle("Alarm information");
-        mEdit = myDialog.findViewById(R.id.Edit);
-
-
-        mEdit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MapsActivity.this, Edit.class);
-                startActivity(intent);
-            }
-        });
-
-        myDialog.show();
-
-    }
-
-
+//    public void myAlarmDialog(final String title) {
+//        myDialog = new Dialog(MapsActivity.this);
+//        myDialog.setContentView(R.layout.activity_popup);
+//        myDialog.setTitle("About");
+//        Ename=myDialog.findViewById(R.id.Ename);
+//        Ename.setText(title);
+//        mEdit = myDialog.findViewById(R.id.Edit);
+//        mEdit.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MapsActivity.this, Edit.class);
+//                intent.putExtra("name",title);
+//                startActivity(intent);
+//            }
+//        });
+//        myDialog.show();
+//    }
 }
