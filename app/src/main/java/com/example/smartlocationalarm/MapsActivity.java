@@ -143,15 +143,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(MapsActivity.this, adding_alarm_db.class);
+                Intent intent1 = new Intent(MapsActivity.this, CreateAlarmActivity.class);
                 startActivity(intent1);
             }
         });
         mSaved.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent2 = new Intent(MapsActivity.this,saved.class);
-                //startActivity(intent2);
+                Intent intent2 = new Intent(MapsActivity.this,MainActivityAlarms.class);
+                startActivity(intent2);
             }
         });
         getLocationPermission();
