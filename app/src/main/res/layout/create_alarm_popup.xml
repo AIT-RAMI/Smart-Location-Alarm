@@ -10,11 +10,12 @@
         android:id="@+id/txtclose"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:textColor="@color/white"
+        android:textColor="@color/create_alarm_button_color"
         android:text="@string/X"
         android:textStyle="bold"
         android:layout_gravity="end"
         android:gravity="center"
+
         android:background="@drawable/cerclebackground"/>
     <LinearLayout
         android:layout_marginTop="15dp"
@@ -31,6 +32,7 @@
             android:layout_marginBottom="-5dp"/>
 
         <EditText
+            android:id="@+id/alarmName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
@@ -45,6 +47,7 @@
             android:layout_marginLeft="12dp"
             android:layout_marginBottom="-5dp"/>
         <EditText
+            android:id="@+id/alarmNotes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
@@ -54,6 +57,7 @@
             android:layout_margin="10dp"
             android:maxLines="10"/>
         <TextView
+            android:id="@+id/radiusText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Radius : 0 meters"
@@ -61,14 +65,15 @@
             android:layout_marginLeft="12dp"
             android:layout_marginTop="5dp"/>
         <SeekBar
-            android:id="@+id/seekBar1"
-            android:layout_width="300dp"
+            android:id="@+id/radiusBar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="26dp"
+            android:paddingTop="14dp"
+            android:layout_marginVertical="10dp"
             style="@style/AppThemeTwo"
-            android:max="10"/>
+            android:max="5000"/>
     </LinearLayout>
     <!--
     <LinearLayout
@@ -150,7 +155,7 @@
         android:layout_marginTop="25dp"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/buttonstyle"
-        android:textColor="@color/white"/>
+        android:textColor="@color/create_alarm_button_color"/>
 
 
 

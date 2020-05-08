@@ -27,7 +27,9 @@ import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.RelativeLayout;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -87,6 +89,11 @@ public class CreateAlarmActivity extends FragmentActivity implements OnMapReadyC
     private final float DEFAULT_ZOOM = 15;
 
     Dialog myDialog;
+    private SeekBar radiusBar;
+    private int radius = 0;
+    private EditText alarmName;
+    private EditText alarmNotes;
+
 
 
     @Override
@@ -247,15 +254,45 @@ public class CreateAlarmActivity extends FragmentActivity implements OnMapReadyC
     }
     public void ShowPopup(View v) {
         TextView txtclose;
-        Button btnFollow;
         myDialog.setContentView(R.layout.create_alarm_popup);
+        alarmName = myDialog.findViewById(R.id.alarmName);
+        alarmNotes = myDialog.findViewById(R.id.alarmNotes);
         txtclose =(TextView) myDialog.findViewById(R.id.txtclose);
-        txtclose.setText("M");
+        txtclose.setText("X");
         btnCreate = (Button) myDialog.findViewById(R.id.btncreate);
         txtclose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 myDialog.dismiss();
+            }
+        });
+        btnCreate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!alarmName.getText().toString().isEmpty()){
+                    // TODO adding values to the database
+                    Toast.makeText(CreateAlarmActivity.this, alarmName.getText().toString() + " " + alarmNotes.getText().toString() + " " + radius,
+                                   Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        final TextView radiusText = myDialog.findViewById(R.id.radiusText);
+        radiusBar = myDialog.findViewById(R.id.radiusBar);
+        radiusBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                radius = progress;
+                String temp = "Radius : " + progress + " meters";
+                radiusText.setText(temp);
+            }
+
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                // TODO Auto-generated method stub
+            }
+
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                //Toast.makeText(CreateAlarmActivity.this, "Radius bar progress is :" + progressChangedValue,
+                 //       Toast.LENGTH_SHORT).show();
             }
         });
         myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
