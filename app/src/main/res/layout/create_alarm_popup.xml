@@ -1,79 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="350dp"
     android:layout_height="390dp"
-    android:background="@color/colorPrimary"
-    android:padding="5dp"
-    android:layout_gravity="center">
+    android:layout_gravity="center"
+    android:background="@color/outline"
+    android:orientation="vertical"
+    android:padding="5dp">
+
     <TextView
         android:id="@+id/txtclose"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:textColor="@color/create_alarm_button_color"
-        android:text="@string/X"
-        android:textStyle="bold"
         android:layout_gravity="end"
+        android:background="@drawable/cerclebackground"
         android:gravity="center"
+        android:text="@string/X"
+        android:textColor="@color/create_alarm_button_color"
 
-        android:background="@drawable/cerclebackground"/>
+        android:textStyle="bold" />
+
     <LinearLayout
-        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Alarm name :"
-            android:textColor="@color/white"
             android:layout_marginLeft="12dp"
-            android:layout_marginBottom="-5dp"/>
+            android:layout_marginBottom="-5dp"
+            android:text="Alarm name :"
+            android:textColor="@color/white" />
 
         <EditText
             android:id="@+id/alarmName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
             android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
             android:layout_marginTop="10dp"
-            android:layout_margin="10dp"/>
+            android:textColor="@color/white" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Notes :"
-            android:textColor="@color/white"
             android:layout_marginLeft="12dp"
-            android:layout_marginBottom="-5dp"/>
+            android:layout_marginBottom="-5dp"
+            android:text="Notes :"
+            android:textColor="@color/white" />
+
         <EditText
             android:id="@+id/alarmNotes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            android:textColor="@color/white"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
             android:layout_margin="10dp"
-            android:maxLines="10"/>
+            android:layout_marginTop="10dp"
+            android:maxLines="10"
+            android:textColor="@color/white" />
+
         <TextView
             android:id="@+id/radiusText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Radius : 0 meters"
-            android:textColor="@color/white"
             android:layout_marginLeft="12dp"
-            android:layout_marginTop="5dp"/>
+            android:layout_marginTop="5dp"
+            android:text="Radius : 0 meters"
+            android:textColor="@color/white" />
+
         <SeekBar
             android:id="@+id/radiusBar"
+            style="@style/AppThemeTwo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:paddingTop="14dp"
             android:layout_marginVertical="10dp"
-            style="@style/AppThemeTwo"
-            android:max="5000"/>
+            android:max="1000"
+            android:paddingTop="14dp" />
     </LinearLayout>
     <!--
     <LinearLayout
@@ -151,12 +157,11 @@
         android:id="@+id/btncreate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create  alarm"
-        android:layout_marginTop="25dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
         android:background="@drawable/buttonstyle"
-        android:textColor="@color/create_alarm_button_color"/>
-
+        android:text="Create  alarm"
+        android:textColor="@color/create_alarm_button_color" />
 
 
 </LinearLayout>
