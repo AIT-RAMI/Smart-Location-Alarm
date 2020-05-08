@@ -1,16 +1,34 @@
 package com.example.smartlocationalarm;
 
 public class alarm {
-    public String longitude, latitude, name;
+    public String longitude, latitude, name,notes,radius;
 
-    public alarm(String longitude, String altitude, String name) {
+    public alarm(String longitude, String latitude, String name, String notes, String radius) {
         this.longitude = longitude;
-        this.latitude = altitude;
+        this.latitude = latitude;
         this.name = name;
+        this.notes = notes;
+        this.radius = radius;
     }
 
     public alarm() {
 
+    }
+
+    public String getNotes() {
+        return notes;
+    }
+
+    public void setNotes(String notes) {
+        this.notes = notes;
+    }
+
+    public String getRadius() {
+        return radius;
+    }
+
+    public void setRadius(String radius) {
+        this.radius = radius;
     }
 
     public String getLongitude() {
