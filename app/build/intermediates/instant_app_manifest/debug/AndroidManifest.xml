@@ -8,6 +8,7 @@
     <uses-sdk
         android:minSdkVersion="21"
         android:targetSdkVersion="29" />
+
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -37,16 +38,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.smartlocationalarm.SettingsActivity" />
-        <activity android:name="com.example.smartlocationalarm.WelcomeActivity2" />
-        <activity android:name="com.example.smartlocationalarm.AboutActivity" />
-        <activity android:name="com.example.smartlocationalarm.NotificationActivity" />
-        <activity
-            android:name="com.example.smartlocationalarm.Main2Activity"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.example.smartlocationalarm.Edit" />
-        <activity android:name="com.example.smartlocationalarm.adding_alarm_db" />
+
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -58,6 +50,20 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+
+        <activity android:name="com.example.smartlocationalarm.alarmDetailsActivity" />
+        <activity android:name="com.example.smartlocationalarm.alarmListActivity" />
+        <activity android:name="com.example.smartlocationalarm.SettingsActivity" />
+        <activity android:name="com.example.smartlocationalarm.WelcomeActivity2" />
+        <activity android:name="com.example.smartlocationalarm.AboutActivity" />
+        <activity android:name="com.example.smartlocationalarm.NotificationActivity" />
+        <activity
+            android:name="com.example.smartlocationalarm.Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.smartlocationalarm.Edit" />
+        <activity android:name="com.example.smartlocationalarm.adding_alarm_db" />
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />

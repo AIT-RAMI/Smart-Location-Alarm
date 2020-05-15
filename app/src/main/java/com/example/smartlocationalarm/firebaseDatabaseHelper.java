@@ -21,7 +21,6 @@ public class firebaseDatabaseHelper {
         mDatabase = FirebaseDatabase.getInstance();
         mDref = mDatabase.getReference().child("alarm");
     }
-
     public void readAlarms(final DataStatus dataStatus) {
         mDref.addValueEventListener(new ValueEventListener() {
             @Override
@@ -41,7 +40,9 @@ public class firebaseDatabaseHelper {
             public void onCancelled(@NonNull DatabaseError databaseError) {
             }
         });
+
     }
+
 
     public void updateAlarm(String key, alarm alarm, final DataStatus dataStatus) {
         mDref.child(key).setValue(alarm).addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -70,6 +71,7 @@ public class firebaseDatabaseHelper {
 
         void DataIsDeleted();
     }
+
 
 }
 

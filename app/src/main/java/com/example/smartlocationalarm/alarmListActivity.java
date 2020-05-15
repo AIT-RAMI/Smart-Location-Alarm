@@ -19,7 +19,6 @@ public class alarmListActivity extends AppCompatActivity {
             @Override
             public void DataIsLoaded(List<alarm> alarms, List<String> keys) {
                 new RecyclerView_Config().setConfig(recyclerView, alarmListActivity.this, alarms, keys);
-
             }
 
             @Override

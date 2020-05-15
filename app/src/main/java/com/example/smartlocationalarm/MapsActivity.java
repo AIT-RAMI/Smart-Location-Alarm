@@ -189,9 +189,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                     @Override
                                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                         alarms.clear();
-                                        longitudes.clear();
-                                        latitudes.clear();
-                                        names.clear();
                                         List<String> keys = new ArrayList<>();
                                         for (DataSnapshot keyNode : dataSnapshot.getChildren()) {
                                             keys.add(keyNode.getKey());
@@ -213,29 +210,38 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                     public void onCancelled(@NonNull DatabaseError databaseError) {
                                     }
                                 });
-//                                try {
-//                                    // Customise the styling of the base map using a JSON object defined
-//                                    // in a raw resource file.
-//                                    boolean success = mMap.setMapStyle(
-//                                            MapStyleOptions.loadRawResourceStyle(
-//                                                    MapsActivity.this, R.raw.mapsretro));
-//
-//                                    if (!success) {
-//                                        Log.e("MapsActivityRaw", "Style parsing failed.");
-//                                    }
-//                                } catch (Resources.NotFoundException e) {
-//                                    Log.e("MapsActivityRaw", "Can't find style.", e);
-//                                }
-//                                mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+//                                new firebaseDatabaseHelper().readAlarms(new firebaseDatabaseHelper.DataStatus() {
 //                                    @Override
-//                                    public boolean onMarkerClick(com.google.android.gms.maps.model.Marker marker) {
-//                                        String markerTitle = marker.getTitle();
+//                                    public void DataIsLoaded(List<alarm> alarms, List<String> keys) {
 //
-//                                        myAlarmDialog(markerTitle);
-//                                        return false;
+//                                        for (int i = 0; i < alarms.size(); i++) {
+//                                            double latitude = Double.valueOf(alarms.get(i).getLatitude());
+//                                            double longitude = Double.valueOf(alarms.get(i).getLongitude());
+//                                            double radius = Double.valueOf(alarms.get(i).getRadius());
+//                                            String notes = alarms.get(i).getName();
+//                                            String name = alarms.get(i).getName()+ " : "+alarms.get(i).getNotes();
+//                                            LatLng position = new LatLng(latitude, longitude);
+//                                            mMap.addMarker(new MarkerOptions().position(position).title(name).icon(bitmapDescriptorFromVector(getApplicationContext(), R.drawable.ic_marker))).showInfoWindow();
+//                                            mMap.addCircle(new CircleOptions().center(position).radius(radius).strokeWidth(2.0f).strokeColor(getResources().getColor(R.color.outline)).fillColor(getResources().getColor(R.color.radius)));
+//                                        }
+//                                    }
+//
+//                                    @Override
+//                                    public void DataIsInserted() {
+//
+//                                    }
+//
+//                                    @Override
+//                                    public void DataIsUpdated() {
+//
+//                                    }
+//
+//                                    @Override
+//                                    public void DataIsDeleted() {
+//
 //                                    }
 //                                });
-//                                mMap.setInfoWindowAdapter(new CustomInfoWindowAdapter(MapsActivity.this));
+
                             }
                         } else {
                             Log.d(TAG, "onComplete: current location is null");
@@ -308,7 +314,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
-    private BitmapDescriptor bitmapDescriptorFromVector(Context context, int vectorResId) {
+    public BitmapDescriptor bitmapDescriptorFromVector(Context context, int vectorResId) {
         Drawable vectorDarawable = ContextCompat.getDrawable(context, vectorResId);
         vectorDarawable.setBounds(0, 0, vectorDarawable.getIntrinsicWidth(), vectorDarawable.getIntrinsicHeight());
         Bitmap bitmap = Bitmap.createBitmap(vectorDarawable.getIntrinsicWidth(), vectorDarawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);

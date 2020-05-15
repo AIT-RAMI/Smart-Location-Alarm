@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.smartlocationalarm">
+
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -20,17 +21,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name=".alarmListActivity"></activity>
-        <activity android:name=".SettingsActivity" />
-        <activity android:name=".WelcomeActivity2" />
-        <activity android:name=".AboutActivity" />
-        <activity android:name=".NotificationActivity" />
-        <activity
-            android:name=".Main2Activity"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Edit" />
-        <activity android:name=".adding_alarm_db" />
+
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -42,6 +33,20 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+
+        <activity android:name=".alarmDetailsActivity" />
+        <activity android:name=".alarmListActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".WelcomeActivity2" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Edit" />
+        <activity android:name=".adding_alarm_db" />
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
