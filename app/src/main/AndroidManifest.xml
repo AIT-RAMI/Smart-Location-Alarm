@@ -20,7 +20,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".alarmListActivity"></activity>
+        <activity android:name=".SettingsActivity" />
         <activity android:name=".WelcomeActivity2" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".NotificationActivity" />
