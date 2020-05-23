@@ -24,4 +24,8 @@
         android:id="@+id/rating"
         android:icon="@drawable/baseline_thumb_up_black_24dp"
         android:title="Rate us!" />
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/baseline_settings_black_24dp"
+        android:title="Settings" />
 </menu>

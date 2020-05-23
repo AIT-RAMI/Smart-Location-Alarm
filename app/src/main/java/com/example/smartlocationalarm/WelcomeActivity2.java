@@ -22,7 +22,6 @@ public class WelcomeActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_welcome2);
 
         Button notif;
-        Button settings;
         Button share;
         Button about;
 
@@ -31,14 +30,6 @@ public class WelcomeActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 addNotification();
-            }
-        });
-        settings = findViewById(R.id.test2);
-        settings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SettingsActivity.class);
-                startActivity(intent);
             }
         });
         share = findViewById(R.id.test4);

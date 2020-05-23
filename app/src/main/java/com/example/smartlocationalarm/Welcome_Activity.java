@@ -72,6 +72,9 @@ public class Welcome_Activity extends AppCompatActivity {
                         return true;
                     case R.id.rating:
                         AppRate.with(c).showRateDialog(a);
+                    case R.id.setting:
+                        Intent intent4 = new Intent(getApplicationContext(), SettingsActivity.class);
+                        startActivity(intent4);
                     default:
                         return false;
                 }
