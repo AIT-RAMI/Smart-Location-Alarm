@@ -20,4 +20,8 @@
         android:id="@+id/allalarms"
         android:icon="@drawable/baseline_alarm_black_24dp"
         android:title="All Alarms" />
+    <item
+        android:id="@+id/rating"
+        android:icon="@drawable/baseline_thumb_up_black_24dp"
+        android:title="Rate us!" />
 </menu>

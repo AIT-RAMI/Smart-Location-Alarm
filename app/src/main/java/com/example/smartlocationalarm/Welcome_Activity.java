@@ -1,5 +1,7 @@
 package com.example.smartlocationalarm;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -12,6 +14,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
+import hotchemi.android.rate.AppRate;
+
 public class Welcome_Activity extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
@@ -21,6 +25,16 @@ public class Welcome_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome_);
+
+        AppRate.with(this)
+                .setInstallDays(0)
+                .setLaunchTimes(10)
+                .setRemindInterval(5)
+                .setShowLaterButton(true)
+                .monitor();
+        AppRate.showRateDialogIfMeetsConditions(this);
+        final Context c = this;
+        final Activity a = this;
 
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
@@ -56,6 +70,8 @@ public class Welcome_Activity extends AppCompatActivity {
                         Intent intent3 = new Intent(Welcome_Activity.this, MainActivityAlarms.class);
                         startActivity(intent3);
                         return true;
+                    case R.id.rating:
+                        AppRate.with(c).showRateDialog(a);
                     default:
                         return false;
                 }

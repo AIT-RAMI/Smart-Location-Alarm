@@ -1,6 +1,5 @@
 package com.example.smartlocationalarm;
 
-import android.app.Activity;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -14,8 +13,6 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 
-import hotchemi.android.rate.AppRate;
-
 public class WelcomeActivity2 extends AppCompatActivity {
 
 
@@ -26,18 +23,8 @@ public class WelcomeActivity2 extends AppCompatActivity {
 
         Button notif;
         Button settings;
-        Button rating;
         Button share;
         Button about;
-
-        AppRate.with(this)
-                .setInstallDays(0)
-                .setLaunchTimes(10)
-                .setRemindInterval(5)
-                .setShowLaterButton(true)
-                .monitor();
-
-        AppRate.showRateDialogIfMeetsConditions(this);
 
         notif = findViewById(R.id.settings);
         notif.setOnClickListener(new View.OnClickListener() {
@@ -52,15 +39,6 @@ public class WelcomeActivity2 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SettingsActivity.class);
                 startActivity(intent);
-            }
-        });
-        rating = findViewById(R.id.test3);
-        final Context c = this;
-        final Activity a = this;
-        rating.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AppRate.with(c).showRateDialog(a);
             }
         });
         share = findViewById(R.id.test4);
