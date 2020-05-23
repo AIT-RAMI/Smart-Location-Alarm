@@ -9,64 +9,12 @@
         android:layout_width="120dp"
         android:layout_height="54dp"
         android:layout_centerInParent="true"
-        android:layout_marginEnd="132dp"
-        android:layout_marginRight="132dp"
+        android:layout_marginEnd="144dp"
         android:text="notification"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.285" />
+        app:layout_constraintVertical_bias="0.499" />
 
-    <Button
-        android:id="@+id/test4"
-        android:layout_width="120dp"
-        android:layout_height="54dp"
-        android:layout_centerInParent="true"
-        android:layout_marginEnd="132dp"
-        android:layout_marginRight="132dp"
-        android:text="share"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.604" />
-
-    <Button
-        android:id="@+id/test3"
-        android:layout_width="120dp"
-        android:layout_height="54dp"
-        android:layout_centerInParent="true"
-        android:layout_marginEnd="132dp"
-        android:layout_marginRight="132dp"
-        android:text="rating"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.497" />
-
-    <Button
-        android:id="@+id/test5"
-        android:layout_width="120dp"
-        android:layout_height="54dp"
-        android:layout_centerInParent="true"
-        android:layout_marginEnd="132dp"
-        android:layout_marginRight="132dp"
-        android:text="about"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.709" />
-
-    <Button
-        android:id="@+id/test2"
-        android:layout_width="120dp"
-        android:layout_height="54dp"
-        android:layout_centerInParent="true"
-        android:layout_marginEnd="132dp"
-        android:layout_marginRight="132dp"
-        android:text="settings"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.389" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
