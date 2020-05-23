@@ -70,11 +70,26 @@ public class Welcome_Activity extends AppCompatActivity {
                         Intent intent3 = new Intent(Welcome_Activity.this, MainActivityAlarms.class);
                         startActivity(intent3);
                         return true;
-                    case R.id.rating:
-                        AppRate.with(c).showRateDialog(a);
                     case R.id.setting:
                         Intent intent4 = new Intent(getApplicationContext(), SettingsActivity.class);
                         startActivity(intent4);
+                        return true;
+                    case R.id.rating:
+                        AppRate.with(c).showRateDialog(a);
+                        return true;
+                    case R.id.share:
+                        Intent i = new Intent(Intent.ACTION_SEND);
+                        i.setType("text/plain");
+                        i.putExtra(Intent.EXTRA_SUBJECT, "Smart Location Alarm");
+                        String message = "\nJe voudrais vous recommander cette application Smart Location Alarm, prochainement nous allons la mettre dans le play store \n\n";
+
+                        i.putExtra(Intent.EXTRA_TEXT, message);
+                        startActivity(Intent.createChooser(i, "Share with others"));
+                        return true;
+                    case R.id.about:
+                        Intent intent5 = new Intent(getApplicationContext(), AboutActivity.class);
+                        startActivity(intent5);
+                        return true;
                     default:
                         return false;
                 }

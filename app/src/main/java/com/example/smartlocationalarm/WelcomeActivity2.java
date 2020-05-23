@@ -22,35 +22,12 @@ public class WelcomeActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_welcome2);
 
         Button notif;
-        Button share;
-        Button about;
 
         notif = findViewById(R.id.settings);
         notif.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 addNotification();
-            }
-        });
-        share = findViewById(R.id.test4);
-        share.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Intent.ACTION_SEND);
-                i.setType("text/plain");
-                i.putExtra(Intent.EXTRA_SUBJECT, "Smart Location Alarm");
-                String message = "\nJe voudrais vous recommander cette application Smart Location Alarm, prochainement nous allons la mettre dans le play store \n\n";
-
-                i.putExtra(Intent.EXTRA_TEXT, message);
-                startActivity(Intent.createChooser(i, "Share with others"));
-            }
-        });
-        about = findViewById(R.id.test5);
-        about.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
-                startActivity(intent);
             }
         });
     }
