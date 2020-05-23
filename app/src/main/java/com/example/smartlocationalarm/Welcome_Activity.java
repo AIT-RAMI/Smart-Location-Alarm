@@ -74,6 +74,10 @@ public class Welcome_Activity extends AppCompatActivity {
                         Intent intent4 = new Intent(getApplicationContext(), SettingsActivity.class);
                         startActivity(intent4);
                         return true;
+                    case R.id.notif:
+                        Intent intent6 = new Intent(getApplicationContext(), WelcomeActivity2.class);
+                        startActivity(intent6);
+                        return true;
                     case R.id.rating:
                         AppRate.with(c).showRateDialog(a);
                         return true;

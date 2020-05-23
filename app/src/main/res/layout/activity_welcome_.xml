@@ -17,8 +17,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Main LAYOUT / Background things"
-            android:textColor="@color/design_default_color_secondary"
+            android:gravity="center"
+            android:text="Background"
+            android:textColor="@color/bluedark"
             android:textSize="24dp"
             android:textStyle="bold" />
     </LinearLayout>
