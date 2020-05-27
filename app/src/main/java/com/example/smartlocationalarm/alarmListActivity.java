@@ -5,6 +5,8 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.smartlocationalarm.ui.SimpleDividerItemDecoration;
+
 import java.util.List;
 
 public class alarmListActivity extends AppCompatActivity {
@@ -15,6 +17,7 @@ public class alarmListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarm_list);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView_alarms);
+        recyclerView.addItemDecoration(new SimpleDividerItemDecoration(this));
         new firebaseDatabaseHelper().readAlarms(new firebaseDatabaseHelper.DataStatus() {
             @Override
             public void DataIsLoaded(List<alarm> alarms, List<String> keys) {
