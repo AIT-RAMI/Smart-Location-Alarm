@@ -9,6 +9,6 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:fontFamily="sans-serif-black"
-        android:textSize="20sp" />
+        android:textSize="24sp" />
 
 </RelativeLayout>

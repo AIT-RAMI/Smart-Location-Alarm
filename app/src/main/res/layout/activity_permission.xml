@@ -40,7 +40,7 @@
             android:text="Smart Location Alarm needs permission to access device location. Please allow it: "
             android:fontFamily="sans-serif-black"
             android:gravity="center_horizontal"
-            android:textSize="16sp"
+            android:textSize="24sp"
             android:layout_marginTop="30dp"
             />
 

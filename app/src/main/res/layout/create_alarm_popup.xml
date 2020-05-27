@@ -103,13 +103,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="150"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textColor="@color/white"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Followers"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textColor="@color/white"/>
         </LinearLayout>
 
@@ -125,13 +125,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="19"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textColor="@color/white"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Cities"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textColor="@color/white"/>
         </LinearLayout>
         <LinearLayout
@@ -146,13 +146,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="50"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textColor="@color/white"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Posts"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textColor="@color/white"/>
         </LinearLayout>
     </LinearLayout>
