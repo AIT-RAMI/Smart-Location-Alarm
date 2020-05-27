@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -109,11 +108,6 @@ public class Welcome_Activity extends AppCompatActivity {
 
     private void clickCreate(){
         Intent intent = new Intent(this, PermissionActivity.class);
-        this.startActivity(intent);
-    }
-
-    public void AllAlarms(View view) {
-        Intent intent = new Intent(this, MainActivityAlarms.class);
         this.startActivity(intent);
     }
 
