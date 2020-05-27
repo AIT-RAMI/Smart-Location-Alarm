@@ -67,7 +67,7 @@ public class Welcome_Activity extends AppCompatActivity {
                         return true;
 
                     case R.id.allalarms:
-                        Intent intent3 = new Intent(Welcome_Activity.this, MainActivityAlarms.class);
+                        Intent intent3 = new Intent(Welcome_Activity.this, alarmListActivity.class);
                         startActivity(intent3);
                         return true;
                     case R.id.setting:
