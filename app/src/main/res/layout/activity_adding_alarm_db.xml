@@ -15,6 +15,7 @@
         android:layout_marginEnd="96dp"
         android:layout_marginRight="96dp"
         android:ems="10"
+        android:fontFamily="sans-serif-black"
         android:inputType="textPersonName" />
 
     <EditText
@@ -27,6 +28,7 @@
         android:layout_marginEnd="98dp"
         android:layout_marginRight="98dp"
         android:ems="10"
+        android:fontFamily="sans-serif-black"
         android:inputType="textPersonName" />
 
     <EditText
@@ -37,6 +39,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="86dp"
+        android:fontFamily="sans-serif-black"
         android:layout_marginRight="86dp"
         android:layout_marginBottom="384dp"
         android:ems="10"

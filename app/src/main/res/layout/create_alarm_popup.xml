@@ -16,7 +16,7 @@
         android:gravity="center"
         android:text="@string/X"
         android:textColor="@color/create_alarm_button_color"
-
+        android:fontFamily="sans-serif-black"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -31,6 +31,7 @@
             android:layout_marginLeft="12dp"
             android:layout_marginBottom="-5dp"
             android:text="Alarm name :"
+            android:fontFamily="sans-serif-black"
             android:textColor="@color/white" />
 
         <EditText
@@ -39,6 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_margin="10dp"
+            android:fontFamily="sans-serif-black"
             android:layout_marginTop="10dp"
             android:textColor="@color/white" />
 
@@ -48,13 +50,14 @@
             android:layout_marginLeft="12dp"
             android:layout_marginBottom="-5dp"
             android:text="Notes :"
+            android:fontFamily="sans-serif-black"
             android:textColor="@color/white" />
 
         <EditText
             android:id="@+id/alarmNotes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:fontFamily="sans-serif-black"
             android:layout_gravity="center_horizontal"
             android:layout_margin="10dp"
             android:layout_marginTop="10dp"
@@ -68,6 +71,7 @@
             android:layout_marginLeft="12dp"
             android:layout_marginTop="5dp"
             android:text="Radius : 0 meters"
+            android:fontFamily="sans-serif-black"
             android:textColor="@color/white" />
 
         <SeekBar

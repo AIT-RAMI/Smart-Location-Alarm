@@ -20,6 +20,7 @@
             android:textSize="20dp"
             android:textAlignment="center"
             android:text="name"
+            android:fontFamily="sans-serif-black"
             android:id="@+id/name"
             />
         <TextView
@@ -29,6 +30,7 @@
             android:textSize="20dp"
             android:textAlignment="center"
             android:text="name"
+            android:fontFamily="sans-serif-black"
             android:id="@+id/date"
             />
 

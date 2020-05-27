@@ -21,6 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
         android:text="Name : "
+        android:fontFamily="sans-serif-black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -32,6 +33,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="9dp"
         android:text="Notes :"
+        android:fontFamily="sans-serif-black"
         app:layout_constraintEnd_toStartOf="@+id/editNotes"
         app:layout_constraintTop_toBottomOf="@+id/editName" />
 
@@ -41,6 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Radius : "
+        android:fontFamily="sans-serif-black"
         app:layout_constraintEnd_toStartOf="@+id/editradius"
         app:layout_constraintTop_toBottomOf="@+id/editNotes" />
 
@@ -52,6 +55,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
+        android:fontFamily="sans-serif-black"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/textView4" />
@@ -63,6 +67,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
+        android:fontFamily="sans-serif-black"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintStart_toStartOf="@+id/editName"
         app:layout_constraintTop_toTopOf="@+id/textView5" />
@@ -74,6 +79,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
+        android:fontFamily="sans-serif-black"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
         app:layout_constraintStart_toStartOf="@+id/editNotes" />
 

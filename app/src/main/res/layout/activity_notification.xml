@@ -8,6 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
+        android:fontFamily="sans-serif-black"
         android:textSize="20sp" />
 
 </RelativeLayout>

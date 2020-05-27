@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PermissionActivity"
     android:padding="32dp"
-    android:layout_gravity="center"
-    >
+    android:layout_gravity="center">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,8 +29,8 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:text="Permission required"
+            android:fontFamily="sans-serif-black"
             android:layout_marginTop="12dp"
-            android:fontFamily="sans-serif-condensed"
             android:textStyle="bold"
             android:textSize="24sp"
             />
@@ -40,6 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Smart Location Alarm needs permission to access device location. Please allow it: "
+            android:fontFamily="sans-serif-black"
             android:gravity="center_horizontal"
             android:textSize="16sp"
             android:layout_marginTop="30dp"

@@ -17,6 +17,7 @@
         android:layout_marginEnd="34dp"
         android:layout_marginRight="34dp"
         android:text="alarm information"
+        android:fontFamily="sans-serif-black"
         android:textSize="22sp" />
 
     <TextView
@@ -29,6 +30,7 @@
         android:layout_marginEnd="176dp"
         android:layout_marginRight="176dp"
         android:layout_marginBottom="142dp"
+        android:fontFamily="sans-serif-black"
         android:text="Name" />
 
     <TextView
@@ -41,6 +43,7 @@
         android:layout_marginEnd="76dp"
         android:layout_marginRight="76dp"
         android:layout_marginBottom="85dp"
+        android:fontFamily="sans-serif-black"
         android:text="some other information" />
 
     <Button
@@ -64,7 +67,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="63dp"
         android:layout_marginRight="63dp"
-        android:layout_marginBottom="142dp" />
+        android:layout_marginBottom="142dp"
+        android:fontFamily="sans-serif-black" />
 
     <ImageView
         android:id="@+id/imageView2"
