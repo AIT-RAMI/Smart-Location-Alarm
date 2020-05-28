@@ -22,6 +22,7 @@
             android:maxWidth="170dp"
             android:maxHeight="170dp"
             android:scaleType="fitCenter"
+            android:contentDescription="navigation_logo"
             android:src="@drawable/gps" />
         <TextView
             android:layout_gravity="center"

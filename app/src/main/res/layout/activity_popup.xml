@@ -80,6 +80,7 @@
         android:layout_marginEnd="86dp"
         android:layout_marginRight="86dp"
         android:layout_marginBottom="29dp"
+        android:contentDescription="icon_for_edit_button"
         android:src="@drawable/ic_edit" />
 
 </RelativeLayout>

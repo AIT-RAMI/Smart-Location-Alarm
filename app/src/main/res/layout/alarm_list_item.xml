@@ -52,6 +52,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.363"
+        android:contentDescription="Navigation Logo"
         app:srcCompat="@drawable/ic_place_black_24dp" />
 
     <TextView
