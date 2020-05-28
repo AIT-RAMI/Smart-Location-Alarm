@@ -1,28 +1,23 @@
 package com.example.smartlocationalarm;
 
-import androidx.annotation.*;
-import androidx.fragment.app.*;
-
-import android.app.Activity;
+import android.annotation.SuppressLint;
 import android.app.Dialog;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentSender;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.location.Address;
 import android.location.Geocoder;
-import android.provider.Telephony;
-import android.text.TextWatcher;
-
-import java.io.IOException;
-import java.util.*;
-
-
-import android.annotation.SuppressLint;
-import android.content.Intent;
-import android.content.IntentSender;
 import android.location.Location;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -32,6 +27,10 @@ import android.widget.RelativeLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.core.app.NotificationCompat;
+import androidx.fragment.app.FragmentActivity;
 
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.common.api.ResolvableApiException;
@@ -43,7 +42,6 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.LocationSettingsRequest;
 import com.google.android.gms.location.LocationSettingsResponse;
 import com.google.android.gms.location.SettingsClient;
-import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -72,6 +70,11 @@ import com.google.firebase.database.ValueEventListener;
 import com.mancj.materialsearchbar.MaterialSearchBar;
 import com.mancj.materialsearchbar.adapter.SuggestionsAdapter;
 import com.skyfishjy.library.RippleBackground;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 
 
@@ -296,11 +299,12 @@ public class CreateAlarmActivity extends FragmentActivity implements OnMapReadyC
                     // TODO adding values to the database
                     alarm.setName(alarmName.getText().toString().trim());
                     alarm.setNotes(alarmNotes.getText().toString().trim());
-                    alarm.setRadius(String.valueOf(radius).toString().trim());
+                    alarm.setRadius(String.valueOf(radius).trim());
                     alarm.setLatitude(String.valueOf(lat));
                     alarm.setLongitude(String.valueOf(log));
                     reff.child(String.valueOf(mid + 1)).setValue(alarm);
                     Toast.makeText(CreateAlarmActivity.this, "saved successfully", Toast.LENGTH_SHORT).show();
+                    addNotification(String.valueOf(radius));
                     Intent intent=new Intent(CreateAlarmActivity.this,MapsActivity.class);
                     startActivity(intent);
 //
@@ -481,5 +485,34 @@ public class CreateAlarmActivity extends FragmentActivity implements OnMapReadyC
                         }
                     }
                 });
+    }
+
+    private void addNotification(String dist) {
+        String notif_text = "Vous avez programmé une alarme de: " + dist + " mètres! Rentrez voir de quoi s'agit il.";
+        String notif_title = "New Alarm";
+
+        Intent intent = new Intent(this, alarmListActivity.class);
+        PendingIntent pdIntent = PendingIntent.getActivity(CreateAlarmActivity.this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
+                .setSmallIcon(R.drawable.alarm)
+                .setContentTitle(notif_title)
+                .setContentText(notif_text)
+                .setContentIntent(pdIntent)
+                .setAutoCancel(true);
+
+        NotificationManager ntfManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            String channelId = "5";
+            NotificationChannel channel = new NotificationChannel(
+                    channelId,
+                    "Ceci est le titre pour la channel",
+                    NotificationManager.IMPORTANCE_HIGH);
+            ntfManager.createNotificationChannel(channel);
+            builder.setChannelId(channelId);
+        }
+
+        ntfManager.notify(0, builder.build());
     }
 }

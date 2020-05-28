@@ -37,9 +37,7 @@
         <activity android:name=".alarmDetailsActivity" />
         <activity android:name=".alarmListActivity" />
         <activity android:name=".SettingsActivity" />
-        <activity android:name=".WelcomeActivity2" />
         <activity android:name=".AboutActivity" />
-        <activity android:name=".NotificationActivity" />
         <activity
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"

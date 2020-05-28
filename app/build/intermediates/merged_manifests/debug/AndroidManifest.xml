@@ -53,9 +53,7 @@
         <activity android:name="com.example.smartlocationalarm.alarmDetailsActivity" />
         <activity android:name="com.example.smartlocationalarm.alarmListActivity" />
         <activity android:name="com.example.smartlocationalarm.SettingsActivity" />
-        <activity android:name="com.example.smartlocationalarm.WelcomeActivity2" />
         <activity android:name="com.example.smartlocationalarm.AboutActivity" />
-        <activity android:name="com.example.smartlocationalarm.NotificationActivity" />
         <activity
             android:name="com.example.smartlocationalarm.Main2Activity"
             android:label="@string/title_activity_main2"
