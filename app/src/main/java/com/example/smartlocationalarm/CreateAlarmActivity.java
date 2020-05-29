@@ -143,10 +143,14 @@ public class CreateAlarmActivity extends FragmentActivity implements OnMapReadyC
                     } catch (IOException e){
                         e.printStackTrace();
                     }
-                    Address address = addressList.get(0);
-                    LatLng latLng = new LatLng(address.getLatitude(), address.getLongitude());
-                    mMap.addMarker(new MarkerOptions().position(latLng).title(location));
-                    mMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
+                    if(addressList.size() != 0){
+                        Address address = addressList.get(0);
+                        LatLng latLng = new LatLng(address.getLatitude(), address.getLongitude());
+                        mMap.addMarker(new MarkerOptions().position(latLng).title(location));
+                        mMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
+                    } else {
+                        Toast.makeText(CreateAlarmActivity.this, "No result found", Toast.LENGTH_SHORT).show();
+                    }
                 }
                 //startSearch(text.toString(), true, null, true);
             }
