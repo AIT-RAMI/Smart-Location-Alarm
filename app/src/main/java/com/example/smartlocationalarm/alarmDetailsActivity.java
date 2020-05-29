@@ -1,6 +1,7 @@
 package com.example.smartlocationalarm;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -12,6 +13,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
@@ -63,67 +65,100 @@ public class alarmDetailsActivity extends AppCompatActivity implements OnMapRead
         btn_edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                alarm alarm = new alarm();
-                alarm.setName(editName.getText().toString());
-                alarm.setNotes(editNotes.getText().toString());
-                alarm.setRadius(editRadius.getText().toString());
-                alarm.setLongitude(longitude);
-                alarm.setLatitude(latitude);
-
-                new firebaseDatabaseHelper().updateAlarm(key, alarm, new firebaseDatabaseHelper.DataStatus() {
+                AlertDialog.Builder builder = new AlertDialog.Builder(alarmDetailsActivity.this);
+                builder.setMessage("are you sure you want to edit this alarm ?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
-                    public void DataIsLoaded(List<com.example.smartlocationalarm.alarm> alarms, List<String> keys) {
+                    public void onClick(DialogInterface dialog, int which) {
+                        alarm alarm = new alarm();
+                        alarm.setName(editName.getText().toString());
+                        alarm.setNotes(editNotes.getText().toString());
+                        alarm.setRadius(editRadius.getText().toString());
+                        alarm.setLongitude(longitude);
+                        alarm.setLatitude(latitude);
+
+                        new firebaseDatabaseHelper().updateAlarm(key, alarm, new firebaseDatabaseHelper.DataStatus() {
+                            @Override
+                            public void DataIsLoaded(List<com.example.smartlocationalarm.alarm> alarms, List<String> keys) {
+
+                            }
+
+                            @Override
+                            public void DataIsInserted() {
+
+                            }
+
+                            @Override
+                            public void DataIsUpdated() {
+                                Toast.makeText(alarmDetailsActivity.this, "alarm has been updated successfully", Toast.LENGTH_LONG).show();
+                                Intent intent = new Intent(alarmDetailsActivity.this, alarmListActivity.class);
+                                startActivity(intent);
+
+                            }
+
+                            @Override
+                            public void DataIsDeleted() {
+
+                            }
+                        });
 
                     }
-
+                }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     @Override
-                    public void DataIsInserted() {
-
-                    }
-
-                    @Override
-                    public void DataIsUpdated() {
-                        Toast.makeText(alarmDetailsActivity.this, "alarm has been updated successfully", Toast.LENGTH_LONG).show();
-                        Intent intent = new Intent(alarmDetailsActivity.this, alarmListActivity.class);
-                        startActivity(intent);
-
-                    }
-
-                    @Override
-                    public void DataIsDeleted() {
-
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
                     }
                 });
+
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
+
+
             }
         });
 
         btn_delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new firebaseDatabaseHelper().deleteAlarm(key, new firebaseDatabaseHelper.DataStatus() {
+                AlertDialog.Builder builder = new AlertDialog.Builder(alarmDetailsActivity.this);
+                builder.setMessage("are you sure you want to delete this alarm ?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
-                    public void DataIsLoaded(List<alarm> alarms, List<String> keys) {
+                    public void onClick(DialogInterface dialog, int which) {
+                        new firebaseDatabaseHelper().deleteAlarm(key, new firebaseDatabaseHelper.DataStatus() {
+                            @Override
+                            public void DataIsLoaded(List<alarm> alarms, List<String> keys) {
+
+                            }
+
+                            @Override
+                            public void DataIsInserted() {
+
+                            }
+
+                            @Override
+                            public void DataIsUpdated() {
+
+                            }
+
+                            @Override
+                            public void DataIsDeleted() {
+                                Toast.makeText(alarmDetailsActivity.this, "alarm has been deleted successfully", Toast.LENGTH_LONG).show();
+                                Intent intent = new Intent(alarmDetailsActivity.this, alarmListActivity.class);
+                                startActivity(intent);
+
+                            }
+                        });
 
                     }
-
+                }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     @Override
-                    public void DataIsInserted() {
-
-                    }
-
-                    @Override
-                    public void DataIsUpdated() {
-
-                    }
-
-                    @Override
-                    public void DataIsDeleted() {
-                        Toast.makeText(alarmDetailsActivity.this, "alarm has been deleted successfully", Toast.LENGTH_LONG).show();
-                        Intent intent = new Intent(alarmDetailsActivity.this, alarmListActivity.class);
-                        startActivity(intent);
-
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
                     }
                 });
+
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
+                
             }
         });
 
