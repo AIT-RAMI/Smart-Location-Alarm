@@ -1,6 +1,7 @@
 package com.example.smartlocationalarm;
 
 import android.Manifest;
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
@@ -11,6 +12,7 @@ import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -19,9 +21,11 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-import androidx.fragment.app.FragmentActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
@@ -36,6 +40,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -45,7 +50,9 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+import hotchemi.android.rate.AppRate;
+
+public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback {
     private static final String TAG = "MapActivity";
 
     private static final String FINE_LOCATION = Manifest.permission.ACCESS_FINE_LOCATION;
@@ -122,26 +129,74 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
+    DrawerLayout drawerLayout;
+    ActionBarDrawerToggle toggle;
+    NavigationView nv;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+        AppRate.with(this)
+                .setInstallDays(0)
+                .setLaunchTimes(10)
+                .setRemindInterval(5)
+                .setShowLaterButton(true)
+                .monitor();
+        AppRate.showRateDialogIfMeetsConditions(this);
+        final Context c = this;
+        final Activity a = this;
+
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
+
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        nv = findViewById(R.id.navView);
+        nv.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.create:
+                        clickCreate();
+                        return true;
+
+                    case R.id.exist:
+                        existing();
+                        return true;
+
+                    case R.id.allalarms:
+                        Intent intent3 = new Intent(MapsActivity.this, alarmListActivity.class);
+                        startActivity(intent3);
+                        return true;
+                    case R.id.setting:
+                        Intent intent4 = new Intent(getApplicationContext(), SettingsActivity.class);
+                        startActivity(intent4);
+                        return true;
+                    case R.id.rating:
+                        AppRate.with(c).showRateDialog(a);
+                        return true;
+                    case R.id.share:
+                        Intent i = new Intent(Intent.ACTION_SEND);
+                        i.setType("text/plain");
+                        i.putExtra(Intent.EXTRA_SUBJECT, "Smart Location Alarm");
+                        String message = "\nJe voudrais vous recommander cette application Smart Location Alarm, prochainement nous allons la mettre dans le play store \n\n";
+
+                        i.putExtra(Intent.EXTRA_TEXT, message);
+                        startActivity(Intent.createChooser(i, "Share with others"));
+                        return true;
+                    case R.id.about:
+                        Intent intent5 = new Intent(getApplicationContext(), AboutActivity.class);
+                        startActivity(intent5);
+                        return true;
+                    default:
+                        return false;
+                }
+            }
+        });
         mAdd = findViewById(R.id.ic_add_alarm);
         mSaved = findViewById(R.id.ic_alarms);
-
-
-//        reff.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-//                alarms alarm=new alarms();
-//
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError databaseError) {
-//
-//            }
-//        });
 
         mAdd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -210,38 +265,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                     public void onCancelled(@NonNull DatabaseError databaseError) {
                                     }
                                 });
-//                                new firebaseDatabaseHelper().readAlarms(new firebaseDatabaseHelper.DataStatus() {
-//                                    @Override
-//                                    public void DataIsLoaded(List<alarm> alarms, List<String> keys) {
-//
-//                                        for (int i = 0; i < alarms.size(); i++) {
-//                                            double latitude = Double.valueOf(alarms.get(i).getLatitude());
-//                                            double longitude = Double.valueOf(alarms.get(i).getLongitude());
-//                                            double radius = Double.valueOf(alarms.get(i).getRadius());
-//                                            String notes = alarms.get(i).getName();
-//                                            String name = alarms.get(i).getName()+ " : "+alarms.get(i).getNotes();
-//                                            LatLng position = new LatLng(latitude, longitude);
-//                                            mMap.addMarker(new MarkerOptions().position(position).title(name).icon(bitmapDescriptorFromVector(getApplicationContext(), R.drawable.ic_marker))).showInfoWindow();
-//                                            mMap.addCircle(new CircleOptions().center(position).radius(radius).strokeWidth(2.0f).strokeColor(getResources().getColor(R.color.outline)).fillColor(getResources().getColor(R.color.radius)));
-//                                        }
-//                                    }
-//
-//                                    @Override
-//                                    public void DataIsInserted() {
-//
-//                                    }
-//
-//                                    @Override
-//                                    public void DataIsUpdated() {
-//
-//                                    }
-//
-//                                    @Override
-//                                    public void DataIsDeleted() {
-//
-//                                    }
-//                                });
-
                             }
                         } else {
                             Log.d(TAG, "onComplete: current location is null");
@@ -324,21 +347,22 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }
 
-//    public void myAlarmDialog(final String title) {
-//        myDialog = new Dialog(MapsActivity.this);
-//        myDialog.setContentView(R.layout.activity_popup);
-//        myDialog.setTitle("About");
-//        Ename=myDialog.findViewById(R.id.Ename);
-//        Ename.setText(title);
-//        mEdit = myDialog.findViewById(R.id.Edit);
-//        mEdit.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(MapsActivity.this, Edit.class);
-//                intent.putExtra("name",title);
-//                startActivity(intent);
-//            }
-//        });
-//        myDialog.show();
-//    }
+    private void existing() {
+        Intent intent = new Intent(this, MapsActivity.class);
+        this.startActivity(intent);
+    }
+
+    private void clickCreate() {
+        Intent intent = new Intent(this, PermissionActivity.class);
+        this.startActivity(intent);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (toggle.onOptionsItemSelected(item)) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 }
