@@ -2,19 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/create"
-        android:icon="@drawable/baseline_alarm_add_black_24dp"
+        android:icon="@drawable/ic_newalarm"
         android:title="New Alarm" />
     <item
         android:id="@+id/exist"
-        android:icon="@drawable/baseline_alarm_on_black_24dp"
+        android:icon="@drawable/ic_tracking"
         android:title="Tracking" />
     <item
         android:id="@+id/allalarms"
-        android:icon="@drawable/baseline_alarm_black_24dp"
+        android:icon="@drawable/ic_alarms"
         android:title="All Alarms" />
     <item
         android:id="@+id/setting"
-        android:icon="@drawable/baseline_settings_black_24dp"
+        android:icon="@drawable/ic_settings"
         android:title="Settings" />
     <item
         android:id="@+id/rating"
