@@ -3,7 +3,7 @@
     android:layout_width="350dp"
     android:layout_height="390dp"
     android:layout_gravity="center"
-    android:background="@color/outline"
+    android:background="#E8EAF6"
     android:orientation="vertical"
     android:padding="5dp">
 
@@ -15,7 +15,7 @@
         android:background="@drawable/cerclebackground"
         android:gravity="center"
         android:text="@string/X"
-        android:textColor="@color/create_alarm_button_color"
+        android:textColor="#1A237E"
         android:fontFamily="sans-serif-black"
         android:textStyle="bold" />
 
@@ -32,7 +32,7 @@
             android:layout_marginBottom="-5dp"
             android:text="Alarm name :"
             android:fontFamily="sans-serif-black"
-            android:textColor="@color/white" />
+            android:textColor="#1A237E" />
 
         <EditText
             android:id="@+id/alarmName"
@@ -42,7 +42,7 @@
             android:layout_margin="10dp"
             android:fontFamily="sans-serif-black"
             android:layout_marginTop="10dp"
-            android:textColor="@color/white" />
+            android:textColor="#1A237E" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -51,7 +51,7 @@
             android:layout_marginBottom="-5dp"
             android:text="Notes :"
             android:fontFamily="sans-serif-black"
-            android:textColor="@color/white" />
+            android:textColor="#1A237E" />
 
         <EditText
             android:id="@+id/alarmNotes"
@@ -62,7 +62,7 @@
             android:layout_margin="10dp"
             android:layout_marginTop="10dp"
             android:maxLines="10"
-            android:textColor="@color/white" />
+            android:textColor="#1A237E" />
 
         <TextView
             android:id="@+id/radiusText"
@@ -72,7 +72,7 @@
             android:layout_marginTop="5dp"
             android:text="Radius : 0 meters"
             android:fontFamily="sans-serif-black"
-            android:textColor="@color/white" />
+            android:textColor="#1A237E" />
 
         <SeekBar
             android:id="@+id/radiusBar"
@@ -85,77 +85,7 @@
             android:max="1000"
             android:paddingTop="14dp" />
     </LinearLayout>
-    <!--
-    <LinearLayout
-        android:layout_marginTop="15dp"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:background="@color/orange"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="100dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="150"
-                android:textSize="20sp"
-                android:textColor="@color/white"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Followers"
-                android:textSize="20sp"
-                android:textColor="@color/white"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:background="@color/green"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="100dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="19"
-                android:textSize="20sp"
-                android:textColor="@color/white"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Cities"
-                android:textSize="20sp"
-                android:textColor="@color/white"/>
-        </LinearLayout>
-        <LinearLayout
-            android:background="@color/bluelight"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="100dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="50"
-                android:textSize="20sp"
-                android:textColor="@color/white"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Posts"
-                android:textSize="20sp"
-                android:textColor="@color/white"/>
-        </LinearLayout>
-    </LinearLayout>
 -->
     <Button
         android:id="@+id/btncreate"
@@ -165,7 +95,7 @@
         android:layout_marginTop="25dp"
         android:background="@drawable/buttonstyle"
         android:text="Create  alarm"
-        android:textColor="@color/create_alarm_button_color" />
+        android:textColor="#1A237E" />
 
 
 </LinearLayout>
