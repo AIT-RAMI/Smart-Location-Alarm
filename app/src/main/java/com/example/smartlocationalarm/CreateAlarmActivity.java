@@ -1,6 +1,7 @@
 package com.example.smartlocationalarm;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.app.Dialog;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -19,6 +20,7 @@ import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
@@ -29,8 +31,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
-import androidx.fragment.app.FragmentActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.common.api.ResolvableApiException;
@@ -62,6 +66,7 @@ import com.google.android.libraries.places.api.net.FetchPlaceResponse;
 import com.google.android.libraries.places.api.net.FindAutocompletePredictionsRequest;
 import com.google.android.libraries.places.api.net.FindAutocompletePredictionsResponse;
 import com.google.android.libraries.places.api.net.PlacesClient;
+import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -76,9 +81,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import hotchemi.android.rate.AppRate;
 
 
-public class CreateAlarmActivity extends FragmentActivity implements OnMapReadyCallback {
+public class CreateAlarmActivity extends AppCompatActivity implements OnMapReadyCallback {
     private double lat = 0, log = 0;
 
     private GoogleMap mMap;
@@ -106,12 +112,73 @@ public class CreateAlarmActivity extends FragmentActivity implements OnMapReadyC
 
 
     DatabaseReference reff;
-
+    DrawerLayout drawerLayout;
+    ActionBarDrawerToggle toggle;
+    NavigationView nv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_alarm);
+        AppRate.with(this)
+                .setInstallDays(0)
+                .setLaunchTimes(10)
+                .setRemindInterval(5)
+                .setShowLaterButton(true)
+                .monitor();
+        AppRate.showRateDialogIfMeetsConditions(this);
+        final Context c = this;
+        final Activity a = this;
+
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
+
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        nv = findViewById(R.id.navView);
+        nv.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.create:
+                        clickCreate();
+                        return true;
+
+                    case R.id.exist:
+                        existing();
+                        return true;
+
+                    case R.id.allalarms:
+                        Intent intent3 = new Intent(CreateAlarmActivity.this, alarmListActivity.class);
+                        startActivity(intent3);
+                        return true;
+                    case R.id.setting:
+                        Intent intent4 = new Intent(getApplicationContext(), SettingsActivity.class);
+                        startActivity(intent4);
+                        return true;
+                    case R.id.rating:
+                        AppRate.with(c).showRateDialog(a);
+                        return true;
+                    case R.id.share:
+                        Intent i = new Intent(Intent.ACTION_SEND);
+                        i.setType("text/plain");
+                        i.putExtra(Intent.EXTRA_SUBJECT, "Smart Location Alarm");
+                        String message = "\nJe voudrais vous recommander cette application Smart Location Alarm, prochainement nous allons la mettre dans le play store \n\n";
+
+                        i.putExtra(Intent.EXTRA_TEXT, message);
+                        startActivity(Intent.createChooser(i, "Share with others"));
+                        return true;
+                    case R.id.about:
+                        Intent intent5 = new Intent(getApplicationContext(), AboutActivity.class);
+                        startActivity(intent5);
+                        return true;
+                    default:
+                        return false;
+                }
+            }
+        });
         myDialog = new Dialog(this);
 
         materialSearchBar = findViewById(R.id.searchBar);
@@ -518,5 +585,23 @@ public class CreateAlarmActivity extends FragmentActivity implements OnMapReadyC
         }
 
         ntfManager.notify(0, builder.build());
+    }
+
+    private void existing() {
+        Intent intent = new Intent(this, MapsActivity.class);
+        this.startActivity(intent);
+    }
+
+    private void clickCreate() {
+        Intent intent = new Intent(this, PermissionActivity.class);
+        this.startActivity(intent);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (toggle.onOptionsItemSelected(item)) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
