@@ -38,12 +38,6 @@
         <activity android:name=".alarmListActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".AboutActivity" />
-        <activity
-            android:name=".Main2Activity"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Edit" />
-        <activity android:name=".adding_alarm_db" />
 
         <meta-data
             android:name="com.google.android.gms.version"

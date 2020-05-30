@@ -54,12 +54,6 @@
         <activity android:name="com.example.smartlocationalarm.alarmListActivity" />
         <activity android:name="com.example.smartlocationalarm.SettingsActivity" />
         <activity android:name="com.example.smartlocationalarm.AboutActivity" />
-        <activity
-            android:name="com.example.smartlocationalarm.Main2Activity"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.example.smartlocationalarm.Edit" />
-        <activity android:name="com.example.smartlocationalarm.adding_alarm_db" />
 
         <meta-data
             android:name="com.google.android.gms.version"
