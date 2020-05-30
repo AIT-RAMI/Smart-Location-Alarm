@@ -12,11 +12,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff342391-9bc2-44fb-8ed1-dff29e0724ec" name="Default Changelist" comment="accessibility contentDescription">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/smartlocationalarm/myDeviderItemDecoration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/smartlocationalarm/CreateAlarmActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/smartlocationalarm/CreateAlarmActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/smartlocationalarm/Welcome_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/smartlocationalarm/Welcome_Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/smartlocationalarm/alarmListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/smartlocationalarm/alarmListActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-anydpi/ic_back.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-anydpi/ic_back.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-anydpi/ic_delete.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-anydpi/ic_delete.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-anydpi/ic_edit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-anydpi/ic_edit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_back.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_back.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_delete.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_delete.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_edit.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_edit.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_back.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_back.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_delete.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_delete.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_edit.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_edit.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_back.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_back.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_delete.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_delete.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_edit.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_edit.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_back.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_back.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_delete.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_delete.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_edit.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_edit.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_alarm_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_alarm_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/alarm_list_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/alarm_list_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/navigation_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/navigation_menu.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +47,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="10033354" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="C509XXEH81150241" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />

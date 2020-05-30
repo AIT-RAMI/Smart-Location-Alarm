@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/nav"
-        android:icon="@drawable/baseline_location_on_black_24dp"
-        android:title="Navigation" />
-    <item
         android:id="@+id/create"
         android:icon="@drawable/baseline_alarm_add_black_24dp"
-        android:title="Create Alarm" />
+        android:title="New Alarm" />
     <item
         android:id="@+id/exist"
         android:icon="@drawable/baseline_alarm_on_black_24dp"
-        android:title="Existing Alarms" />
+        android:title="Tracking" />
     <item
         android:id="@+id/allalarms"
         android:icon="@drawable/baseline_alarm_black_24dp"

@@ -47,11 +47,6 @@ public class Welcome_Activity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
-                    case R.id.nav:
-                        Intent intent2 = new Intent(Welcome_Activity.this, Main2Activity.class);
-                        startActivity(intent2);
-                        return true;
-
                     case R.id.create:
                         clickCreate();
                         return true;

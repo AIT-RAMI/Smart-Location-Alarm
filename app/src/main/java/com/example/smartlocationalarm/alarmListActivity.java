@@ -3,9 +3,8 @@ package com.example.smartlocationalarm;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.smartlocationalarm.ui.SimpleDividerItemDecoration;
 
 import java.util.List;
 
@@ -17,7 +16,11 @@ public class alarmListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarm_list);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView_alarms);
-        recyclerView.addItemDecoration(new SimpleDividerItemDecoration(this));
+        try {
+            recyclerView.addItemDecoration(new myDeviderItemDecoration(LinearLayoutManager.VERTICAL, this, 30));
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
         new firebaseDatabaseHelper().readAlarms(new firebaseDatabaseHelper.DataStatus() {
             @Override
             public void DataIsLoaded(List<alarm> alarms, List<String> keys) {
