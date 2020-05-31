@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -20,11 +22,29 @@ public class Welcome_Activity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle toggle;
     NavigationView nv;
+    // Test Are
+    Button serviceTest;
+    // End Test Area
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome_);
+        // Test Area
+        serviceTest = findViewById(R.id.serviceTest);
+        //final Intent intent = new Intent(this, MyService.class);
+        final Intent intent = new Intent(this, BackgroundLocationUpdateService.class);
+        serviceTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startService(intent);
+                /*stopService(intent);
+                intent.putExtra("alarmHour", Calendar.getInstance().getTime().getHours());
+                intent.putExtra("alarmMinute", Calendar.getInstance().getTime().getMinutes() + 1);
+                startService(intent);*/
+            }
 
+        });
+        // End Test Area
         AppRate.with(this)
                 .setInstallDays(0)
                 .setLaunchTimes(10)
