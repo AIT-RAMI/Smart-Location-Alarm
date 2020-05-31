@@ -6,15 +6,25 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="mo" />
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="a" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff342391-9bc2-44fb-8ed1-dff29e0724ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/header.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/smartlocationalarm/alarmDetailsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/smartlocationalarm/alarmDetailsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_alarm_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_alarm_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_alarm_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_alarm_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_create_alarm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_create_alarm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +32,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="C509XXEH81150241" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="d20dcce1" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -39,9 +49,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="layoutResourceFile_vertical" />
-        <option value="layoutResourceFile" />
         <option value="resourceFile" />
         <option value="Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -78,10 +88,8 @@
     <option name="MODULE_TAB" value="Properties" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\res\drawable" />
-      <recent name="C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\res\drawable-xxhdpi" />
-      <recent name="C:\Users\aabba\Desktop\smart_location_alarm\app\src\main\res\drawable" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.smartlocationalarm" />
@@ -92,8 +100,10 @@
     <key name="android.template.parentActivityClass">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\res\drawable" />
+      <recent name="C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\res\drawable-xxhdpi" />
+      <recent name="C:\Users\aabba\Desktop\smart_location_alarm\app\src\main\res\drawable" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -355,63 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590878281463</updated>
     </task>
-    <task id="LOCAL-00026" summary="ihm">
-      <created>1590922784499</created>
+    <task id="LOCAL-00026" summary="navigDrawer on maps">
+      <created>1590879250221</created>
       <option name="number" value="00026" />
       <option name="presentableId" value="LOCAL-00026" />
       <option name="project" value="LOCAL" />
-      <updated>1590922784499</updated>
+      <updated>1590879250221</updated>
     </task>
-    <task id="LOCAL-00027" summary="ihm">
-      <created>1590925434833</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1590925434833</updated>
-    </task>
-    <task id="LOCAL-00028" summary="unique dataset for each device">
-      <created>1590940486611</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1590940486611</updated>
-    </task>
-    <task id="LOCAL-00029" summary="app logo launcher">
-      <created>1590940977690</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1590940977690</updated>
-    </task>
-    <task id="LOCAL-00030" summary="onBack pressed fixed">
-      <created>1590946222800</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1590946222800</updated>
-    </task>
-    <task id="LOCAL-00031" summary="added alarm status">
-      <created>1590948869750</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1590948869750</updated>
-    </task>
-    <task id="LOCAL-00032" summary="added switch button for alarm status;">
-      <created>1590950161408</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1590950161409</updated>
-    </task>
-    <task id="LOCAL-00033" summary="switch fixed">
-      <created>1590950840249</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1590950840249</updated>
-    </task>
-    <option name="localTasksCounter" value="34" />
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -452,6 +413,12 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="création de notifications" />
+    <MESSAGE value="set up env" />
+    <MESSAGE value="setting up some changes and merge" />
+    <MESSAGE value="popup window" />
+    <MESSAGE value="notification cleaning" />
+    <MESSAGE value="started on the navigation drawer side bar" />
     <MESSAGE value="AlarmListView" />
     <MESSAGE value="rating in place" />
     <MESSAGE value="settings in place" />
@@ -470,14 +437,8 @@
     <MESSAGE value="navigDrawer on alarmDetails" />
     <MESSAGE value="navigDrawer on alarmList" />
     <MESSAGE value="navigDrawer on createAlarm" />
-    <MESSAGE value="ihm" />
-    <MESSAGE value="unique dataset for each device" />
-    <MESSAGE value="app logo launcher" />
-    <MESSAGE value="onBack pressed fixed" />
-    <MESSAGE value="added alarm status" />
-    <MESSAGE value="added switch button for alarm status;" />
-    <MESSAGE value="switch fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="switch fixed" />
+    <MESSAGE value="navigDrawer on maps" />
+    <option name="LAST_COMMIT_MESSAGE" value="navigDrawer on maps" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
