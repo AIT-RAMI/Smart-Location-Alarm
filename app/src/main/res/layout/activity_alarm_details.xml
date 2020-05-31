@@ -183,6 +183,7 @@
         android:layout_marginBottom="353dp"
         android:text="You want to change alarm location ? Just create a new alarm !"
         android:textColor="#1A237E"
+        android:textSize="13dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

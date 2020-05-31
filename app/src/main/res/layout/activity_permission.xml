@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     tools:context=".PermissionActivity"
     android:padding="32dp"
-    android:layout_gravity="center">
+    android:layout_gravity="center"
+    android:background="#5C6BC0">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,6 +33,7 @@
             android:text="Permission required"
             android:fontFamily="sans-serif-black"
             android:layout_marginTop="12dp"
+            android:textColor="@color/quantum_black_100"
             android:textStyle="bold"
             android:textSize="24sp"
             />
@@ -41,6 +43,7 @@
             android:text="Smart Location Alarm needs permission to access device location. Please allow it: "
             android:fontFamily="sans-serif-black"
             android:gravity="center_horizontal"
+            android:textColor="@color/quantum_black_100"
             android:textSize="24sp"
             android:layout_marginTop="30dp"
             />
@@ -52,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/colorPrimary"
+        android:background="#303F9F"
         android:textColor="#FFFFFF"
         android:text="Grant Permission"
         android:textAllCaps="false"
