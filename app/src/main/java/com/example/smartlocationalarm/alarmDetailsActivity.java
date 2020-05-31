@@ -307,7 +307,7 @@ public class alarmDetailsActivity extends AppCompatActivity implements OnMapRead
     }
 
     private void clickCreate() {
-        Intent intent = new Intent(this, PermissionActivity.class);
+        Intent intent = new Intent(this, alarmListActivity.class);
         this.startActivity(intent);
     }
 

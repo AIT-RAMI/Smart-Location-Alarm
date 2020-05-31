@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -30,6 +31,7 @@ public class RecyclerView_Config {
         private TextView name_, note_, radius_;
         private String longitude, latitude;
         private Boolean status;
+        private Switch switch_;
 
         private String key;
 
@@ -39,6 +41,7 @@ public class RecyclerView_Config {
             name_ = itemView.findViewById(R.id.name_txt);
             note_ = itemView.findViewById(R.id.note_txt);
             radius_ = itemView.findViewById(R.id.radius_txt);
+            switch_ = itemView.findViewById(R.id.switch4);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -61,6 +64,7 @@ public class RecyclerView_Config {
             name_.setText(alarm.getName());
             note_.setText(alarm.getNotes());
             radius_.setText(alarm.getRadius());
+            switch_.setChecked(alarm.getStatus());
             longitude = alarm.getLongitude();
             latitude = alarm.getLatitude();
             status = alarm.getStatus();
