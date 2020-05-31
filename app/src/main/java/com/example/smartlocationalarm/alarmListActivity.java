@@ -3,6 +3,7 @@ package com.example.smartlocationalarm;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -37,6 +38,7 @@ public class alarmListActivity extends AppCompatActivity {
         AppRate.showRateDialogIfMeetsConditions(this);
         final Context c = this;
         final Activity a = this;
+        String id = getIntent().getStringExtra("id");
 
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
@@ -93,7 +95,9 @@ public class alarmListActivity extends AppCompatActivity {
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }
-        new firebaseDatabaseHelper().readAlarms(new firebaseDatabaseHelper.DataStatus() {
+        SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
+        String uniqueId = prefs.getString("UUID", "alarm");
+        new firebaseDatabaseHelper(alarmListActivity.this).readAlarms(new firebaseDatabaseHelper.DataStatus() {
             @Override
             public void DataIsLoaded(List<alarm> alarms, List<String> keys) {
                 new RecyclerView_Config().setConfig(recyclerView, alarmListActivity.this, alarms, keys);

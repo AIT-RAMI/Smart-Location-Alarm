@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -78,33 +79,34 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference databaseReference;
 
-    public void readAlarms() {
-        firebaseDatabase = firebaseDatabase.getInstance();
-        databaseReference = firebaseDatabase.getReference().child("alarm");
-        Toast.makeText(this, "databaseLoaded", Toast.LENGTH_SHORT).show();
-        databaseReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                alarms.clear();
-                longitudes.clear();
-                latitudes.clear();
-                names.clear();
-                List<String> keys = new ArrayList<>();
-                for (DataSnapshot keyNode : dataSnapshot.getChildren()) {
-                    keys.add(keyNode.getKey());
-                    alarm mAlarm = keyNode.getValue(alarm.class);
-                    alarms.add(mAlarm);
-                }
-                int a = alarms.size();
-                Log.d("aaaaaaaa", String.valueOf(a));
-                int h = 0;
-            }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-            }
-        });
-    }
+//    public void readAlarms() {
+//        firebaseDatabase = firebaseDatabase.getInstance();
+//        databaseReference = firebaseDatabase.getReference().child("alarm");
+//        Toast.makeText(this, "databaseLoaded", Toast.LENGTH_SHORT).show();
+//        databaseReference.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                alarms.clear();
+//                longitudes.clear();
+//                latitudes.clear();
+//                names.clear();
+//                List<String> keys = new ArrayList<>();
+//                for (DataSnapshot keyNode : dataSnapshot.getChildren()) {
+//                    keys.add(keyNode.getKey());
+//                    alarm mAlarm = keyNode.getValue(alarm.class);
+//                    alarms.add(mAlarm);
+//                }
+//                int a = alarms.size();
+//                Log.d("aaaaaaaa", String.valueOf(a));
+//                int h = 0;
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError databaseError) {
+//            }
+//        });
+//    }
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -145,6 +147,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         AppRate.showRateDialogIfMeetsConditions(this);
         final Context c = this;
         final Activity a = this;
+        SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
+        final String uniqueId = prefs.getString("UUID", "alarm");
 
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
@@ -209,6 +213,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             @Override
             public void onClick(View v) {
                 Intent intent2 = new Intent(MapsActivity.this, alarmListActivity.class);
+                intent2.putExtra("id", uniqueId);
                 startActivity(intent2);
             }
         });
@@ -224,6 +229,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             if (mLocationPermissionsGranted) {
 
                 final Task location = mFusedLocationProviderClient.getLastLocation();
+                SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
+                final String uniqueId = prefs.getString("UUID", "alarm");
                 location.addOnCompleteListener(new OnCompleteListener() {
                     @Override
                     public void onComplete(@NonNull Task task) {
@@ -239,7 +246,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                                 mMap.addMarker(new MarkerOptions().position(MyLocation).title("My Location"));
                                 Marker = true;
                                 firebaseDatabase = firebaseDatabase.getInstance();
-                                databaseReference = firebaseDatabase.getReference().child("alarm");
+                                databaseReference = firebaseDatabase.getReference().child(uniqueId);
                                 databaseReference.addValueEventListener(new ValueEventListener() {
                                     @Override
                                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

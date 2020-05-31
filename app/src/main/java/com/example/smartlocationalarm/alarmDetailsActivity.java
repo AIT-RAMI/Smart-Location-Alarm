@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
@@ -132,6 +133,10 @@ public class alarmDetailsActivity extends AppCompatActivity implements OnMapRead
         btn_edit = findViewById(R.id.editBtn);
         btn_back = findViewById(R.id.backbtn);
 
+        SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
+        final String uniqueId = prefs.getString("UUID", "alarm");
+
+
         btn_edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -146,7 +151,7 @@ public class alarmDetailsActivity extends AppCompatActivity implements OnMapRead
                         alarm.setLongitude(longitude);
                         alarm.setLatitude(latitude);
 
-                        new firebaseDatabaseHelper().updateAlarm(key, alarm, new firebaseDatabaseHelper.DataStatus() {
+                        new firebaseDatabaseHelper(alarmDetailsActivity.this).updateAlarm(key, alarm, new firebaseDatabaseHelper.DataStatus() {
                             @Override
                             public void DataIsLoaded(List<com.example.smartlocationalarm.alarm> alarms, List<String> keys) {
 
@@ -193,7 +198,7 @@ public class alarmDetailsActivity extends AppCompatActivity implements OnMapRead
                 builder.setMessage("are you sure you want to delete this alarm ?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        new firebaseDatabaseHelper().deleteAlarm(key, new firebaseDatabaseHelper.DataStatus() {
+                        new firebaseDatabaseHelper(alarmDetailsActivity.this).deleteAlarm(key, new firebaseDatabaseHelper.DataStatus() {
                             @Override
                             public void DataIsLoaded(List<alarm> alarms, List<String> keys) {
 
@@ -228,7 +233,7 @@ public class alarmDetailsActivity extends AppCompatActivity implements OnMapRead
 
                 AlertDialog alertDialog = builder.create();
                 alertDialog.show();
-                
+
             }
         });
 

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:2:1-63:12
-INJECTED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:2:1-63:12
-INJECTED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:2:1-63:12
-INJECTED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:2:1-63:12
+ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:2:1-65:12
 MERGED from [com.karumi:dexter:6.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\45c582b5f7ff5c4faed151a1a5b87dae\jetified-dexter-6.0.2\AndroidManifest.xml:17:1-32:12
 MERGED from [androidx.navigation:navigation-ui:2.2.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d1d5ccbf562d0e2bf861f602b57b02a4\navigation-ui-2.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\6029c1862846be4a7ec1743d4d20ec64\material-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -94,22 +94,22 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\ABIR\.gradle
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\c9f37172fb5d136167f0c662d8abf5c0\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.datatransport:transport-api:2.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\f436af6fbc948f2be8b24811beb844cf\jetified-transport-api-2.1.0\AndroidManifest.xml:15:1-22:12
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\3ab8ce0080fc4104c96ea6c28032f4ef\jetified-firebase-database-collection-17.0.0\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:2:1-63:12
-INJECTED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:2:1-63:12
-INJECTED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:2:1-65:12
 	package
 		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:4:5-45
 		INJECTED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:2:1-63:12
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:2:1-65:12
 		INJECTED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:2:1-63:12
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:2:1-65:12
 		INJECTED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:2:11-69
@@ -173,8 +173,14 @@ MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\
 MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\8a9eb8870eb2f607990e88c7b33f4dd8\jetified-transport-runtime-2.1.0\AndroidManifest.xml:22:5-79
 	android:name
 		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:14:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:15:5-75
+MERGED from [com.google.android.libraries.places:places:2.2.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\1e6e0b218ccfeb7492b94f8f5863d2cc\jetified-places-2.2.0\AndroidManifest.xml:10:5-76
+MERGED from [com.google.android.libraries.places:places:2.2.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\1e6e0b218ccfeb7492b94f8f5863d2cc\jetified-places-2.2.0\AndroidManifest.xml:10:5-76
+	android:name
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:15:22-73
 application
-ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:16:5-61:19
+ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:18:5-63:19
 MERGED from [com.karumi:dexter:6.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\45c582b5f7ff5c4faed151a1a5b87dae\jetified-dexter-6.0.2\AndroidManifest.xml:26:5-30:19
 MERGED from [com.karumi:dexter:6.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\45c582b5f7ff5c4faed151a1a5b87dae\jetified-dexter-6.0.2\AndroidManifest.xml:26:5-30:19
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\6029c1862846be4a7ec1743d4d20ec64\material-1.1.0\AndroidManifest.xml:22:5-20
@@ -254,84 +260,84 @@ MERGED from [com.android.volley:volley:1.1.1] C:\Users\ABIR\.gradle\caches\trans
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.2.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\c6f4260131458ccd0b15b1a20cb8065e\core-1.2.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:21:9-35
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:23:9-35
 	android:label
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:19:9-41
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:21:9-41
 	android:roundIcon
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:20:9-54
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:22:9-54
 	android:icon
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:18:9-43
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:20:9-43
 		REJECTED from [com.github.Triggertrap:SeekArc:v1.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\ce00b31e45c942ecd53d24bd679d13bb\jetified-SeekArc-v1.1\AndroidManifest.xml:36:9-45
 	android:allowBackup
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:19:9-35
 	android:theme
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:22:9-40
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:24:9-40
 	tools:replace
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:23:9-37
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:25:9-37
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:33:9-35:55
+ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:35:9-37:55
 	android:value
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:35:13-52
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:37:13-52
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:34:13-58
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:36:13-58
 activity#com.example.smartlocationalarm.alarmDetailsActivity
-ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:37:9-58
+ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:39:9-58
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:37:19-55
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:39:19-55
 activity#com.example.smartlocationalarm.alarmListActivity
-ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:38:9-55
+ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:40:9-55
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:38:19-52
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:40:19-52
 activity#com.example.smartlocationalarm.SettingsActivity
-ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:39:9-54
+ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:41:9-54
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:39:19-51
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:41:19-51
 activity#com.example.smartlocationalarm.AboutActivity
-ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:40:9-51
+ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:42:9-51
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:40:19-48
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:42:19-48
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:42:9-44:69
+ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:44:9-46:69
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\164bb505b81f338baa0db13edd04c1d1\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\164bb505b81f338baa0db13edd04c1d1\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:44:13-66
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:46:13-66
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:43:13-58
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:45:13-58
 activity#com.example.smartlocationalarm.MapsActivity
-ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:46:9-48:59
+ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:48:9-50:59
 	android:label
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:48:13-56
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:50:13-56
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:47:13-41
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:49:13-41
 activity#com.example.smartlocationalarm.CreateAlarmActivity
-ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:49:9-51:67
+ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:51:9-53:67
 	android:label
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:51:13-64
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:53:13-64
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:50:13-48
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:52:13-48
 activity#com.example.smartlocationalarm.PermissionActivity
-ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:52:9-56
+ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:54:9-56
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:52:19-53
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:54:19-53
 activity#com.example.smartlocationalarm.Welcome_Activity
-ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:53:9-54
+ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:55:9-54
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:53:19-51
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:55:19-51
 activity#com.example.smartlocationalarm.MainActivity
-ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:54:9-60:20
+ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:56:9-62:20
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:54:19-47
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:56:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:55:13-59:29
+ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:57:13-61:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:56:17-69
+ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:58:17-69
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:56:25-66
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:58:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:58:17-77
+ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:60:17-77
 	android:name
-		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:58:27-74
+		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:60:27-74
 uses-sdk
 INJECTED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml
@@ -532,10 +538,6 @@ ADDED from [com.karumi:dexter:6.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\f
 		ADDED from [com.karumi:dexter:6.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\45c582b5f7ff5c4faed151a1a5b87dae\jetified-dexter-6.0.2\AndroidManifest.xml:29:13-69
 	android:name
 		ADDED from [com.karumi:dexter:6.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\45c582b5f7ff5c4faed151a1a5b87dae\jetified-dexter-6.0.2\AndroidManifest.xml:28:13-60
-uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from [com.google.android.libraries.places:places:2.2.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\1e6e0b218ccfeb7492b94f8f5863d2cc\jetified-places-2.2.0\AndroidManifest.xml:10:5-76
-	android:name
-		ADDED from [com.google.android.libraries.places:places:2.2.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\1e6e0b218ccfeb7492b94f8f5863d2cc\jetified-places-2.2.0\AndroidManifest.xml:10:22-73
 activity#com.google.android.libraries.places.widget.AutocompleteActivity
 ADDED from [com.google.android.libraries.places:places:2.2.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\1e6e0b218ccfeb7492b94f8f5863d2cc\jetified-places-2.2.0\AndroidManifest.xml:14:9-20:20
 	android:label

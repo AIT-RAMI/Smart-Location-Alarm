@@ -37,11 +37,11 @@
         <EditText
             android:id="@+id/alarmName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_gravity="center_horizontal"
             android:layout_margin="10dp"
-            android:fontFamily="sans-serif-black"
             android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
             android:textColor="#1A237E" />
 
         <TextView
@@ -56,11 +56,11 @@
         <EditText
             android:id="@+id/alarmNotes"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-black"
+            android:layout_height="26dp"
             android:layout_gravity="center_horizontal"
             android:layout_margin="10dp"
             android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
             android:maxLines="10"
             android:textColor="#1A237E" />
 
@@ -87,14 +87,16 @@
     </LinearLayout>
 
 -->
+
     <Button
         android:id="@+id/btncreate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="25dp"
-        android:background="@drawable/buttonstyle"
         android:text="Create  alarm"
+        android:background="@drawable/gradient"
+        android:textSize="10dp"
         android:textColor="#1A237E" />
 
 

@@ -9,6 +9,7 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentSender;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.location.Address;
@@ -336,6 +337,8 @@ public class CreateAlarmActivity extends AppCompatActivity implements OnMapReady
         });
     }
     public void ShowPopup(View v) {
+        SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
+        String uniqueId = prefs.getString("UUID", "alarm");
         TextView txtclose;
         myDialog.setContentView(R.layout.create_alarm_popup);
         alarmName = myDialog.findViewById(R.id.alarmName);
@@ -349,7 +352,7 @@ public class CreateAlarmActivity extends AppCompatActivity implements OnMapReady
                 myDialog.dismiss();
             }
         });
-        reff = FirebaseDatabase.getInstance().getReference().child("alarm");
+        reff = FirebaseDatabase.getInstance().getReference().child(uniqueId);
         reff.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

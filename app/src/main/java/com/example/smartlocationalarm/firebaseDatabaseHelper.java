@@ -1,5 +1,8 @@
 package com.example.smartlocationalarm;
 
+import android.content.Context;
+import android.content.SharedPreferences;
+
 import androidx.annotation.NonNull;
 
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -12,15 +15,22 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class firebaseDatabaseHelper {
+
     private FirebaseDatabase mDatabase;
     private DatabaseReference mDref;
     private List<alarm> alarms = new ArrayList<>();
 
-    public firebaseDatabaseHelper() {
+    //    SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
+//    final String uniqueId = prefs.getString("UUID","alarm");
+    public firebaseDatabaseHelper(Context context) {
+        SharedPreferences prefs = context.getSharedPreferences("prefs", context.MODE_PRIVATE);
+        final String uniqueId = prefs.getString("UUID", "alarm");
         mDatabase = FirebaseDatabase.getInstance();
-        mDref = mDatabase.getReference().child("alarm");
+        mDref = mDatabase.getReference().child(uniqueId);
     }
+
     public void readAlarms(final DataStatus dataStatus) {
         mDref.addValueEventListener(new ValueEventListener() {
             @Override
@@ -71,7 +81,5 @@ public class firebaseDatabaseHelper {
 
         void DataIsDeleted();
     }
-
-
 }
 
