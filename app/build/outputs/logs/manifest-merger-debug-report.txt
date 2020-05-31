@@ -174,7 +174,7 @@ MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\
 	android:name
 		ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:14:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:15:5-75
+ADDED from C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:15:5-76
 MERGED from [com.google.android.libraries.places:places:2.2.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\1e6e0b218ccfeb7492b94f8f5863d2cc\jetified-places-2.2.0\AndroidManifest.xml:10:5-76
 MERGED from [com.google.android.libraries.places:places:2.2.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\1e6e0b218ccfeb7492b94f8f5863d2cc\jetified-places-2.2.0\AndroidManifest.xml:10:5-76
 	android:name

@@ -28,7 +28,7 @@
 19-->C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:14:5-79
 19-->C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:14:22-76
 20    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-20-->C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:15:5-75
+20-->C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:15:5-76
 20-->C:\Users\ABIR\Desktop\New folder (2)\app\src\main\AndroidManifest.xml:15:22-73
 21
 22    <uses-feature
