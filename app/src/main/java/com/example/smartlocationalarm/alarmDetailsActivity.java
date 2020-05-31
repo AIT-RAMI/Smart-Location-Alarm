@@ -12,8 +12,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -44,6 +46,8 @@ public class alarmDetailsActivity extends AppCompatActivity implements OnMapRead
     private ImageButton btn_edit, btn_delete, btn_back;
     private String name, note, radius, key, longitude, latitude;
     private boolean status;
+    private Switch _switch;
+    private Boolean _Statut;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle toggle;
     NavigationView nv;
@@ -123,10 +127,13 @@ public class alarmDetailsActivity extends AppCompatActivity implements OnMapRead
         latitude = getIntent().getStringExtra("latitude");
         status = getIntent().getExtras().getBoolean("status");
 
+
         editName = findViewById(R.id.editName);
         editNotes = findViewById(R.id.editNotes);
         editRadius = findViewById(R.id.editradius);
+        _switch = findViewById(R.id.switch3);
 
+        _switch.setChecked(status);
         editName.setText(name);
         editNotes.setText(note);
         editRadius.setText(radius);
@@ -138,6 +145,17 @@ public class alarmDetailsActivity extends AppCompatActivity implements OnMapRead
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
         final String uniqueId = prefs.getString("UUID", "alarm");
 
+        _switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked == true) {
+                    _Statut = true;
+
+                } else {
+                    _Statut = false;
+                }
+            }
+        });
 
         btn_edit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -152,6 +170,7 @@ public class alarmDetailsActivity extends AppCompatActivity implements OnMapRead
                         alarm.setRadius(editRadius.getText().toString());
                         alarm.setLongitude(longitude);
                         alarm.setLatitude(latitude);
+                        alarm.setStatus(_Statut);
 
                         new firebaseDatabaseHelper(alarmDetailsActivity.this).updateAlarm(key, alarm, new firebaseDatabaseHelper.DataStatus() {
                             @Override
