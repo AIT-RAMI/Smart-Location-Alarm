@@ -10,19 +10,9 @@
     <!-- add the things behind the side bar in the linear layout -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:fontFamily="sans-serif-black"
-            android:gravity="center"
-            android:text="Background"
-            android:textColor="@color/bluedark"
-            android:textSize="24sp"
-            android:textStyle="bold" />
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
