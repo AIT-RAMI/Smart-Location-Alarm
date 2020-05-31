@@ -29,6 +29,7 @@ public class RecyclerView_Config {
     class alarmItemView extends RecyclerView.ViewHolder {
         private TextView name_, note_, radius_;
         private String longitude, latitude;
+        private Boolean status;
 
         private String key;
 
@@ -49,6 +50,7 @@ public class RecyclerView_Config {
                     intent.putExtra("radius", radius_.getText().toString());
                     intent.putExtra("longitude", longitude);
                     intent.putExtra("latitude", latitude);
+                    intent.putExtra("status", status);
                     mContext.startActivity(intent);
 
                 }
@@ -61,6 +63,7 @@ public class RecyclerView_Config {
             radius_.setText(alarm.getRadius());
             longitude = alarm.getLongitude();
             latitude = alarm.getLatitude();
+            status = alarm.getStatus();
             this.key = key;
         }
     }

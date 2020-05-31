@@ -376,6 +376,7 @@ public class CreateAlarmActivity extends AppCompatActivity implements OnMapReady
                     alarm.setRadius(String.valueOf(radius).trim());
                     alarm.setLatitude(String.valueOf(lat));
                     alarm.setLongitude(String.valueOf(log));
+                    alarm.setStatus(true);
                     reff.child(String.valueOf(mid + 1)).setValue(alarm);
                     Toast.makeText(CreateAlarmActivity.this, "saved successfully", Toast.LENGTH_SHORT).show();
                     addNotification(String.valueOf(radius));

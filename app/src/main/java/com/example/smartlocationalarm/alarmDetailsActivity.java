@@ -43,6 +43,7 @@ public class alarmDetailsActivity extends AppCompatActivity implements OnMapRead
     private EditText editName, editNotes, editRadius;
     private ImageButton btn_edit, btn_delete, btn_back;
     private String name, note, radius, key, longitude, latitude;
+    private boolean status;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle toggle;
     NavigationView nv;
@@ -120,6 +121,7 @@ public class alarmDetailsActivity extends AppCompatActivity implements OnMapRead
         radius = getIntent().getStringExtra("radius");
         longitude = getIntent().getStringExtra("longitude");
         latitude = getIntent().getStringExtra("latitude");
+        status = getIntent().getExtras().getBoolean("status");
 
         editName = findViewById(R.id.editName);
         editNotes = findViewById(R.id.editNotes);

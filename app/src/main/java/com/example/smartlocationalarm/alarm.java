@@ -2,17 +2,27 @@ package com.example.smartlocationalarm;
 
 public class alarm {
     public String longitude, latitude, name,notes,radius;
+    public Boolean status;
 
-    public alarm(String longitude, String latitude, String name, String notes, String radius) {
+    public alarm(String longitude, String latitude, String name, String notes, String radius, Boolean status) {
         this.longitude = longitude;
         this.latitude = latitude;
         this.name = name;
         this.notes = notes;
         this.radius = radius;
+        this.status = status;
     }
 
     public alarm() {
 
+    }
+
+    public Boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
     }
 
     public String getNotes() {
