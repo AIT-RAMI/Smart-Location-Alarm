@@ -607,4 +607,11 @@ public class CreateAlarmActivity extends AppCompatActivity implements OnMapReady
         }
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this, CreateAlarmActivity.class);
+        startActivity(intent);
+    }
+
 }

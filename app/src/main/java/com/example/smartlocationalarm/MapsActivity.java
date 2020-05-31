@@ -372,4 +372,11 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this, CreateAlarmActivity.class);
+        startActivity(intent);
+    }
+
+
 }

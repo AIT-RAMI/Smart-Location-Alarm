@@ -246,6 +246,11 @@ public class alarmDetailsActivity extends AppCompatActivity implements OnMapRead
         });
     }
 
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this, CreateAlarmActivity.class);
+        startActivity(intent);
+    }
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
