@@ -43,7 +43,7 @@ import hotchemi.android.rate.AppRate;
 public class alarmDetailsActivity extends AppCompatActivity implements OnMapReadyCallback {
     GoogleMap mMap;
     private EditText editName, editNotes, editRadius;
-    private ImageButton btn_edit, btn_delete, btn_back;
+    private ImageButton btn_edit, btn_delete;
     private String name, note, radius, key, longitude, latitude;
     private boolean status;
     private Switch _switch;
@@ -140,7 +140,6 @@ public class alarmDetailsActivity extends AppCompatActivity implements OnMapRead
 
         btn_delete = findViewById(R.id.deletebtn);
         btn_edit = findViewById(R.id.editBtn);
-        btn_back = findViewById(R.id.backbtn);
 
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
         final String uniqueId = prefs.getString("UUID", "alarm");
@@ -257,14 +256,7 @@ public class alarmDetailsActivity extends AppCompatActivity implements OnMapRead
 
             }
         });
-
-        btn_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-                return;
-            }
-        });
+        
     }
 
     @Override
