@@ -132,16 +132,16 @@ public class SettingsActivity extends AppCompatActivity {
         s1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                } else {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                }
                 state1 = !state1;
                 s1.setChecked(state1);
                 SharedPreferences.Editor ed = pref.edit();
                 ed.putBoolean("s1", state1);
                 ed.apply();
-                if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_NO) {
-                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                } else {
-                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-                }
             }
         });
 
