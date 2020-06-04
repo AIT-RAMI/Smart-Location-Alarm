@@ -43,6 +43,7 @@ import com.google.android.gms.tasks.OnCanceledListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class BackgroundLocationUpdateService extends Service implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener {
@@ -150,7 +151,7 @@ public class BackgroundLocationUpdateService extends Service implements GoogleAp
     }
 
     @Override
-    public void onLocationChanged(Location location) {
+    public void onLocationChanged(final Location location) {
         Log.e(TAG_LOCATION, "Location Changed Latitude : " + location.getLatitude() + "\tLongitude : " + location.getLongitude());
 
         latitude = String.valueOf(location.getLatitude());
@@ -159,13 +160,40 @@ public class BackgroundLocationUpdateService extends Service implements GoogleAp
         if (latitude.equalsIgnoreCase("0.0") && longitude.equalsIgnoreCase("0.0")) {
             requestLocationUpdate();
         } else {
-            // Change those values for test
-            double latDest = 0;
-            double logDest = 0;
-            double radius = 0;
-            if(inRange(latDest, logDest, location.getLatitude(), location.getLongitude(), radius)){
-                Log.e(TAG_LOCATION, "I'm in range! the alarm should sound :)");
-            }
+            // Change those values for
+            //load data
+            new firebaseDatabaseHelper(BackgroundLocationUpdateService.this).readAlarms(new firebaseDatabaseHelper.DataStatus() {
+                @Override
+                public void DataIsLoaded(List<alarm> alarms, List<String> keys) {
+                    for (int i = 0; i < alarms.size(); i++) {
+                        double latDest = Double.valueOf(alarms.get(i).getLatitude());
+                        double logDest = Double.valueOf(alarms.get(i).getLongitude());
+                        double radius = Double.valueOf(alarms.get(i).getRadius());
+                        String Title = String.valueOf(alarms.get(i).getName());
+                        String Note = String.valueOf(alarms.get(i).getNotes());
+                        Boolean status = alarms.get(i).getStatus();
+                        if (inRange(latDest, logDest, location.getLatitude(), location.getLongitude(), radius) && status) {
+                            Log.d(TAG_LOCATION, "I'm in range! the alarm should notify :)");
+                        }
+                    }
+                }
+
+                @Override
+                public void DataIsInserted() {
+
+                }
+
+                @Override
+                public void DataIsUpdated() {
+
+                }
+
+                @Override
+                public void DataIsDeleted() {
+
+                }
+            });
+
             Log.e(TAG_LOCATION, "Latitude : " + location.getLatitude() + "\tLongitude : " + location.getLongitude());
         }
     }
