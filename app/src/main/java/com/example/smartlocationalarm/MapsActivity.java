@@ -24,6 +24,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.biometric.BiometricPrompt;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -50,6 +51,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Executor;
 
 import hotchemi.android.rate.AppRate;
 
@@ -110,7 +112,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-
+    private Executor executor;
+    private BiometricPrompt biometricPrompt;
+    private BiometricPrompt.PromptInfo promptInfo;
     @Override
     public void onMapReady(GoogleMap googleMap) {
         Toast.makeText(this, "Map is Ready", Toast.LENGTH_SHORT).show();
@@ -118,7 +122,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         mMap = googleMap;
 
         if (mLocationPermissionsGranted) {
-            getDeviceLocation();
+            checkingIdentity();
 
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                     != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,
@@ -378,5 +382,47 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         startActivity(intent);
     }
 
+    public void checkingIdentity() {
+        executor = ContextCompat.getMainExecutor(this);
+        biometricPrompt = new BiometricPrompt(MapsActivity.this,
+                executor, new BiometricPrompt.AuthenticationCallback() {
+            @Override
+            public void onAuthenticationError(int errorCode,
+                                              @NonNull CharSequence errString) {
+                super.onAuthenticationError(errorCode, errString);
+                Toast.makeText(getApplicationContext(),
+                        "Erreur d'authentification: " + errString, Toast.LENGTH_SHORT)
+                        .show();
+            }
 
+            @Override
+            public void onAuthenticationSucceeded(
+                    @NonNull BiometricPrompt.AuthenticationResult result) {
+                super.onAuthenticationSucceeded(result);
+                Toast.makeText(getApplicationContext(),
+                        "C'est bien vous!", Toast.LENGTH_SHORT).show();
+                getDeviceLocation();
+            }
+
+            @Override
+            public void onAuthenticationFailed() {
+                super.onAuthenticationFailed();
+                Toast.makeText(getApplicationContext(), "Authentication échouée !",
+                        Toast.LENGTH_SHORT)
+                        .show();
+            }
+        });
+
+        rePromptInfo();
+    }
+
+    public void rePromptInfo() {
+        promptInfo = new BiometricPrompt.PromptInfo.Builder()
+                .setTitle("Only you can see your alarms !")
+                .setSubtitle("Log in using your fingerprint")
+                .setDeviceCredentialAllowed(true)
+                .build();
+
+        biometricPrompt.authenticate(promptInfo);
+    }
 }

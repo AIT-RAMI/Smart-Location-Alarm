@@ -104,7 +104,7 @@ public class alarmListActivity extends AppCompatActivity {
                                               @NonNull CharSequence errString) {
                 super.onAuthenticationError(errorCode, errString);
                 Toast.makeText(getApplicationContext(),
-                        "Authentication error: " + errString, Toast.LENGTH_SHORT)
+                        "Erreur d'authentification:" + errString, Toast.LENGTH_SHORT)
                         .show();
             }
 
@@ -113,14 +113,14 @@ public class alarmListActivity extends AppCompatActivity {
                     @NonNull BiometricPrompt.AuthenticationResult result) {
                 super.onAuthenticationSucceeded(result);
                 Toast.makeText(getApplicationContext(),
-                        "Authentication succeeded!", Toast.LENGTH_SHORT).show();
+                        "C'est bien vous!", Toast.LENGTH_SHORT).show();
                 showAlarms();
             }
 
             @Override
             public void onAuthenticationFailed() {
                 super.onAuthenticationFailed();
-                Toast.makeText(getApplicationContext(), "Authentication failed",
+                Toast.makeText(getApplicationContext(), "Authentication échouée !",
                         Toast.LENGTH_SHORT)
                         .show();
             }
