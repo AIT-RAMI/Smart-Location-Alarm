@@ -20,8 +20,8 @@
         android:textStyle="bold" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:layout_height="238dp"
         android:layout_marginTop="15dp"
         android:orientation="vertical">
 
@@ -30,9 +30,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="12dp"
             android:layout_marginBottom="-5dp"
+            android:fontFamily="sans-serif-condensed-medium"
             android:text="Alarm name :"
-            android:fontFamily="sans-serif-black"
-            android:textColor="#1A237E" />
+            android:textColor="#1A237E"
+            android:textSize="13dp" />
 
         <EditText
             android:id="@+id/alarmName"
@@ -41,18 +42,19 @@
             android:layout_gravity="center_horizontal"
             android:layout_margin="10dp"
             android:layout_marginTop="10dp"
-            android:fontFamily="sans-serif-condensed-light"
+            android:fontFamily="sans-serif-condensed-medium"
             android:textColor="#1A237E"
-            android:textSize="10dp" />
+            android:textSize="11dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="12dp"
             android:layout_marginBottom="-5dp"
+            android:fontFamily="sans-serif-condensed-medium"
             android:text="Notes :"
-            android:fontFamily="sans-serif-black"
-            android:textColor="#1A237E" />
+            android:textColor="#1A237E"
+            android:textSize="13dp" />
 
         <EditText
             android:id="@+id/alarmNotes"
@@ -61,9 +63,10 @@
             android:layout_gravity="center_horizontal"
             android:layout_margin="10dp"
             android:layout_marginTop="10dp"
-            android:fontFamily="sans-serif-condensed-light"
+            android:fontFamily="sans-serif-condensed-medium"
             android:maxLines="10"
-            android:textColor="#1A237E" />
+            android:textColor="#1A237E"
+            android:textSize="11dp" />
 
         <TextView
             android:id="@+id/radiusText"
@@ -71,8 +74,9 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="12dp"
             android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="13dp"
             android:text="Radius : 0 meters"
-            android:fontFamily="sans-serif-black"
             android:textColor="#1A237E" />
 
         <SeekBar
