@@ -6,10 +6,13 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.biometric.BiometricPrompt;
+import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,6 +20,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.List;
+import java.util.concurrent.Executor;
 
 import hotchemi.android.rate.AppRate;
 
@@ -25,6 +29,9 @@ public class alarmListActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle toggle;
     NavigationView nv;
+    private Executor executor;
+    private BiometricPrompt biometricPrompt;
+    private BiometricPrompt.PromptInfo promptInfo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -89,6 +96,74 @@ public class alarmListActivity extends AppCompatActivity {
                 }
             }
         });
+        executor = ContextCompat.getMainExecutor(this);
+        biometricPrompt = new BiometricPrompt(alarmListActivity.this,
+                executor, new BiometricPrompt.AuthenticationCallback() {
+            @Override
+            public void onAuthenticationError(int errorCode,
+                                              @NonNull CharSequence errString) {
+                super.onAuthenticationError(errorCode, errString);
+                Toast.makeText(getApplicationContext(),
+                        "Authentication error: " + errString, Toast.LENGTH_SHORT)
+                        .show();
+            }
+
+            @Override
+            public void onAuthenticationSucceeded(
+                    @NonNull BiometricPrompt.AuthenticationResult result) {
+                super.onAuthenticationSucceeded(result);
+                Toast.makeText(getApplicationContext(),
+                        "Authentication succeeded!", Toast.LENGTH_SHORT).show();
+                showAlarms();
+            }
+
+            @Override
+            public void onAuthenticationFailed() {
+                super.onAuthenticationFailed();
+                Toast.makeText(getApplicationContext(), "Authentication failed",
+                        Toast.LENGTH_SHORT)
+                        .show();
+            }
+        });
+
+        rePromptInfo();
+    }
+
+    private void existing() {
+        Intent intent = new Intent(this, MapsActivity.class);
+        this.startActivity(intent);
+    }
+
+    private void clickCreate() {
+        Intent intent = new Intent(this, PermissionActivity.class);
+        this.startActivity(intent);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (toggle.onOptionsItemSelected(item)) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this, CreateAlarmActivity.class);
+        startActivity(intent);
+    }
+
+    public void rePromptInfo() {
+        promptInfo = new BiometricPrompt.PromptInfo.Builder()
+                .setTitle("Only you can see your alarms !")
+                .setSubtitle("Log in using your fingerprint")
+                .setDeviceCredentialAllowed(true)
+                .build();
+
+        biometricPrompt.authenticate(promptInfo);
+    }
+
+    public void showAlarms() {
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView_alarms);
         try {
             recyclerView.addItemDecoration(new myDeviderItemDecoration(LinearLayoutManager.VERTICAL, this, 30));
@@ -118,30 +193,6 @@ public class alarmListActivity extends AppCompatActivity {
 
             }
         });
-    }
-
-    private void existing() {
-        Intent intent = new Intent(this, MapsActivity.class);
-        this.startActivity(intent);
-    }
-
-    private void clickCreate() {
-        Intent intent = new Intent(this, PermissionActivity.class);
-        this.startActivity(intent);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (toggle.onOptionsItemSelected(item)) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public void onBackPressed() {
-        Intent intent = new Intent(this, CreateAlarmActivity.class);
-        startActivity(intent);
     }
 
 }
