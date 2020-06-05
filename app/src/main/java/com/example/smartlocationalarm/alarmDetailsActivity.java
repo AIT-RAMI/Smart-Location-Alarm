@@ -261,7 +261,7 @@ public class alarmDetailsActivity extends AppCompatActivity implements OnMapRead
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(this, CreateAlarmActivity.class);
+        Intent intent = new Intent(this, alarmListActivity.class);
         startActivity(intent);
     }
 

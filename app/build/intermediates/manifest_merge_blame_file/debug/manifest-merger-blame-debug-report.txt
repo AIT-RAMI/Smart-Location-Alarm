@@ -6,35 +6,35 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml
+8-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml
+9-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml
 10    <!--
 11         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
 12         Google Maps Android API v2, but you must specify either coarse or fine
 13         location permissions for the 'MyLocation' functionality.
 14    -->
 15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-15-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:10:5-79
-15-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:10:22-76
+15-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:10:5-79
+15-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:10:22-76
 16    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
-16-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:11:5-82
-16-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:11:22-79
+16-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:11:5-82
+16-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:11:22-79
 17    <uses-permission android:name="android.permission.INTERNET" />
-17-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:12:5-67
-17-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:12:22-64
+17-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:12:5-67
+17-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:12:22-64
 18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-18-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:13:5-79
-18-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:13:22-76
+18-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:13:5-79
+18-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:13:22-76
 19    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-19-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:14:5-76
-19-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:14:22-73
+19-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:14:5-76
+19-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:14:22-73
 20    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-20-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:15:5-77
-20-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:15:22-74
+20-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:15:5-77
+20-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:15:22-74
 21    <uses-permission android:name="android.permission.VIBRATE" />
-21-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:16:5-66
-21-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:16:22-63
+21-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:16:5-66
+21-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:16:22-63
 22    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
 22-->[androidx.biometric:biometric:1.0.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\3c36ac32f064037aff12d63655dd93bb\biometric-1.0.1\AndroidManifest.xml:24:5-72
 22-->[androidx.biometric:biometric:1.0.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\3c36ac32f064037aff12d63655dd93bb\biometric-1.0.1\AndroidManifest.xml:24:22-69
@@ -60,33 +60,33 @@
 31-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:26:22-107
 32
 33    <application
-33-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:18:5-78:19
+33-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:18:5-78:19
 34        android:name="com.example.smartlocationalarm.MyApplication"
-34-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:19:9-38
+34-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:19:9-38
 35        android:allowBackup="true"
-35-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:20:9-35
+35-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:20:9-35
 36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 36-->[androidx.core:core:1.2.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\c6f4260131458ccd0b15b1a20cb8065e\core-1.2.0\AndroidManifest.xml:24:18-86
 37        android:debuggable="true"
 38        android:icon="@mipmap/ic_launcher"
-38-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:21:9-43
+38-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:21:9-43
 39        android:label="@string/app_name"
-39-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:22:9-41
+39-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:22:9-41
 40        android:roundIcon="@mipmap/ic_launcher_round"
-40-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:23:9-54
+40-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:23:9-54
 41        android:supportsRtl="true"
-41-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:24:9-35
+41-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:24:9-35
 42        android:testOnly="true"
 43        android:theme="@style/AppTheme" >
-43-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:25:9-40
+43-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:25:9-40
 44        <service
-44-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:28:9-31:39
+44-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:28:9-31:39
 45            android:name="com.example.smartlocationalarm.BackgroundLocationUpdateService"
-45-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:29:13-60
+45-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:29:13-60
 46            android:enabled="true"
-46-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:30:13-35
+46-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:30:13-35
 47            android:exported="true" />
-47-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:31:13-36
+47-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:31:13-36
 48        <!--
 49             The API key for Google Maps-based APIs is defined as a string resource.
 50             (See the file "res/values/google_maps_api.xml").
@@ -96,77 +96,77 @@
 54             You can define the keys for the debug and release targets in src/debug/ and src/release/.
 55        -->
 56        <meta-data
-56-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:40:9-42:55
+56-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:40:9-42:55
 57            android:name="com.google.android.geo.API_KEY"
-57-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:41:13-58
+57-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:41:13-58
 58            android:value="@string/google_maps_key" />
-58-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:42:13-52
+58-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:42:13-52
 59
 60        <activity
-60-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:44:9-46:45
+60-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:44:9-46:45
 61            android:name="com.example.smartlocationalarm.alarmDetailsActivity"
-61-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:45:13-49
+61-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:45:13-49
 62            android:label="Alarm Details" />
-62-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:46:13-42
+62-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:46:13-42
 63        <activity
-63-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:47:9-49:42
+63-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:47:9-49:42
 64            android:name="com.example.smartlocationalarm.alarmListActivity"
-64-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:48:13-46
+64-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:48:13-46
 65            android:label="Alarm List" />
-65-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:49:13-39
+65-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:49:13-39
 66        <activity
-66-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:50:9-52:40
+66-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:50:9-52:40
 67            android:name="com.example.smartlocationalarm.SettingsActivity"
-67-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:51:13-45
+67-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:51:13-45
 68            android:label="Settings" />
-68-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:52:13-37
+68-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:52:13-37
 69        <activity
-69-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:53:9-55:37
+69-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:53:9-55:37
 70            android:name="com.example.smartlocationalarm.AboutActivity"
-70-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:54:13-42
+70-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:54:13-42
 71            android:label="About" />
-71-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:55:13-34
+71-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:55:13-34
 72
 73        <meta-data
-73-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:57:9-59:69
+73-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:57:9-59:69
 74            android:name="com.google.android.gms.version"
-74-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:58:13-58
+74-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:58:13-58
 75            android:value="@integer/google_play_services_version" />
-75-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:59:13-66
+75-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:59:13-66
 76
 77        <activity
-77-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:61:9-63:59
+77-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:61:9-63:59
 78            android:name="com.example.smartlocationalarm.MapsActivity"
-78-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:62:13-41
+78-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:62:13-41
 79            android:label="@string/title_activity_maps" />
-79-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:63:13-56
+79-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:63:13-56
 80        <activity
-80-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:64:9-66:67
+80-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:64:9-66:67
 81            android:name="com.example.smartlocationalarm.CreateAlarmActivity"
-81-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:65:13-48
+81-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:65:13-48
 82            android:label="@string/title_activity_create_alarm" />
-82-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:66:13-64
+82-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:66:13-64
 83        <activity android:name="com.example.smartlocationalarm.PermissionActivity" />
-83-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:67:9-56
-83-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:67:19-53
+83-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:67:9-56
+83-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:67:19-53
 84        <activity
-84-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:68:9-70:36
+84-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:68:9-70:36
 85            android:name="com.example.smartlocationalarm.Welcome_Activity"
-85-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:69:13-45
+85-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:69:13-45
 86            android:label="Home" />
-86-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:70:13-33
+86-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:70:13-33
 87        <activity android:name="com.example.smartlocationalarm.MainActivity" >
-87-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:71:9-77:20
-87-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:71:19-47
+87-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:71:9-77:20
+87-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:71:19-47
 88            <intent-filter>
-88-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:72:13-76:29
+88-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:72:13-76:29
 89                <action android:name="android.intent.action.MAIN" />
-89-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:73:17-69
-89-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:73:25-66
+89-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:73:17-69
+89-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:73:25-66
 90
 91                <category android:name="android.intent.category.LAUNCHER" />
-91-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:75:17-77
-91-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:75:27-74
+91-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:75:17-77
+91-->C:\Users\ABIR\Desktop\New folder (3)\app\src\main\AndroidManifest.xml:75:27-74
 92            </intent-filter>
 93        </activity>
 94        <activity
