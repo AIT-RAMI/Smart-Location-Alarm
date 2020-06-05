@@ -210,22 +210,23 @@ public class BackgroundLocationUpdateService extends Service implements GoogleAp
                         String Title = String.valueOf(alarms.get(i).getName());
                         String Note = String.valueOf(alarms.get(i).getNotes());
                         Boolean status = alarms.get(i).getStatus();
-                        if (test(latDest, logDest, location.getLatitude(), location.getLongitude())<radius) {
-                            Log.d(TAG_LOCATION, "I'm in range! the alarm should notify :)");
-                            /* Notification Code*/
-                            final int notificationId = 1111;
+                        if (test(latDest, logDest, location.getLatitude(), location.getLongitude())<=radius) {
+                            if (status) {
+                                Log.d(TAG_LOCATION, "I'm in range! the alarm should notify :)");
+                                /* Notification Code*/
+                                final int notificationId = 1111;
 
-                            // notificationId is a unique int for each notification that you must define
+                                // notificationId is a unique int for each notification that you must define
 
-                            builder.setContentTitle(Title);
-                            builder.setContentText(Note);
-                            final Notification notification = builder.build();
-                            notification.defaults |= Notification.DEFAULT_SOUND;
+                                builder.setContentTitle(Title);
+                                builder.setContentText(Note);
+                                final Notification notification = builder.build();
+                                notification.defaults |= Notification.DEFAULT_SOUND;
 
-                            notificationManager.notify(notificationId, notification);
-                            ringtone.play();
+                                notificationManager.notify(notificationId, notification);
+                                ringtone.play();
 
-                            //notificationManager.cancel(notificationId);
+                                //notificationManager.cancel(notificationId);
 
 //                            alarm alarm = new alarm();
 //                            alarm.setName(alarms.get(i).getName());
@@ -255,7 +256,8 @@ public class BackgroundLocationUpdateService extends Service implements GoogleAp
 //
 //                                }
 //                            });
-                            /* end Notification Code */
+                                /* end Notification Code */
+                            }
                         }
                     }
                 }
