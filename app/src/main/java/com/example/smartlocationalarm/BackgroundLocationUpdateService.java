@@ -210,11 +210,13 @@ public class BackgroundLocationUpdateService extends Service implements GoogleAp
                         String Title = String.valueOf(alarms.get(i).getName());
                         String Note = String.valueOf(alarms.get(i).getNotes());
                         Boolean status = alarms.get(i).getStatus();
-                        if (inRange(latDest, logDest, location.getLatitude(), location.getLongitude(), radius) && status) {
+                        if (test(latDest, logDest, location.getLatitude(), location.getLongitude())<radius) {
                             Log.d(TAG_LOCATION, "I'm in range! the alarm should notify :)");
                             /* Notification Code*/
                             final int notificationId = 1111;
+
                             // notificationId is a unique int for each notification that you must define
+
                             builder.setContentTitle(Title);
                             builder.setContentText(Note);
                             final Notification notification = builder.build();
@@ -223,34 +225,36 @@ public class BackgroundLocationUpdateService extends Service implements GoogleAp
                             notificationManager.notify(notificationId, notification);
                             ringtone.play();
 
-                            alarm alarm = new alarm();
-                            alarm.setName(alarms.get(i).getName());
-                            alarm.setNotes(alarms.get(i).getNotes());
-                            alarm.setRadius(alarms.get(i).getRadius());
-                            alarm.setLongitude(alarms.get(i).getLongitude());
-                            alarm.setLatitude(alarms.get(i).getLatitude());
-                            alarm.setStatus(false);
+                            //notificationManager.cancel(notificationId);
 
-                            new firebaseDatabaseHelper(BackgroundLocationUpdateService.this).updateAlarm(String.valueOf(i), alarm, new firebaseDatabaseHelper.DataStatus() {
-                                @Override
-                                public void DataIsLoaded(List<com.example.smartlocationalarm.alarm> alarms, List<String> keys) {
-
-                                }
-
-                                @Override
-                                public void DataIsInserted() {
-
-                                }
-
-                                @Override
-                                public void DataIsUpdated() {
-                                }
-
-                                @Override
-                                public void DataIsDeleted() {
-
-                                }
-                            });
+//                            alarm alarm = new alarm();
+//                            alarm.setName(alarms.get(i).getName());
+//                            alarm.setNotes(alarms.get(i).getNotes());
+//                            alarm.setRadius(alarms.get(i).getRadius());
+//                            alarm.setLongitude(alarms.get(i).getLongitude());
+//                            alarm.setLatitude(alarms.get(i).getLatitude());
+//                            alarm.setStatus(false);
+//
+//                            new firebaseDatabaseHelper(BackgroundLocationUpdateService.this).updateAlarm(String.valueOf(i), alarm, new firebaseDatabaseHelper.DataStatus() {
+//                                @Override
+//                                public void DataIsLoaded(List<com.example.smartlocationalarm.alarm> alarms, List<String> keys) {
+//
+//                                }
+//
+//                                @Override
+//                                public void DataIsInserted() {
+//
+//                                }
+//
+//                                @Override
+//                                public void DataIsUpdated() {
+//                                }
+//
+//                                @Override
+//                                public void DataIsDeleted() {
+//
+//                                }
+//                            });
                             /* end Notification Code */
                         }
                     }
@@ -390,5 +394,18 @@ public class BackgroundLocationUpdateService extends Service implements GoogleAp
         double d = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
         if(d < radius) return true;
         else return false;
+    }
+
+    public Double test(Double lat1, Double lon1, Double lat2, Double lon2) {
+        double earthRadius = 6371;
+        double latDiff = Math.toRadians(lat2-lat1);
+        double lngDiff = Math.toRadians(lon2-lon1);
+        double a = Math.sin(latDiff /2) * Math.sin(latDiff /2) +
+                Math.cos(Math.toRadians(lat1))*
+                        Math.cos(Math.toRadians(lat2))* Math.sin(lngDiff /2) *
+                        Math.sin(lngDiff /2);
+        double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        double distance = c;
+        return distance;
     }
 }
