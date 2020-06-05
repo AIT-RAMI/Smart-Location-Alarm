@@ -21,6 +21,7 @@ import android.os.Handler;
 import android.os.IBinder;
 import android.os.Looper;
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -209,7 +210,7 @@ public class BackgroundLocationUpdateService extends Service implements GoogleAp
                         String Title = String.valueOf(alarms.get(i).getName());
                         String Note = String.valueOf(alarms.get(i).getNotes());
                         Boolean status = alarms.get(i).getStatus();
-                        if (inRange(latDest, logDest, location.getLatitude(), location.getLongitude(), radius) && status) {
+                        while (inRange(latDest, logDest, location.getLatitude(), location.getLongitude(), radius) && status) {
                             Log.d(TAG_LOCATION, "I'm in range! the alarm should notify :)");
                             /* Notification Code*/
                             int notificationId = 1111;
@@ -221,12 +222,47 @@ public class BackgroundLocationUpdateService extends Service implements GoogleAp
 
                             notificationManager.notify(notificationId, notification);
                             ringtone.play();
-                            alarms.get(i).setStatus(false);
+                            try {
+                                TimeUnit.SECONDS.sleep(30);
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
+
+                            alarm alarm = new alarm();
+                            alarm.setName(alarms.get(i).getName());
+                            alarm.setNotes(alarms.get(i).getNotes());
+                            alarm.setRadius(alarms.get(i).getRadius());
+                            alarm.setLongitude(alarms.get(i).getLongitude());
+                            alarm.setLatitude(alarms.get(i).getLatitude());
+                            alarm.setStatus(false);
+
+                            new firebaseDatabaseHelper(BackgroundLocationUpdateService.this).updateAlarm(String.valueOf(i), alarm, new firebaseDatabaseHelper.DataStatus() {
+                                @Override
+                                public void DataIsLoaded(List<com.example.smartlocationalarm.alarm> alarms, List<String> keys) {
+
+                                }
+
+                                @Override
+                                public void DataIsInserted() {
+
+                                }
+
+                                @Override
+                                public void DataIsUpdated() {
+//                                    ringtone.stop();
+//                                    notificationManager.cancelAll();
+
+                                }
+
+                                @Override
+                                public void DataIsDeleted() {
+
+                                }
+                            });
                             /* end Notification Code */
                         }
                     }
                 }
-
                 @Override
                 public void DataIsInserted() {
 

@@ -6,18 +6,21 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="tag" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="I'm" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff342391-9bc2-44fb-8ed1-dff29e0724ec" name="Default Changelist" comment="">
+    <list default="true" id="06fcd505-5e20-46a6-b2a1-9198b8c791f5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/smartlocationalarm/BackgroundLocationUpdateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/smartlocationalarm/BackgroundLocationUpdateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +28,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="10033354" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="C509XXEH81150241" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -38,68 +41,14 @@
       </state>
     </system>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="layoutResourceFile_vertical" />
-        <option value="resourceFile" />
-        <option value="Class" />
-        <option value="layoutResourceFile" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="adnaneaabbar" />
-        <option value="Adnane Aabbar" />
-      </list>
-    </option>
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1afPmJl91uLziWTKyRPynBHXkpq" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1ctuRazzhxRLoY64L7EzkJY3C0B" />
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="d20dcce1" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-03-24T21:08:03.658Z" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TPS-ANDROID/TP4_GL1_AABBAR ADNANE/TP2" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.17" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="http.proxy" />
-  </component>
-  <component name="PsdUISettings">
-    <option name="MODULE_TAB" value="Properties" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\res\raw" />
-      <recent name="C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\res\drawable-mdpi" />
-      <recent name="C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\res\drawable" />
-      <recent name="C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\res\drawable-xxhdpi" />
-      <recent name="C:\Users\aabba\Desktop\smart_location_alarm\app\src\main\res\drawable" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.example.smartlocationalarm" />
-    </key>
-    <key name="android.template.packageName">
-      <recent name="com.example.smartlocationalarm" />
-    </key>
-    <key name="android.template.parentActivityClass">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\aabba\Desktop\Smart-Location-Alarm\app\src\main\res\drawable" />
-    </key>
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -175,259 +124,16 @@
   </component>
   <component name="SvnConfiguration">
     <configuration />
-    <myIsUseDefaultProxy>true</myIsUseDefaultProxy>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ff342391-9bc2-44fb-8ed1-dff29e0724ec" name="Default Changelist" comment="" />
-      <created>1583760729846</created>
+      <changelist id="06fcd505-5e20-46a6-b2a1-9198b8c791f5" name="Default Changelist" comment="" />
+      <created>1591360204485</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1583760729846</updated>
+      <updated>1591360204485</updated>
     </task>
-    <task id="LOCAL-00001" summary="création de notifications">
-      <created>1585085762485</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1585085762486</updated>
-    </task>
-    <task id="LOCAL-00002" summary="set up env">
-      <created>1585516034257</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1585516034257</updated>
-    </task>
-    <task id="LOCAL-00003" summary="setting up some changes and merge">
-      <created>1587128660092</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1587128660092</updated>
-    </task>
-    <task id="LOCAL-00004" summary="popup window">
-      <created>1587160392941</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1587160392942</updated>
-    </task>
-    <task id="LOCAL-00005" summary="notification cleaning">
-      <created>1588873690283</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1588873690284</updated>
-    </task>
-    <task id="LOCAL-00006" summary="started on the navigation drawer side bar">
-      <created>1588877779924</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1588877779924</updated>
-    </task>
-    <task id="LOCAL-00007" summary="started on the navigation drawer side bar">
-      <created>1589552546615</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1589552546615</updated>
-    </task>
-    <task id="LOCAL-00008" summary="AlarmListView">
-      <created>1589555577017</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1589555577017</updated>
-    </task>
-    <task id="LOCAL-00009" summary="rating in place">
-      <created>1590259357336</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1590259357336</updated>
-    </task>
-    <task id="LOCAL-00010" summary="settings in place">
-      <created>1590259617275</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1590259617275</updated>
-    </task>
-    <task id="LOCAL-00011" summary="share in place">
-      <created>1590260250827</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1590260250827</updated>
-    </task>
-    <task id="LOCAL-00012" summary="work moved to drawer">
-      <created>1590260587810</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1590260587810</updated>
-    </task>
-    <task id="LOCAL-00013" summary="clean up for the drawer">
-      <created>1590261190921</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1590261190921</updated>
-    </task>
-    <task id="LOCAL-00014" summary="accessibility fontFamily">
-      <created>1590609633199</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1590609633199</updated>
-    </task>
-    <task id="LOCAL-00015" summary="accessibility textSize">
-      <created>1590609806626</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1590609806626</updated>
-    </task>
-    <task id="LOCAL-00016" summary="accessibility itemDivider">
-      <created>1590611958195</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1590611958196</updated>
-    </task>
-    <task id="LOCAL-00017" summary="existing alarms fix">
-      <created>1590613381407</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1590613381407</updated>
-    </task>
-    <task id="LOCAL-00018" summary="cleaning">
-      <created>1590613664322</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1590613664322</updated>
-    </task>
-    <task id="LOCAL-00019" summary="accessibility contentDescription">
-      <created>1590671703320</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1590671703320</updated>
-    </task>
-    <task id="LOCAL-00020" summary="notification when alarm created">
-      <created>1590678365410</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1590678365410</updated>
-    </task>
-    <task id="LOCAL-00021" summary="navigDrawer on Settings">
-      <created>1590875854739</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1590875854739</updated>
-    </task>
-    <task id="LOCAL-00022" summary="navigDrawer on About">
-      <created>1590876028712</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1590876028712</updated>
-    </task>
-    <task id="LOCAL-00023" summary="navigDrawer on alarmDetails">
-      <created>1590876978560</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1590876978560</updated>
-    </task>
-    <task id="LOCAL-00024" summary="navigDrawer on alarmList">
-      <created>1590877213112</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1590877213112</updated>
-    </task>
-    <task id="LOCAL-00025" summary="navigDrawer on createAlarm">
-      <created>1590878281463</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1590878281463</updated>
-    </task>
-    <task id="LOCAL-00026" summary="navigDrawer on maps">
-      <created>1590879250221</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1590879250221</updated>
-    </task>
-    <task id="LOCAL-00027" summary="header for navigation drawer">
-      <created>1590958588656</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1590958588656</updated>
-    </task>
-    <task id="LOCAL-00028" summary="background">
-      <created>1590959750033</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1590959750033</updated>
-    </task>
-    <task id="LOCAL-00029" summary="background edited">
-      <created>1590959989881</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1590959989881</updated>
-    </task>
-    <task id="LOCAL-00030" summary="imperial system cleanup">
-      <created>1591281945455</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1591281945455</updated>
-    </task>
-    <task id="LOCAL-00031" summary="checking biometrics">
-      <created>1591282523374</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1591282523374</updated>
-    </task>
-    <task id="LOCAL-00032" summary="added biometrics security for alarms">
-      <created>1591285007520</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1591285007520</updated>
-    </task>
-    <task id="LOCAL-00033" summary="dark mode fixed bug">
-      <created>1591286679191</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1591286679191</updated>
-    </task>
-    <option name="localTasksCounter" value="34" />
     <servers />
-  </component>
-  <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
-      <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -441,50 +147,5 @@
         </entry>
       </map>
     </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="rating in place" />
-    <MESSAGE value="settings in place" />
-    <MESSAGE value="share in place" />
-    <MESSAGE value="work moved to drawer" />
-    <MESSAGE value="clean up for the drawer" />
-    <MESSAGE value="accessibility fontFamily" />
-    <MESSAGE value="accessibility textSize" />
-    <MESSAGE value="accessibility itemDivider" />
-    <MESSAGE value="existing alarms fix" />
-    <MESSAGE value="cleaning" />
-    <MESSAGE value="accessibility contentDescription" />
-    <MESSAGE value="notification when alarm created" />
-    <MESSAGE value="navigDrawer on Settings" />
-    <MESSAGE value="navigDrawer on About" />
-    <MESSAGE value="navigDrawer on alarmDetails" />
-    <MESSAGE value="navigDrawer on alarmList" />
-    <MESSAGE value="navigDrawer on createAlarm" />
-    <MESSAGE value="navigDrawer on maps" />
-    <MESSAGE value="header for navigation drawer" />
-    <MESSAGE value="background" />
-    <MESSAGE value="background edited" />
-    <MESSAGE value="imperial system cleanup" />
-    <MESSAGE value="checking biometrics" />
-    <MESSAGE value="added biometrics security for alarms" />
-    <MESSAGE value="dark mode fixed bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="dark mode fixed bug" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
