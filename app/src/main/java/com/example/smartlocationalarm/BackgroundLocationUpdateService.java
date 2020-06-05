@@ -174,7 +174,8 @@ public class BackgroundLocationUpdateService extends Service implements GoogleAp
             // Create an explicit intent for an Activity in your app
             Intent intent = new Intent(this, alarmListActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
+            intent.putExtra("id", 111111);
+            PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
             final Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
             final NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
                     .setSmallIcon(R.drawable.ic_alarms)
@@ -197,6 +198,7 @@ public class BackgroundLocationUpdateService extends Service implements GoogleAp
                         .setUsage(AudioAttributes.USAGE_NOTIFICATION)
                         .build();
                 notificationChannel.setSound(alarmSound, attributes);
+
             }
             final NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
 
@@ -225,6 +227,8 @@ public class BackgroundLocationUpdateService extends Service implements GoogleAp
 
                                 notificationManager.notify(notificationId, notification);
                                 ringtone.play();
+
+                                ((MyApplication) getApplication()).setId("Put Id Heere");
 
                                 //notificationManager.cancel(notificationId);
 

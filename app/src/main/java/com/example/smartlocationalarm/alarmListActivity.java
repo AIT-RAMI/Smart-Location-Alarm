@@ -96,6 +96,18 @@ public class alarmListActivity extends AppCompatActivity {
                 }
             }
         });
+        showAlarms();
+
+        // treat id heeere
+        String s = ((MyApplication) this.getApplication()).getId();
+        Toast.makeText(getApplicationContext(),
+                "id: " + s, Toast.LENGTH_SHORT)
+                .show();
+        // After removing the alarm set
+
+
+        /*
+
         executor = ContextCompat.getMainExecutor(this);
         biometricPrompt = new BiometricPrompt(alarmListActivity.this,
                 executor, new BiometricPrompt.AuthenticationCallback() {
@@ -112,7 +124,7 @@ public class alarmListActivity extends AppCompatActivity {
             public void onAuthenticationSucceeded(
                     @NonNull BiometricPrompt.AuthenticationResult result) {
                 super.onAuthenticationSucceeded(result);
-                Toast.makeText(getApplicationContext(),
+               /* Toast.makeText(getApplicationContext(),
                         "C'est bien vous!", Toast.LENGTH_SHORT).show();
                 showAlarms();
             }
@@ -126,7 +138,25 @@ public class alarmListActivity extends AppCompatActivity {
             }
         });
 
-        rePromptInfo();
+        rePromptInfo();*/
+    }
+
+    @Override
+    public void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        this.setIntent(intent);
+        int id;
+
+        if (intent != null) {
+            id = intent.getExtras().getInt("id");
+            Toast.makeText(getApplicationContext(),
+                    "id: " + id, Toast.LENGTH_SHORT)
+                    .show();
+        } else {
+            Toast.makeText(getApplicationContext(),
+                    "intent is null  ", Toast.LENGTH_SHORT)
+                    .show();
+        }
     }
 
     private void existing() {

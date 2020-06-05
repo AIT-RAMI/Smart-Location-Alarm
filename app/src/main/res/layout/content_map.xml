@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/searchBar"
         android:layout_margin="20dp"
-        app:mt_navIconEnabled="true"
+        app:mt_navIconEnabled="false"
         android:elevation="5dp"
         android:outlineProvider="bounds"
         app:mt_placeholder="Where do you want to go?"/>
