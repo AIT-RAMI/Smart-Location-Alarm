@@ -213,20 +213,15 @@ public class BackgroundLocationUpdateService extends Service implements GoogleAp
                         while (inRange(latDest, logDest, location.getLatitude(), location.getLongitude(), radius) && status) {
                             Log.d(TAG_LOCATION, "I'm in range! the alarm should notify :)");
                             /* Notification Code*/
-                            int notificationId = 1111;
+                            final int notificationId = 1111;
                             // notificationId is a unique int for each notification that you must define
                             builder.setContentTitle(Title);
                             builder.setContentText(Note);
-                            Notification notification = builder.build();
+                            final Notification notification = builder.build();
                             notification.defaults |= Notification.DEFAULT_SOUND;
 
                             notificationManager.notify(notificationId, notification);
                             ringtone.play();
-                            try {
-                                TimeUnit.SECONDS.sleep(30);
-                            } catch (InterruptedException e) {
-                                e.printStackTrace();
-                            }
 
                             alarm alarm = new alarm();
                             alarm.setName(alarms.get(i).getName());
@@ -249,9 +244,6 @@ public class BackgroundLocationUpdateService extends Service implements GoogleAp
 
                                 @Override
                                 public void DataIsUpdated() {
-//                                    ringtone.stop();
-//                                    notificationManager.cancelAll();
-
                                 }
 
                                 @Override
