@@ -425,4 +425,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         biometricPrompt.authenticate(promptInfo);
     }
+
+    public void saveCredentials() {
+
+    }
 }

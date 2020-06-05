@@ -57,10 +57,18 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name="com.example.smartlocationalarm.alarmDetailsActivity" />
-        <activity android:name="com.example.smartlocationalarm.alarmListActivity" />
-        <activity android:name="com.example.smartlocationalarm.SettingsActivity" />
-        <activity android:name="com.example.smartlocationalarm.AboutActivity" />
+        <activity
+            android:name="com.example.smartlocationalarm.alarmDetailsActivity"
+            android:label="Alarm Details" />
+        <activity
+            android:name="com.example.smartlocationalarm.alarmListActivity"
+            android:label="Alarm List" />
+        <activity
+            android:name="com.example.smartlocationalarm.SettingsActivity"
+            android:label="Settings" />
+        <activity
+            android:name="com.example.smartlocationalarm.AboutActivity"
+            android:label="About" />
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -73,7 +81,9 @@
             android:name="com.example.smartlocationalarm.CreateAlarmActivity"
             android:label="@string/title_activity_create_alarm" />
         <activity android:name="com.example.smartlocationalarm.PermissionActivity" />
-        <activity android:name="com.example.smartlocationalarm.Welcome_Activity" />
+        <activity
+            android:name="com.example.smartlocationalarm.Welcome_Activity"
+            android:label="Home" />
         <activity android:name="com.example.smartlocationalarm.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Smart Location Alarm</string>
-    <string name="title_activity_create_alarm">Map</string>
-    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_create_alarm">Create Alarm</string>
+    <string name="title_activity_maps">Tracking</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
