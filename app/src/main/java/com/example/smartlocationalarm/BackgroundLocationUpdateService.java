@@ -149,7 +149,7 @@ public class BackgroundLocationUpdateService extends Service implements GoogleAp
 
         builder.setContentTitle("Your title");
         builder.setContentText("You are now online");
-        Uri notificationSound = RingtoneManager.getActualDefaultRingtoneUri(this, RingtoneManager.TYPE_NOTIFICATION);
+        Uri notificationSound = RingtoneManager.getActualDefaultRingtoneUri(this, RingtoneManager.TYPE_ALARM);
         builder.setSound(notificationSound);
         builder.setAutoCancel(true);
         builder.setContentIntent(pendingIntent);
@@ -210,7 +210,7 @@ public class BackgroundLocationUpdateService extends Service implements GoogleAp
                         String Title = String.valueOf(alarms.get(i).getName());
                         String Note = String.valueOf(alarms.get(i).getNotes());
                         Boolean status = alarms.get(i).getStatus();
-                        while (inRange(latDest, logDest, location.getLatitude(), location.getLongitude(), radius) && status) {
+                        if (inRange(latDest, logDest, location.getLatitude(), location.getLongitude(), radius) && status) {
                             Log.d(TAG_LOCATION, "I'm in range! the alarm should notify :)");
                             /* Notification Code*/
                             final int notificationId = 1111;
