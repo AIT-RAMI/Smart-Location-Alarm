@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ABIR-Desktop-New folder-SmartLocationAlarm.iml" filepath="$PROJECT_DIR$/ABIR-Desktop-New folder-SmartLocationAlarm.iml" group="SmartLocationAlarm" />
       <module fileurl="file://$PROJECT_DIR$/AndroidStudioProjects-Smart-Location-Alarm-SmartLocationAlarm.iml" filepath="$PROJECT_DIR$/AndroidStudioProjects-Smart-Location-Alarm-SmartLocationAlarm.iml" group="SmartLocationAlarm" />
       <module fileurl="file://$PROJECT_DIR$/Desktop-New folder (2)-SmartLocationAlarm.iml" filepath="$PROJECT_DIR$/Desktop-New folder (2)-SmartLocationAlarm.iml" group="SmartLocationAlarm" />
       <module fileurl="file://$PROJECT_DIR$/Desktop-New folder (4)-SmartLocationAlarm.iml" filepath="$PROJECT_DIR$/Desktop-New folder (4)-SmartLocationAlarm.iml" group="SmartLocationAlarm" />

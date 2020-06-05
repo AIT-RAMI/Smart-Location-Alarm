@@ -6,359 +6,358 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
+8-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml
-10
-11    <!--
-12         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
-13         Google Maps Android API v2, but you must specify either coarse or fine
-14         location permissions for the 'MyLocation' functionality.
-15    -->
-16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-16-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:11:5-79
-16-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:11:22-76
-17    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
-17-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:12:5-82
-17-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:12:22-79
-18    <uses-permission android:name="android.permission.INTERNET" />
-18-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:13:5-67
-18-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:13:22-64
-19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-19-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:14:5-79
-19-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:14:22-76
-20    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-20-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:15:5-76
-20-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:15:22-73
-21    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-21-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:16:5-77
-21-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:16:22-74
-22    <uses-permission android:name="android.permission.VIBRATE" />
-22-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:17:5-66
-22-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:17:22-63
-23    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
-23-->[androidx.biometric:biometric:1.0.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3c36ac32f064037aff12d63655dd93bb\biometric-1.0.1\AndroidManifest.xml:24:5-72
-23-->[androidx.biometric:biometric:1.0.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3c36ac32f064037aff12d63655dd93bb\biometric-1.0.1\AndroidManifest.xml:24:22-69
-24    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
-24-->[androidx.biometric:biometric:1.0.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3c36ac32f064037aff12d63655dd93bb\biometric-1.0.1\AndroidManifest.xml:25:5-74
-24-->[androidx.biometric:biometric:1.0.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3c36ac32f064037aff12d63655dd93bb\biometric-1.0.1\AndroidManifest.xml:25:22-71
-25
-26    <uses-feature
-26-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\7568ba76e7ca3967850522f169ef779d\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
-27        android:glEsVersion="0x00020000"
-27-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\7568ba76e7ca3967850522f169ef779d\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
-28        android:required="true" />
-28-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\7568ba76e7ca3967850522f169ef779d\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
-29
-30    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-30-->[com.google.android.gms:play-services-measurement-api:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\e6531f046c849c551c01e1e2ab1fa5eb\jetified-play-services-measurement-api-17.2.3\AndroidManifest.xml:24:5-68
-30-->[com.google.android.gms:play-services-measurement-api:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\e6531f046c849c551c01e1e2ab1fa5eb\jetified-play-services-measurement-api-17.2.3\AndroidManifest.xml:24:22-65
-31    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-31-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:26:5-82
-31-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:26:22-79
-32    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-32-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:26:5-110
-32-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:26:22-107
-33
-34    <application
-34-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:20:5-79:19
-35        android:name="com.example.smartlocationalarm.MyApplication"
-35-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:21:9-38
-36        android:allowBackup="true"
-36-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:22:9-35
-37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-37-->[androidx.core:core:1.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\c6f4260131458ccd0b15b1a20cb8065e\core-1.2.0\AndroidManifest.xml:24:18-86
-38        android:debuggable="true"
-39        android:icon="@mipmap/ic_launcher"
-39-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:23:9-43
-40        android:label="@string/app_name"
-40-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:24:9-41
-41        android:roundIcon="@mipmap/ic_launcher_round"
-41-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:25:9-54
-42        android:supportsRtl="true"
-42-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:26:9-35
-43        android:testOnly="true"
-44        android:theme="@style/AppTheme" >
-44-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:27:9-40
-45        <service
-45-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:29:9-32:47
-46            android:name="com.example.smartlocationalarm.BackgroundLocationUpdateService"
-46-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:30:13-60
-47            android:enabled="true"
-47-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:31:13-35
-48            android:exported="true" />
-48-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:32:13-36
-49        <!--
-50             The API key for Google Maps-based APIs is defined as a string resource.
-51             (See the file "res/values/google_maps_api.xml").
-52             Note that the API key is linked to the encryption key used to sign the APK.
-53             You need a different API key for each encryption key, including the release key that is used to
-54             sign the APK for publishing.
-55             You can define the keys for the debug and release targets in src/debug/ and src/release/.
-56        -->
-57        <meta-data
-57-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:41:9-43:55
-58            android:name="com.google.android.geo.API_KEY"
-58-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:42:13-58
-59            android:value="@string/google_maps_key" />
-59-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:43:13-52
-60
-61        <activity
-61-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:45:9-47:44
-62            android:name="com.example.smartlocationalarm.alarmDetailsActivity"
-62-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:46:13-49
-63            android:label="Alarm Details" />
-63-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:47:13-42
-64        <activity
-64-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:48:9-50:41
-65            android:name="com.example.smartlocationalarm.alarmListActivity"
-65-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:49:13-46
-66            android:label="Alarm List" />
-66-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:50:13-39
-67        <activity
-67-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:51:9-53:39
-68            android:name="com.example.smartlocationalarm.SettingsActivity"
-68-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:52:13-45
-69            android:label="Settings" />
-69-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:53:13-37
-70        <activity
-70-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:54:9-56:36
-71            android:name="com.example.smartlocationalarm.AboutActivity"
-71-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:55:13-42
-72            android:label="About" />
-72-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:56:13-34
-73
-74        <meta-data
-74-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:58:9-60:69
-75            android:name="com.google.android.gms.version"
-75-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:59:13-58
-76            android:value="@integer/google_play_services_version" />
-76-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:60:13-66
-77
-78        <activity
-78-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:62:9-64:59
-79            android:name="com.example.smartlocationalarm.MapsActivity"
-79-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:63:13-41
-80            android:label="@string/title_activity_maps" />
-80-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:64:13-56
-81        <activity
-81-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:65:9-67:67
-82            android:name="com.example.smartlocationalarm.CreateAlarmActivity"
-82-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:66:13-48
-83            android:label="@string/title_activity_create_alarm" />
-83-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:67:13-64
-84        <activity android:name="com.example.smartlocationalarm.PermissionActivity" />
-84-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:68:9-55
-84-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:68:19-53
-85        <activity
-85-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:69:9-71:35
-86            android:name="com.example.smartlocationalarm.Welcome_Activity"
-86-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:70:13-45
-87            android:label="Home" />
-87-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:71:13-33
-88        <activity android:name="com.example.smartlocationalarm.MainActivity" >
-88-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:72:9-78:20
-88-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:72:19-47
-89            <intent-filter>
-89-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:73:13-77:29
-90                <action android:name="android.intent.action.MAIN" />
-90-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:74:17-69
-90-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:74:25-66
-91
-92                <category android:name="android.intent.category.LAUNCHER" />
-92-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:76:17-77
-92-->C:\Users\AIT RAMI\github\android\Smart-Location-Alarm\app\src\main\AndroidManifest.xml:76:27-74
-93            </intent-filter>
-94        </activity>
-95        <activity
-95-->[androidx.biometric:biometric:1.0.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3c36ac32f064037aff12d63655dd93bb\biometric-1.0.1\AndroidManifest.xml:28:9-31:67
-96            android:name="androidx.biometric.DeviceCredentialHandlerActivity"
-96-->[androidx.biometric:biometric:1.0.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3c36ac32f064037aff12d63655dd93bb\biometric-1.0.1\AndroidManifest.xml:29:13-78
-97            android:exported="true"
-97-->[androidx.biometric:biometric:1.0.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3c36ac32f064037aff12d63655dd93bb\biometric-1.0.1\AndroidManifest.xml:30:13-36
-98            android:theme="@style/DeviceCredentialHandlerTheme" />
-98-->[androidx.biometric:biometric:1.0.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3c36ac32f064037aff12d63655dd93bb\biometric-1.0.1\AndroidManifest.xml:31:13-64
-99        <activity
-99-->[com.karumi:dexter:6.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\45c582b5f7ff5c4faed151a1a5b87dae\jetified-dexter-6.0.2\AndroidManifest.xml:27:9-29:72
-100            android:name="com.karumi.dexter.DexterActivity"
-100-->[com.karumi:dexter:6.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\45c582b5f7ff5c4faed151a1a5b87dae\jetified-dexter-6.0.2\AndroidManifest.xml:28:13-60
-101            android:theme="@style/Dexter.Internal.Theme.Transparent" />
-101-->[com.karumi:dexter:6.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\45c582b5f7ff5c4faed151a1a5b87dae\jetified-dexter-6.0.2\AndroidManifest.xml:29:13-69
-102        <activity
-102-->[com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\1e6e0b218ccfeb7492b94f8f5863d2cc\jetified-places-2.2.0\AndroidManifest.xml:14:9-20:20
-103            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
-103-->[com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\1e6e0b218ccfeb7492b94f8f5863d2cc\jetified-places-2.2.0\AndroidManifest.xml:15:13-91
-104            android:exported="false"
-104-->[com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\1e6e0b218ccfeb7492b94f8f5863d2cc\jetified-places-2.2.0\AndroidManifest.xml:16:13-37
-105            android:label="@string/places_autocomplete_label"
-105-->[com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\1e6e0b218ccfeb7492b94f8f5863d2cc\jetified-places-2.2.0\AndroidManifest.xml:17:13-62
-106            android:theme="@style/PlacesAutocompleteOverlay"
-106-->[com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\1e6e0b218ccfeb7492b94f8f5863d2cc\jetified-places-2.2.0\AndroidManifest.xml:18:13-61
-107            android:windowSoftInputMode="adjustResize" >
-107-->[com.google.android.libraries.places:places:2.2.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\1e6e0b218ccfeb7492b94f8f5863d2cc\jetified-places-2.2.0\AndroidManifest.xml:19:13-55
-108        </activity> <!-- Needs to be explicitly declared on P+ -->
-109        <uses-library
-109-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\7568ba76e7ca3967850522f169ef779d\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
-110            android:name="org.apache.http.legacy"
-110-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\7568ba76e7ca3967850522f169ef779d\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
-111            android:required="false" />
-111-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\7568ba76e7ca3967850522f169ef779d\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
-112
-113        <service
-113-->[com.google.firebase:firebase-database:19.2.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3e824c51aee14a2eb43534159ffb335f\jetified-firebase-database-19.2.1\AndroidManifest.xml:29:9-35:19
-114            android:name="com.google.firebase.components.ComponentDiscoveryService"
-114-->[com.google.firebase:firebase-database:19.2.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3e824c51aee14a2eb43534159ffb335f\jetified-firebase-database-19.2.1\AndroidManifest.xml:30:13-84
-115            android:directBootAware="true"
-115-->[com.google.firebase:firebase-common:19.3.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
-116            android:exported="false" >
-116-->[com.google.firebase:firebase-database:19.2.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3e824c51aee14a2eb43534159ffb335f\jetified-firebase-database-19.2.1\AndroidManifest.xml:31:13-37
-117            <meta-data
-117-->[com.google.firebase:firebase-database:19.2.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3e824c51aee14a2eb43534159ffb335f\jetified-firebase-database-19.2.1\AndroidManifest.xml:32:13-34:85
-118                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-118-->[com.google.firebase:firebase-database:19.2.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3e824c51aee14a2eb43534159ffb335f\jetified-firebase-database-19.2.1\AndroidManifest.xml:33:17-109
-119                android:value="com.google.firebase.components.ComponentRegistrar" />
-119-->[com.google.firebase:firebase-database:19.2.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3e824c51aee14a2eb43534159ffb335f\jetified-firebase-database-19.2.1\AndroidManifest.xml:34:17-82
-120            <meta-data
-120-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\c8c55a9dfb88ee84ed4b575295b8e34f\jetified-firebase-storage-19.1.1\AndroidManifest.xml:33:13-35:85
-121                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-121-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\c8c55a9dfb88ee84ed4b575295b8e34f\jetified-firebase-storage-19.1.1\AndroidManifest.xml:34:17-107
-122                android:value="com.google.firebase.components.ComponentRegistrar" />
-122-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\c8c55a9dfb88ee84ed4b575295b8e34f\jetified-firebase-storage-19.1.1\AndroidManifest.xml:35:17-82
-123            <meta-data
-123-->[com.google.android.gms:play-services-measurement-api:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\e6531f046c849c551c01e1e2ab1fa5eb\jetified-play-services-measurement-api-17.2.3\AndroidManifest.xml:30:13-32:85
-124                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-124-->[com.google.android.gms:play-services-measurement-api:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\e6531f046c849c551c01e1e2ab1fa5eb\jetified-play-services-measurement-api-17.2.3\AndroidManifest.xml:31:17-139
-125                android:value="com.google.firebase.components.ComponentRegistrar" />
-125-->[com.google.android.gms:play-services-measurement-api:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\e6531f046c849c551c01e1e2ab1fa5eb\jetified-play-services-measurement-api-17.2.3\AndroidManifest.xml:32:17-82
-126            <meta-data
-126-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:32:13-34:85
-127                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-127-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:33:17-96
-128                android:value="com.google.firebase.components.ComponentRegistrar" />
-128-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:34:17-82
-129        </service>
-130
-131        <receiver
-131-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:37:9-44:20
-132            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-132-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:38:13-78
-133            android:exported="true"
-133-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:39:13-36
-134            android:permission="com.google.android.c2dm.permission.SEND" >
-134-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:40:13-73
-135            <intent-filter>
-135-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:41:13-43:29
-136                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-136-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:42:17-81
-136-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:42:25-78
-137            </intent-filter>
-138        </receiver>
-139
-140        <activity
-140-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\2be5ef2959ea5355d833f1cf7554bfda\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
-141            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-141-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\2be5ef2959ea5355d833f1cf7554bfda\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
-142            android:exported="false"
-142-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\2be5ef2959ea5355d833f1cf7554bfda\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
-143            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-143-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\2be5ef2959ea5355d833f1cf7554bfda\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
-144
-145        <provider
-145-->[com.google.firebase:firebase-common:19.3.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
-146            android:name="com.google.firebase.provider.FirebaseInitProvider"
-146-->[com.google.firebase:firebase-common:19.3.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
-147            android:authorities="com.example.smartlocationalarm.firebaseinitprovider"
-147-->[com.google.firebase:firebase-common:19.3.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
-148            android:exported="false"
-148-->[com.google.firebase:firebase-common:19.3.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
-149            android:initOrder="100" />
-149-->[com.google.firebase:firebase-common:19.3.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
-150
-151        <receiver
-151-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:29:9-33:20
-152            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-152-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:30:13-85
-153            android:enabled="true"
-153-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:31:13-35
-154            android:exported="false" >
-154-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:32:13-37
-155        </receiver>
-156        <receiver
-156-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:34:9-42:20
-157            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-157-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:35:13-100
-158            android:enabled="true"
-158-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:36:13-35
-159            android:exported="true"
-159-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:37:13-36
-160            android:permission="android.permission.INSTALL_PACKAGES" >
-160-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:38:13-69
-161            <intent-filter>
-161-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:39:13-41:29
-162                <action android:name="com.android.vending.INSTALL_REFERRER" />
-162-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:40:17-79
-162-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:40:25-76
-163            </intent-filter>
-164        </receiver>
-165
-166        <service
-166-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:44:9-47:40
-167            android:name="com.google.android.gms.measurement.AppMeasurementService"
-167-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:45:13-84
-168            android:enabled="true"
-168-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:46:13-35
-169            android:exported="false" />
-169-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:47:13-37
-170        <service
-170-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:48:9-52:72
-171            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-171-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:49:13-87
-172            android:enabled="true"
-172-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:50:13-35
-173            android:exported="false"
-173-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:51:13-37
-174            android:permission="android.permission.BIND_JOB_SERVICE" />
-174-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:52:13-69
-175        <service
-175-->[com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\aace659ae5ecd38c9b505a1cb9ce2db9\jetified-transport-backend-cct-2.1.0\AndroidManifest.xml:29:9-35:19
-176            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-176-->[com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\aace659ae5ecd38c9b505a1cb9ce2db9\jetified-transport-backend-cct-2.1.0\AndroidManifest.xml:30:13-103
-177            android:exported="false" >
-177-->[com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\aace659ae5ecd38c9b505a1cb9ce2db9\jetified-transport-backend-cct-2.1.0\AndroidManifest.xml:31:13-37
-178            <meta-data
-178-->[com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\aace659ae5ecd38c9b505a1cb9ce2db9\jetified-transport-backend-cct-2.1.0\AndroidManifest.xml:32:13-34:39
-179                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-179-->[com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\aace659ae5ecd38c9b505a1cb9ce2db9\jetified-transport-backend-cct-2.1.0\AndroidManifest.xml:33:17-94
-180                android:value="cct" />
-180-->[com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\aace659ae5ecd38c9b505a1cb9ce2db9\jetified-transport-backend-cct-2.1.0\AndroidManifest.xml:34:17-36
-181        </service>
-182        <service
-182-->[com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\8a9eb8870eb2f607990e88c7b33f4dd8\jetified-transport-runtime-2.1.0\AndroidManifest.xml:26:9-30:19
-183            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-183-->[com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\8a9eb8870eb2f607990e88c7b33f4dd8\jetified-transport-runtime-2.1.0\AndroidManifest.xml:27:13-117
-184            android:exported="false"
-184-->[com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\8a9eb8870eb2f607990e88c7b33f4dd8\jetified-transport-runtime-2.1.0\AndroidManifest.xml:28:13-37
-185            android:permission="android.permission.BIND_JOB_SERVICE" >
-185-->[com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\8a9eb8870eb2f607990e88c7b33f4dd8\jetified-transport-runtime-2.1.0\AndroidManifest.xml:29:13-69
-186        </service>
-187
-188        <receiver
-188-->[com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\8a9eb8870eb2f607990e88c7b33f4dd8\jetified-transport-runtime-2.1.0\AndroidManifest.xml:32:9-34:40
-189            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-189-->[com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\8a9eb8870eb2f607990e88c7b33f4dd8\jetified-transport-runtime-2.1.0\AndroidManifest.xml:33:13-132
-190            android:exported="false" />
-190-->[com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\8a9eb8870eb2f607990e88c7b33f4dd8\jetified-transport-runtime-2.1.0\AndroidManifest.xml:34:13-37
-191
-192        <provider
-192-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\07b19265bd045da9807bee6a1281581a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
-193            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-193-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\07b19265bd045da9807bee6a1281581a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
-194            android:authorities="com.example.smartlocationalarm.lifecycle-process"
-194-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\07b19265bd045da9807bee6a1281581a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
-195            android:exported="false"
-195-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\07b19265bd045da9807bee6a1281581a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
-196            android:multiprocess="true" />
-196-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AIT RAMI\.gradle\caches\transforms-2\files-2.1\07b19265bd045da9807bee6a1281581a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
-197    </application>
-198
-199</manifest>
+9-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml
+10    <!--
+11         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+12         Google Maps Android API v2, but you must specify either coarse or fine
+13         location permissions for the 'MyLocation' functionality.
+14    -->
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:10:5-79
+15-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:10:22-76
+16    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
+16-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:11:5-82
+16-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:11:22-79
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:12:5-67
+17-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:12:22-64
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:13:5-79
+18-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:13:22-76
+19    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+19-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:14:5-76
+19-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:14:22-73
+20    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+20-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:15:5-77
+20-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:15:22-74
+21    <uses-permission android:name="android.permission.VIBRATE" />
+21-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:16:5-66
+21-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:16:22-63
+22    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+22-->[androidx.biometric:biometric:1.0.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\3c36ac32f064037aff12d63655dd93bb\biometric-1.0.1\AndroidManifest.xml:24:5-72
+22-->[androidx.biometric:biometric:1.0.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\3c36ac32f064037aff12d63655dd93bb\biometric-1.0.1\AndroidManifest.xml:24:22-69
+23    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+23-->[androidx.biometric:biometric:1.0.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\3c36ac32f064037aff12d63655dd93bb\biometric-1.0.1\AndroidManifest.xml:25:5-74
+23-->[androidx.biometric:biometric:1.0.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\3c36ac32f064037aff12d63655dd93bb\biometric-1.0.1\AndroidManifest.xml:25:22-71
+24
+25    <uses-feature
+25-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\7568ba76e7ca3967850522f169ef779d\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+26        android:glEsVersion="0x00020000"
+26-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\7568ba76e7ca3967850522f169ef779d\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+27        android:required="true" />
+27-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\7568ba76e7ca3967850522f169ef779d\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+28
+29    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+29-->[com.google.android.gms:play-services-measurement-api:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\e6531f046c849c551c01e1e2ab1fa5eb\jetified-play-services-measurement-api-17.2.3\AndroidManifest.xml:24:5-68
+29-->[com.google.android.gms:play-services-measurement-api:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\e6531f046c849c551c01e1e2ab1fa5eb\jetified-play-services-measurement-api-17.2.3\AndroidManifest.xml:24:22-65
+30    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+30-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:26:5-82
+30-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:26:22-79
+31    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+31-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:26:5-110
+31-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:26:22-107
+32
+33    <application
+33-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:18:5-78:19
+34        android:name="com.example.smartlocationalarm.MyApplication"
+34-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:19:9-38
+35        android:allowBackup="true"
+35-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:20:9-35
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.2.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\c6f4260131458ccd0b15b1a20cb8065e\core-1.2.0\AndroidManifest.xml:24:18-86
+37        android:debuggable="true"
+38        android:icon="@mipmap/ic_launcher"
+38-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:21:9-43
+39        android:label="@string/app_name"
+39-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:22:9-41
+40        android:roundIcon="@mipmap/ic_launcher_round"
+40-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:23:9-54
+41        android:supportsRtl="true"
+41-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:24:9-35
+42        android:testOnly="true"
+43        android:theme="@style/AppTheme" >
+43-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:25:9-40
+44        <service
+44-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:28:9-31:39
+45            android:name="com.example.smartlocationalarm.BackgroundLocationUpdateService"
+45-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:29:13-60
+46            android:enabled="true"
+46-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:30:13-35
+47            android:exported="true" />
+47-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:31:13-36
+48        <!--
+49             The API key for Google Maps-based APIs is defined as a string resource.
+50             (See the file "res/values/google_maps_api.xml").
+51             Note that the API key is linked to the encryption key used to sign the APK.
+52             You need a different API key for each encryption key, including the release key that is used to
+53             sign the APK for publishing.
+54             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+55        -->
+56        <meta-data
+56-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:40:9-42:55
+57            android:name="com.google.android.geo.API_KEY"
+57-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:41:13-58
+58            android:value="@string/google_maps_key" />
+58-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:42:13-52
+59
+60        <activity
+60-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:44:9-46:45
+61            android:name="com.example.smartlocationalarm.alarmDetailsActivity"
+61-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:45:13-49
+62            android:label="Alarm Details" />
+62-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:46:13-42
+63        <activity
+63-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:47:9-49:42
+64            android:name="com.example.smartlocationalarm.alarmListActivity"
+64-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:48:13-46
+65            android:label="Alarm List" />
+65-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:49:13-39
+66        <activity
+66-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:50:9-52:40
+67            android:name="com.example.smartlocationalarm.SettingsActivity"
+67-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:51:13-45
+68            android:label="Settings" />
+68-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:52:13-37
+69        <activity
+69-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:53:9-55:37
+70            android:name="com.example.smartlocationalarm.AboutActivity"
+70-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:54:13-42
+71            android:label="About" />
+71-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:55:13-34
+72
+73        <meta-data
+73-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:57:9-59:69
+74            android:name="com.google.android.gms.version"
+74-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:58:13-58
+75            android:value="@integer/google_play_services_version" />
+75-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:59:13-66
+76
+77        <activity
+77-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:61:9-63:59
+78            android:name="com.example.smartlocationalarm.MapsActivity"
+78-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:62:13-41
+79            android:label="@string/title_activity_maps" />
+79-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:63:13-56
+80        <activity
+80-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:64:9-66:67
+81            android:name="com.example.smartlocationalarm.CreateAlarmActivity"
+81-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:65:13-48
+82            android:label="@string/title_activity_create_alarm" />
+82-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:66:13-64
+83        <activity android:name="com.example.smartlocationalarm.PermissionActivity" />
+83-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:67:9-56
+83-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:67:19-53
+84        <activity
+84-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:68:9-70:36
+85            android:name="com.example.smartlocationalarm.Welcome_Activity"
+85-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:69:13-45
+86            android:label="Home" />
+86-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:70:13-33
+87        <activity android:name="com.example.smartlocationalarm.MainActivity" >
+87-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:71:9-77:20
+87-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:71:19-47
+88            <intent-filter>
+88-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:72:13-76:29
+89                <action android:name="android.intent.action.MAIN" />
+89-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:73:17-69
+89-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:73:25-66
+90
+91                <category android:name="android.intent.category.LAUNCHER" />
+91-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:75:17-77
+91-->C:\Users\ABIR\Desktop\New folder\app\src\main\AndroidManifest.xml:75:27-74
+92            </intent-filter>
+93        </activity>
+94        <activity
+94-->[androidx.biometric:biometric:1.0.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\3c36ac32f064037aff12d63655dd93bb\biometric-1.0.1\AndroidManifest.xml:28:9-31:67
+95            android:name="androidx.biometric.DeviceCredentialHandlerActivity"
+95-->[androidx.biometric:biometric:1.0.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\3c36ac32f064037aff12d63655dd93bb\biometric-1.0.1\AndroidManifest.xml:29:13-78
+96            android:exported="true"
+96-->[androidx.biometric:biometric:1.0.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\3c36ac32f064037aff12d63655dd93bb\biometric-1.0.1\AndroidManifest.xml:30:13-36
+97            android:theme="@style/DeviceCredentialHandlerTheme" />
+97-->[androidx.biometric:biometric:1.0.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\3c36ac32f064037aff12d63655dd93bb\biometric-1.0.1\AndroidManifest.xml:31:13-64
+98        <activity
+98-->[com.karumi:dexter:6.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\45c582b5f7ff5c4faed151a1a5b87dae\jetified-dexter-6.0.2\AndroidManifest.xml:27:9-29:72
+99            android:name="com.karumi.dexter.DexterActivity"
+99-->[com.karumi:dexter:6.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\45c582b5f7ff5c4faed151a1a5b87dae\jetified-dexter-6.0.2\AndroidManifest.xml:28:13-60
+100            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+100-->[com.karumi:dexter:6.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\45c582b5f7ff5c4faed151a1a5b87dae\jetified-dexter-6.0.2\AndroidManifest.xml:29:13-69
+101        <activity
+101-->[com.google.android.libraries.places:places:2.2.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\1e6e0b218ccfeb7492b94f8f5863d2cc\jetified-places-2.2.0\AndroidManifest.xml:14:9-20:20
+102            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+102-->[com.google.android.libraries.places:places:2.2.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\1e6e0b218ccfeb7492b94f8f5863d2cc\jetified-places-2.2.0\AndroidManifest.xml:15:13-91
+103            android:exported="false"
+103-->[com.google.android.libraries.places:places:2.2.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\1e6e0b218ccfeb7492b94f8f5863d2cc\jetified-places-2.2.0\AndroidManifest.xml:16:13-37
+104            android:label="@string/places_autocomplete_label"
+104-->[com.google.android.libraries.places:places:2.2.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\1e6e0b218ccfeb7492b94f8f5863d2cc\jetified-places-2.2.0\AndroidManifest.xml:17:13-62
+105            android:theme="@style/PlacesAutocompleteOverlay"
+105-->[com.google.android.libraries.places:places:2.2.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\1e6e0b218ccfeb7492b94f8f5863d2cc\jetified-places-2.2.0\AndroidManifest.xml:18:13-61
+106            android:windowSoftInputMode="adjustResize" >
+106-->[com.google.android.libraries.places:places:2.2.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\1e6e0b218ccfeb7492b94f8f5863d2cc\jetified-places-2.2.0\AndroidManifest.xml:19:13-55
+107        </activity> <!-- Needs to be explicitly declared on P+ -->
+108        <uses-library
+108-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\7568ba76e7ca3967850522f169ef779d\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+109            android:name="org.apache.http.legacy"
+109-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\7568ba76e7ca3967850522f169ef779d\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+110            android:required="false" />
+110-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\7568ba76e7ca3967850522f169ef779d\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+111
+112        <service
+112-->[com.google.firebase:firebase-database:19.2.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\3e824c51aee14a2eb43534159ffb335f\jetified-firebase-database-19.2.1\AndroidManifest.xml:29:9-35:19
+113            android:name="com.google.firebase.components.ComponentDiscoveryService"
+113-->[com.google.firebase:firebase-database:19.2.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\3e824c51aee14a2eb43534159ffb335f\jetified-firebase-database-19.2.1\AndroidManifest.xml:30:13-84
+114            android:directBootAware="true"
+114-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+115            android:exported="false" >
+115-->[com.google.firebase:firebase-database:19.2.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\3e824c51aee14a2eb43534159ffb335f\jetified-firebase-database-19.2.1\AndroidManifest.xml:31:13-37
+116            <meta-data
+116-->[com.google.firebase:firebase-database:19.2.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\3e824c51aee14a2eb43534159ffb335f\jetified-firebase-database-19.2.1\AndroidManifest.xml:32:13-34:85
+117                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+117-->[com.google.firebase:firebase-database:19.2.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\3e824c51aee14a2eb43534159ffb335f\jetified-firebase-database-19.2.1\AndroidManifest.xml:33:17-109
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.firebase:firebase-database:19.2.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\3e824c51aee14a2eb43534159ffb335f\jetified-firebase-database-19.2.1\AndroidManifest.xml:34:17-82
+119            <meta-data
+119-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\c8c55a9dfb88ee84ed4b575295b8e34f\jetified-firebase-storage-19.1.1\AndroidManifest.xml:33:13-35:85
+120                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+120-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\c8c55a9dfb88ee84ed4b575295b8e34f\jetified-firebase-storage-19.1.1\AndroidManifest.xml:34:17-107
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\c8c55a9dfb88ee84ed4b575295b8e34f\jetified-firebase-storage-19.1.1\AndroidManifest.xml:35:17-82
+122            <meta-data
+122-->[com.google.android.gms:play-services-measurement-api:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\e6531f046c849c551c01e1e2ab1fa5eb\jetified-play-services-measurement-api-17.2.3\AndroidManifest.xml:30:13-32:85
+123                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+123-->[com.google.android.gms:play-services-measurement-api:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\e6531f046c849c551c01e1e2ab1fa5eb\jetified-play-services-measurement-api-17.2.3\AndroidManifest.xml:31:17-139
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[com.google.android.gms:play-services-measurement-api:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\e6531f046c849c551c01e1e2ab1fa5eb\jetified-play-services-measurement-api-17.2.3\AndroidManifest.xml:32:17-82
+125            <meta-data
+125-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:32:13-34:85
+126                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+126-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:33:17-96
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:34:17-82
+128        </service>
+129
+130        <receiver
+130-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:37:9-44:20
+131            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+131-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:38:13-78
+132            android:exported="true"
+132-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:39:13-36
+133            android:permission="com.google.android.c2dm.permission.SEND" >
+133-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:40:13-73
+134            <intent-filter>
+134-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:41:13-43:29
+135                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+135-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:42:17-81
+135-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:42:25-78
+136            </intent-filter>
+137        </receiver>
+138
+139        <activity
+139-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\2be5ef2959ea5355d833f1cf7554bfda\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+140            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+140-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\2be5ef2959ea5355d833f1cf7554bfda\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+141            android:exported="false"
+141-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\2be5ef2959ea5355d833f1cf7554bfda\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+142            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+142-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\2be5ef2959ea5355d833f1cf7554bfda\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+143
+144        <provider
+144-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+145            android:name="com.google.firebase.provider.FirebaseInitProvider"
+145-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+146            android:authorities="com.example.smartlocationalarm.firebaseinitprovider"
+146-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+147            android:exported="false"
+147-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+148            android:initOrder="100" />
+148-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\3deb10f8139ef5717b3d54ada2a19ca4\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+149
+150        <receiver
+150-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:29:9-33:20
+151            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+151-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:30:13-85
+152            android:enabled="true"
+152-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:31:13-35
+153            android:exported="false" >
+153-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:32:13-37
+154        </receiver>
+155        <receiver
+155-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:34:9-42:20
+156            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+156-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:35:13-100
+157            android:enabled="true"
+157-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:36:13-35
+158            android:exported="true"
+158-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:37:13-36
+159            android:permission="android.permission.INSTALL_PACKAGES" >
+159-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:38:13-69
+160            <intent-filter>
+160-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:39:13-41:29
+161                <action android:name="com.android.vending.INSTALL_REFERRER" />
+161-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:40:17-79
+161-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:40:25-76
+162            </intent-filter>
+163        </receiver>
+164
+165        <service
+165-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:44:9-47:40
+166            android:name="com.google.android.gms.measurement.AppMeasurementService"
+166-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:45:13-84
+167            android:enabled="true"
+167-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:46:13-35
+168            android:exported="false" />
+168-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:47:13-37
+169        <service
+169-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:48:9-52:72
+170            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+170-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:49:13-87
+171            android:enabled="true"
+171-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:50:13-35
+172            android:exported="false"
+172-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:51:13-37
+173            android:permission="android.permission.BIND_JOB_SERVICE" />
+173-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\d896ceb7bac6328c77b75de4a6113e55\jetified-play-services-measurement-17.2.3\AndroidManifest.xml:52:13-69
+174        <service
+174-->[com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\aace659ae5ecd38c9b505a1cb9ce2db9\jetified-transport-backend-cct-2.1.0\AndroidManifest.xml:29:9-35:19
+175            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+175-->[com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\aace659ae5ecd38c9b505a1cb9ce2db9\jetified-transport-backend-cct-2.1.0\AndroidManifest.xml:30:13-103
+176            android:exported="false" >
+176-->[com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\aace659ae5ecd38c9b505a1cb9ce2db9\jetified-transport-backend-cct-2.1.0\AndroidManifest.xml:31:13-37
+177            <meta-data
+177-->[com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\aace659ae5ecd38c9b505a1cb9ce2db9\jetified-transport-backend-cct-2.1.0\AndroidManifest.xml:32:13-34:39
+178                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+178-->[com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\aace659ae5ecd38c9b505a1cb9ce2db9\jetified-transport-backend-cct-2.1.0\AndroidManifest.xml:33:17-94
+179                android:value="cct" />
+179-->[com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\aace659ae5ecd38c9b505a1cb9ce2db9\jetified-transport-backend-cct-2.1.0\AndroidManifest.xml:34:17-36
+180        </service>
+181        <service
+181-->[com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\8a9eb8870eb2f607990e88c7b33f4dd8\jetified-transport-runtime-2.1.0\AndroidManifest.xml:26:9-30:19
+182            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+182-->[com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\8a9eb8870eb2f607990e88c7b33f4dd8\jetified-transport-runtime-2.1.0\AndroidManifest.xml:27:13-117
+183            android:exported="false"
+183-->[com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\8a9eb8870eb2f607990e88c7b33f4dd8\jetified-transport-runtime-2.1.0\AndroidManifest.xml:28:13-37
+184            android:permission="android.permission.BIND_JOB_SERVICE" >
+184-->[com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\8a9eb8870eb2f607990e88c7b33f4dd8\jetified-transport-runtime-2.1.0\AndroidManifest.xml:29:13-69
+185        </service>
+186
+187        <receiver
+187-->[com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\8a9eb8870eb2f607990e88c7b33f4dd8\jetified-transport-runtime-2.1.0\AndroidManifest.xml:32:9-34:40
+188            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+188-->[com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\8a9eb8870eb2f607990e88c7b33f4dd8\jetified-transport-runtime-2.1.0\AndroidManifest.xml:33:13-132
+189            android:exported="false" />
+189-->[com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\8a9eb8870eb2f607990e88c7b33f4dd8\jetified-transport-runtime-2.1.0\AndroidManifest.xml:34:13-37
+190
+191        <provider
+191-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\07b19265bd045da9807bee6a1281581a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+192            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+192-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\07b19265bd045da9807bee6a1281581a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+193            android:authorities="com.example.smartlocationalarm.lifecycle-process"
+193-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\07b19265bd045da9807bee6a1281581a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+194            android:exported="false"
+194-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\07b19265bd045da9807bee6a1281581a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+195            android:multiprocess="true" />
+195-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\ABIR\.gradle\caches\transforms-2\files-2.1\07b19265bd045da9807bee6a1281581a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+196    </application>
+197
+198</manifest>

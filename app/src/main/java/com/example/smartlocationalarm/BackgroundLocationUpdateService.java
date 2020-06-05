@@ -228,38 +228,45 @@ public class BackgroundLocationUpdateService extends Service implements GoogleAp
                                 notificationManager.notify(notificationId, notification);
                                 ringtone.play();
 
-                                ((MyApplication) getApplication()).setId("Put Id Heere");
+                                ((MyApplication) getApplication()).setId(String.valueOf(i+1));
+
+                                try {
+                                    TimeUnit.SECONDS.sleep(10);
+                                } catch (InterruptedException e) {
+                                    e.printStackTrace();
+                                }
 
                                 //notificationManager.cancel(notificationId);
 
-//                            alarm alarm = new alarm();
-//                            alarm.setName(alarms.get(i).getName());
-//                            alarm.setNotes(alarms.get(i).getNotes());
-//                            alarm.setRadius(alarms.get(i).getRadius());
-//                            alarm.setLongitude(alarms.get(i).getLongitude());
-//                            alarm.setLatitude(alarms.get(i).getLatitude());
-//                            alarm.setStatus(false);
-//
-//                            new firebaseDatabaseHelper(BackgroundLocationUpdateService.this).updateAlarm(String.valueOf(i), alarm, new firebaseDatabaseHelper.DataStatus() {
-//                                @Override
-//                                public void DataIsLoaded(List<com.example.smartlocationalarm.alarm> alarms, List<String> keys) {
-//
-//                                }
-//
-//                                @Override
-//                                public void DataIsInserted() {
-//
-//                                }
-//
-//                                @Override
-//                                public void DataIsUpdated() {
-//                                }
-//
-//                                @Override
-//                                public void DataIsDeleted() {
-//
-//                                }
-//                            });
+                            alarm alarm = new alarm();
+                            alarm.setName(alarms.get(i).getName());
+                            alarm.setNotes(alarms.get(i).getNotes());
+                            alarm.setRadius(alarms.get(i).getRadius());
+                            alarm.setLongitude(alarms.get(i).getLongitude());
+                            alarm.setLatitude(alarms.get(i).getLatitude());
+                            alarm.setStatus(false);
+
+                            new firebaseDatabaseHelper(BackgroundLocationUpdateService.this).updateAlarm(String.valueOf(i+1), alarm, new firebaseDatabaseHelper.DataStatus() {
+                                @Override
+                                public void DataIsLoaded(List<com.example.smartlocationalarm.alarm> alarms, List<String> keys) {
+
+                                }
+
+                                @Override
+                                public void DataIsInserted() {
+
+                                }
+
+                                @Override
+                                public void DataIsUpdated() {
+                                }
+
+                                @Override
+                                public void DataIsDeleted() {
+
+                                }
+                            });
+
                                 /* end Notification Code */
                             }
                         }

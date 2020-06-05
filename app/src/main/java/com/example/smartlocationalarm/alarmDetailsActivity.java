@@ -148,10 +148,10 @@ public class alarmDetailsActivity extends AppCompatActivity implements OnMapRead
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked == true) {
-                    _Statut = true;
+                    status = true;
 
                 } else {
-                    _Statut = false;
+                    status = false;
                 }
             }
         });
@@ -169,7 +169,7 @@ public class alarmDetailsActivity extends AppCompatActivity implements OnMapRead
                         alarm.setRadius(editRadius.getText().toString());
                         alarm.setLongitude(longitude);
                         alarm.setLatitude(latitude);
-                        alarm.setStatus(_Statut);
+                        alarm.setStatus(status);
 
                         new firebaseDatabaseHelper(alarmDetailsActivity.this).updateAlarm(key, alarm, new firebaseDatabaseHelper.DataStatus() {
                             @Override
