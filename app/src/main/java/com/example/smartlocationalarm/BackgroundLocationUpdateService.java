@@ -171,7 +171,7 @@ public class BackgroundLocationUpdateService extends Service implements GoogleAp
             ringtone = RingtoneManager.getRingtone(getApplicationContext(), RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION));
             String CHANNEL_ID = "ff";
             // Create an explicit intent for an Activity in your app
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, alarmListActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
             final Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
@@ -199,7 +199,6 @@ public class BackgroundLocationUpdateService extends Service implements GoogleAp
             }
             final NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
 
-
             new firebaseDatabaseHelper(BackgroundLocationUpdateService.this).readAlarms(new firebaseDatabaseHelper.DataStatus() {
                 @Override
                 public void DataIsLoaded(List<alarm> alarms, List<String> keys) {
@@ -219,9 +218,10 @@ public class BackgroundLocationUpdateService extends Service implements GoogleAp
                             builder.setContentText(Note);
                             Notification notification = builder.build();
                             notification.defaults |= Notification.DEFAULT_SOUND;
-                            
-                            notificationManager.notify(notificationId, notification);
 
+                            notificationManager.notify(notificationId, notification);
+                            ringtone.play();
+                            alarms.get(i).setStatus(false);
                             /* end Notification Code */
                         }
                     }
