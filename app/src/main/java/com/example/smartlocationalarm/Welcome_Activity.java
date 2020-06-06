@@ -23,17 +23,28 @@ public class Welcome_Activity extends AppCompatActivity {
     ActionBarDrawerToggle toggle;
     NavigationView nv;
     // Test Are
-    //Button serviceTest;
+    Button serviceTest;
     // End Test Area
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome_);
         // Test Area
-        //serviceTest = findViewById(R.id.serviceTest);
+        serviceTest = findViewById(R.id.serviceTest);
         //final Intent intent = new Intent(this, MyService.class);
         final Intent intent = new Intent(this, BackgroundLocationUpdateService.class);
-        startService(intent);
+        //startService(intent);
+        serviceTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startService(intent);
+                /*stopService(intent);
+                intent.putExtra("alarmHour", Calendar.getInstance().getTime().getHours());
+                intent.putExtra("alarmMinute", Calendar.getInstance().getTime().getMinutes() + 1);
+                startService(intent);*/
+            }
+
+        });
         AppRate.with(this)
                 .setInstallDays(0)
                 .setLaunchTimes(10)
