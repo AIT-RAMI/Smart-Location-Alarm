@@ -42,6 +42,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.smartlocationalarm.turnAlarmeOffActivity" />
+
         <service
             android:name="com.example.smartlocationalarm.BackgroundLocationUpdateService"
             android:enabled="true"

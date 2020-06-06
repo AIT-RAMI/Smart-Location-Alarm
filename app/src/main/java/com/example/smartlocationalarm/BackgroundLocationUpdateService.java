@@ -172,7 +172,7 @@ public class BackgroundLocationUpdateService extends Service implements GoogleAp
             ringtone = RingtoneManager.getRingtone(getApplicationContext(), RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION));
             String CHANNEL_ID = "ff";
             // Create an explicit intent for an Activity in your app
-            Intent intent = new Intent(this, alarmListActivity.class);
+            Intent intent = new Intent(this, turnAlarmeOffActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             intent.putExtra("id", 111111);
             PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
@@ -230,42 +230,37 @@ public class BackgroundLocationUpdateService extends Service implements GoogleAp
 
                                 ((MyApplication) getApplication()).setId(String.valueOf(i+1));
 
-                                try {
-                                    TimeUnit.SECONDS.sleep(10);
-                                } catch (InterruptedException e) {
-                                    e.printStackTrace();
-                                }
 
                                 //notificationManager.cancel(notificationId);
 
-                            alarm alarm = new alarm();
-                            alarm.setName(alarms.get(i).getName());
-                            alarm.setNotes(alarms.get(i).getNotes());
-                            alarm.setRadius(alarms.get(i).getRadius());
-                            alarm.setLongitude(alarms.get(i).getLongitude());
-                            alarm.setLatitude(alarms.get(i).getLatitude());
-                            alarm.setStatus(false);
-
-                            new firebaseDatabaseHelper(BackgroundLocationUpdateService.this).updateAlarm(String.valueOf(i+1), alarm, new firebaseDatabaseHelper.DataStatus() {
-                                @Override
-                                public void DataIsLoaded(List<com.example.smartlocationalarm.alarm> alarms, List<String> keys) {
-
-                                }
-
-                                @Override
-                                public void DataIsInserted() {
-
-                                }
-
-                                @Override
-                                public void DataIsUpdated() {
-                                }
-
-                                @Override
-                                public void DataIsDeleted() {
-
-                                }
-                            });
+//                            alarm alarm = new alarm();
+//                            alarm.setName(alarms.get(i).getName());
+//                            alarm.setNotes(alarms.get(i).getNotes());
+//                            alarm.setRadius(alarms.get(i).getRadius());
+//                            alarm.setLongitude(alarms.get(i).getLongitude());
+//                            alarm.setLatitude(alarms.get(i).getLatitude());
+//                            alarm.setStatus(false);
+//
+//                            new firebaseDatabaseHelper(BackgroundLocationUpdateService.this).updateAlarm(String.valueOf(i+1), alarm, new firebaseDatabaseHelper.DataStatus() {
+//                                @Override
+//                                public void DataIsLoaded(List<com.example.smartlocationalarm.alarm> alarms, List<String> keys) {
+//
+//                                }
+//
+//                                @Override
+//                                public void DataIsInserted() {
+//
+//                                }
+//
+//                                @Override
+//                                public void DataIsUpdated() {
+//                                }
+//
+//                                @Override
+//                                public void DataIsDeleted() {
+//
+//                                }
+//                            });
 
                                 /* end Notification Code */
                             }
@@ -310,8 +305,8 @@ public class BackgroundLocationUpdateService extends Service implements GoogleAp
     @Override
     public void onConnected(@Nullable Bundle bundle) {
         mLocationRequest = new LocationRequest();
-        mLocationRequest.setInterval(10 * 1000);
-        mLocationRequest.setFastestInterval(5 * 1000);
+        mLocationRequest.setInterval(10 * 10000);
+        mLocationRequest.setFastestInterval(5 * 10000);
         mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
 
         LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder();

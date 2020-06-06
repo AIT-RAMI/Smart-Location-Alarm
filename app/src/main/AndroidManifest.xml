@@ -24,6 +24,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
+        <activity android:name=".turnAlarmeOffActivity"></activity>
 
         <service
             android:name=".BackgroundLocationUpdateService"
